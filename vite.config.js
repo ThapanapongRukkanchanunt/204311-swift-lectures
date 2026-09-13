@@ -5,6 +5,8 @@ export default defineConfig({
   build: { rollupOptions: { input: {
     home: resolve('index.html'),
     week01: resolve('2027/week-01/index.html'),
-    reading: resolve('2027/week-01/reading.html')
+    reading: resolve('2027/week-01/reading.html'),
+    week02: resolve('2027/week-02/index.html'),
+    reading02: resolve('2027/week-02/reading.html')
   } } }
 });

@@ -1,0 +1,13 @@
+.queue-number{font-size:72px;font-weight:800;color:var(--purple)}
+.deck.enhanced .cards.queue-pair{grid-template-columns:1fr 1fr}
+.code-label{font-size:12px!important;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px!important}
+.queue-sim{background:var(--mint);border-radius:18px;padding:20px}
+.queue-output{font-weight:bold;color:#175A44}
+.queue-sim button{margin:4px}
+body:not(.enhanced) .queue-sim button{display:none}
+.lesson-card + .lesson-card{margin-top:24px}
+.deck.enhanced #w02-title h2{font-size:62px;max-width:1080px}
+.deck.enhanced #w02-title .lead{font-size:38px;margin-top:38px}
+.deck.enhanced #w02-minimal-state-view pre,.deck.enhanced #w02-duplicated-state-defect pre{line-height:1.4}
+.deck.enhanced #w02-event-state-view-trace li{margin-bottom:10px}
+@media(max-width:700px){.queue-number{font-size:48px}.reading .reveal table,body:not(.enhanced) .reveal table{table-layout:fixed;font-size:12px}.reading .reveal td,.reading .reveal th,body:not(.enhanced) .reveal td,body:not(.enhanced) .reveal th{padding:6px;overflow-wrap:anywhere}}

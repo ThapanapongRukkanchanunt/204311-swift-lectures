@@ -1,5 +1,6 @@
 import Reveal from 'reveal.js';
 import './style.css';
+import './week02.css';
 
 const reading = document.body.classList.contains('reading');
 const all = [...document.querySelectorAll('.slides > section')];
@@ -9,7 +10,7 @@ const editable = el => el.closest('input,select,textarea,button,summary,a,[conte
 if (!reading) {
   // Add fragments only in presentation mode: reading/no-JS content stays complete.
   for (const slide of all) {
-    slide.querySelectorAll('li, .cards > .card, .criteria > div').forEach(item => {
+    slide.querySelectorAll('li, .cards > .card, .criteria > div, tbody > tr').forEach(item => {
       item.classList.add('fragment', 'fade-up');
     });
   }
@@ -51,7 +52,7 @@ if (!reading) {
   document.body.classList.add('enhanced');
   document.querySelector('.navigation').hidden=true;
   for(const a of dialog.querySelectorAll('a'))a.href=a.getAttribute('href').replace('#/','#');
-  document.querySelector('#mode-link').href=`index.html#/${location.hash.slice(1)||'welcome'}`;
+  document.querySelector('#mode-link').href=`index.html#/${location.hash.slice(1)||all[0].id}`;
 }
 document.querySelector('#overview').onclick=()=>dialog.showModal();
 document.querySelector('#close-overview').onclick=()=>dialog.close();
@@ -68,14 +69,26 @@ const arrival = {
 };
 function renderArrival(){const [title,message]=arrival[document.querySelector('#arrival-state').value]; document.querySelector('#arrival-title').textContent=title;document.querySelector('#arrival-message').textContent=message;}
 function renderTrace(){const n=document.querySelector('#minutes').value; document.querySelector('#minutes-value').textContent=n;document.querySelector('#trace-output').textContent=`North Gate: ${n} min`;document.querySelector('#swift-trace pre code').textContent=`let stop = "North Gate"\nlet minutes = ${n}\nprint("\\(stop): \\(minutes) min")`;}
-document.querySelector('#arrival-state').addEventListener('change',renderArrival);
-document.querySelector('#minutes').addEventListener('input',renderTrace);
+document.querySelector('#arrival-state')?.addEventListener('change',renderArrival);
+document.querySelector('#minutes')?.addEventListener('input',renderTrace);
 document.querySelectorAll('[data-reset]').forEach(button=>button.addEventListener('click',()=>{
   const section=button.closest('section');
   section.querySelectorAll('input').forEach(el=>{if(el.type==='checkbox')el.checked=false;else el.value=el.defaultValue;});
   section.querySelectorAll('select').forEach(el=>el.selectedIndex=0);
   section.querySelectorAll('details').forEach(el=>el.open=false);
-  renderArrival();renderTrace();
+  if(document.querySelector('#arrival-state'))renderArrival();
+  if(document.querySelector('#minutes'))renderTrace();
 }));
 // Disclosure content is always present in the static HTML and usable without JS.
 // Keep arrow keys inside range/select controls; Reveal only owns slide navigation.
+for(const simulation of document.querySelectorAll('.queue-sim')) {
+  let waiting=Number(simulation.dataset.start);
+  simulation.addEventListener('click',event=>{
+    const action=event.target.closest('[data-queue]')?.dataset.queue;
+    if(!action)return;
+    if(action==='join')waiting+=1;
+    if(action==='leave')waiting=Math.max(0,waiting-1);
+    if(action==='reset')waiting=Number(simulation.dataset.start);
+    simulation.querySelector('.queue-output').textContent=`Waiting: ${waiting} · ${waiting>=5?'Queue forming':'Seats available'}`;
+  });
+}

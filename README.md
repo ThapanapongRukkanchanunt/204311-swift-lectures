@@ -1,5 +1,7 @@
 # 204311 Swift Lectures
 
+Week 02 is available in source at `/2027/week-02/` with a linear reading view, CampusQueue practice project and offline package. Its content lives in `src/week02.mjs`. The shared generator builds both lessons. Week 02 private English and Thai instructor notes stay outside this public repository. Pushing source runs the build workflow; Pages publication requires the explicit release workflow.
+
 Public interactive lecture slides and student-facing downloads for CS 311 (204311), Mobile Application Development Frameworks.
 
 The lecture site will use Reveal.js with Vite and deploy to GitHub Pages. Restricted material—including solutions, assessment answers, credentials, student data, and private instructor notes—must remain outside this repository.
