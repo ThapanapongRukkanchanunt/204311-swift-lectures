@@ -7,8 +7,16 @@ const dialog = document.querySelector('#contents');
 let deck;
 const editable = el => el.closest('input,select,textarea,button,summary,a,[contenteditable]');
 if (!reading) {
+  // Add fragments only in presentation mode: reading/no-JS content stays complete.
+  for (const slide of all) {
+    slide.querySelectorAll('li, .cards > .card, .criteria > div').forEach(item => {
+      item.classList.add('fragment', 'fade-up');
+    });
+  }
+  document.body.classList.add('enhanced');
   deck = new Reveal(document.querySelector('.reveal'), {
-    embedded:true, disableLayout:true, center:false, controls:false, progress:false,
+    embedded:true, width:1280, height:800, margin:0.03, minScale:0.1, maxScale:2,
+    center:false, controls:false, progress:false,
     history:true, hash:true, hashOneBasedIndex:false, navigationMode:'linear',
     transition:'none', backgroundTransition:'none',
     autoSlide:0, touch:true, keyboardCondition:event => !dialog.open && !editable(event.target),
@@ -16,18 +24,26 @@ if (!reading) {
     help:false, view:'slide', scrollActivationWidth:null
   });
   await deck.initialize();
+  const syncScale=()=>document.querySelector('.slides').style.setProperty('--slide-scale',deck.getScale());
+  deck.on('resize',syncScale);
+  syncScale();
   document.body.classList.add('enhanced');
   const update = () => {
     const s=deck.getCurrentSlide(); const index=all.indexOf(s);
-    document.querySelector('#position').textContent=`${index+1} / ${all.length}`;
+    const fragments = [...s.querySelectorAll('.fragment')];
+    const revealed = fragments.filter(f=>f.classList.contains('visible')).length;
+    document.querySelector('#position').textContent=`${index+1} / ${all.length}${fragments.length ? ` · ${revealed}/${fragments.length} points` : ''}`;
     document.querySelector('#chapter-label').textContent=s.querySelector('.eyebrow').childNodes[0].textContent;
     document.querySelector('.course-progress i').style.width=`${(index+1)/all.length*100}%`;
-    document.querySelector('#previous').disabled=index===0;
-    document.querySelector('#next').disabled=index===all.length-1;
+    const routes=deck.availableFragments();
+    document.querySelector('#previous').disabled=index===0 && !routes.prev;
+    document.querySelector('#next').disabled=index===all.length-1 && !routes.next;
     document.querySelector('#mode-link').href=`reading.html#${s.id}`;
     s.scrollTop=0;
   };
   deck.on('slidechanged',()=>{update();deck.getCurrentSlide().querySelector('h2').focus({preventScroll:true});});
+  deck.on('fragmentshown',update);
+  deck.on('fragmenthidden',update);
   update();
   document.querySelector('#previous').onclick=()=>deck.prev();
   document.querySelector('#next').onclick=()=>deck.next();

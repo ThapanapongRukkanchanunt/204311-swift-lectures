@@ -20,4 +20,46 @@ body:not(.enhanced) #overview{display:none}
 .cards:has(>article:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:700px){.cards:has(>article:nth-child(4)){grid-template-columns:1fr}}
 .deck.enhanced .slides>section:not(.present){display:none!important}
+/* One fixed teaching canvas; Reveal scales it to the space between toolbars.
+   Keep responsive reflow in Read, not inside presentation slides. */
+.deck.enhanced .reveal{font-size:24px}
+.deck.enhanced .slides{width:1280px!important;height:800px!important;inset:50% auto auto 50%!important;transform:translate(-50%,-50%) scale(var(--slide-scale,1))!important;perspective:600px}
+.deck.enhanced .slides>section{width:1280px;height:800px;overflow:visible}
+.deck.enhanced .slide-inner{width:1280px;max-width:none;min-height:800px;padding:36px 56px;margin:0}
+.deck.enhanced .reveal h2{font-size:48px;margin-bottom:24px}
+.deck.enhanced .hero h2{font-size:60px}
+.deck.enhanced .reveal p{margin-bottom:20px}
+.deck.enhanced .eyebrow{font-size:12px!important;letter-spacing:2.5px!important;margin-bottom:20px!important}
+.deck.enhanced .split{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:36px}
+.deck.enhanced .hero .split{grid-template-columns:1.4fr 1fr}
+.deck.enhanced .cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:22px 0 28px}
+.deck.enhanced .cards:has(>article:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr))}
+.deck.enhanced .card{padding:24px}
+.deck.enhanced .criteria{grid-template-columns:repeat(3,1fr);gap:24px}
+.deck.enhanced .matching{grid-template-columns:1fr 1fr;gap:18px;margin:20px 0}
+.deck.enhanced .matching label{padding:18px}
+.deck.enhanced .matching select{margin-top:12px}
+.deck.enhanced .poll{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.deck.enhanced .poll label{padding:12px;margin:0;min-height:55px}
+.deck.enhanced .poll legend{grid-column:1 / -1}
+.deck.enhanced .phone{width:270px;padding:22px;transform:rotate(2deg);margin:0;box-shadow:18px 18px 0 #E9E0F7}
+.deck.enhanced .phone .arrival{font-size:78px}
+.deck.enhanced .phone-bar{margin-bottom:24px}
+.deck.enhanced .phone .phone-bottom{margin-top:24px!important}
+.deck.enhanced .phone .eyebrow{font-size:10px!important}
+.deck.enhanced .lead{font-size:1.3em}
+.deck.enhanced .timeline li{display:grid;grid-template-columns:38% 1fr}
+.deck.enhanced .timeline span{margin-top:0}
+.deck.enhanced .reveal pre{font-size:22px;padding:22px}
+.deck.enhanced .reveal table{font-size:.88em}
+.deck.enhanced .reveal th,.deck.enhanced .reveal td{padding:17px}
+.deck.enhanced .sources{font-size:12px;margin-top:24px!important}
+.deck.enhanced .reveal details{margin:18px 0}
+.deck.enhanced .reveal summary{padding:14px 18px}
+.deck.enhanced .card .steps{margin:24px 0!important}
+.deck.enhanced .card .steps li{padding:12px 16px}
+.deck.enhanced .reveal .prompt{padding:18px 22px}
+.deck.enhanced p.statement{font-size:52px!important}
+.deck.enhanced .slides .fragment{transition:opacity .25s ease,transform .25s ease}
+@media print{.deck.enhanced .slides{width:100%!important;height:auto!important;inset:auto!important}.deck.enhanced .slide-inner{width:auto;min-height:0}.reveal .slides .fragment{opacity:1!important;visibility:visible!important;transform:none!important}}
 @media print{.toolbar,.navigation,.course-progress,.skip,dialog,button{display:none!important}body,.reveal,.slides{height:auto!important;overflow:visible!important;position:static!important;transform:none!important}.deck.enhanced .slides>section,.reveal .slides>section{display:block!important;position:relative!important;opacity:1!important;visibility:visible!important;transform:none!important;height:auto!important;break-after:page}.slide-inner{padding:20px}.reveal{font-size:18px}.reveal h2{font-size:32px}.reveal details .answer{display:block}.phone{box-shadow:none}}
