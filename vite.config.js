@@ -7,6 +7,9 @@ export default defineConfig({
     week01: resolve('2027/week-01/index.html'),
     reading: resolve('2027/week-01/reading.html'),
     week02: resolve('2027/week-02/index.html'),
-    reading02: resolve('2027/week-02/reading.html')
+    reading02: resolve('2027/week-02/reading.html'),
+    labs: resolve('2027/labs/index.html'),
+    lab01: resolve('2027/week-01/lab/index.html'),
+    lab02: resolve('2027/week-02/lab/index.html')
   } } }
 });

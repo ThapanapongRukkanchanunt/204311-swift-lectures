@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "node scripts/generate.mjs",
+    "generate": "node scripts/generate.mjs && node scripts/labs.mjs",
     "dev": "npm run generate && vite --host 127.0.0.1",
     "build": "npm run generate && vite build && node scripts/package.mjs",
     "preview": "vite preview --host 127.0.0.1",

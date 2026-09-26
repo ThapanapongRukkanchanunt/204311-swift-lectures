@@ -7,7 +7,7 @@ assert.equal(slides.length,26);assert.equal(slides.reduce((n,s)=>n+s.time,0),120
 assert.equal(new Set(slides.map(s=>s.id)).size,26);
 assert.equal(week02.length,24);assert.equal(week02.reduce((n,s)=>n+s.time,0),120);
 assert.equal(new Set(week02.map(s=>s.id)).size,24);
-for(const file of ['dist/index.html','dist/2027/week-01/index.html','dist/2027/week-01/reading.html','dist/2027/week-02/index.html','dist/2027/week-02/reading.html']){
+for(const file of ['dist/index.html','dist/2027/week-01/index.html','dist/2027/week-01/reading.html','dist/2027/week-02/index.html','dist/2027/week-02/reading.html','dist/2027/labs/index.html','dist/2027/week-01/lab/index.html','dist/2027/week-02/lab/index.html']){
  const html=await readFile(file,'utf8');
  for(const [,url] of html.matchAll(/(?:href|src)="([^"]+)"/g)){
   if(/^(?:https?:|#|mailto:)/.test(url))continue;

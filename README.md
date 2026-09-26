@@ -1,5 +1,9 @@
 # 204311 Swift Lectures
 
+## Thai lab sheets
+
+The lab index is `/2027/labs/`, with sheets at `/2027/week-01/lab/` and `/2027/week-02/lab/`. Each has a Canvas HTML-fragment download. Public fragment sources are in `content/labs/`; `scripts/labs.mjs` wraps them as standalone pages. These are review drafts with instructor media placeholders. Canonical course fragments and private instructor verification records remain outside this repository. When a canonical sheet changes, sync only its student-facing fragment (without HTML comments) into `content/labs/`, then rebuild. Both current lab sheets are included in the shared offline package. Do not copy lab solutions or instructor notes into this repository.
+
 Week 02 is available in source at `/2027/week-02/` with a linear reading view, CampusQueue practice project and offline package. Its content lives in `src/week02.mjs`. The shared generator builds both lessons. Week 02 private English and Thai instructor notes stay outside this public repository. Pushing source runs the build workflow; Pages publication requires the explicit release workflow.
 
 Public interactive lecture slides and student-facing downloads for CS 311 (204311), Mobile Application Development Frameworks.
