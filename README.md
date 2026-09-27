@@ -49,6 +49,8 @@ The build generates `downloads/week-NN-practice.zip` and `downloads/week-NN-offl
 
 Selected slides use locally stored, licensed internet images. Creator, source and license links appear beside each image; click an image for the full-size file. [Complete image credits](public/images/lectures/credits.html) and [provenance record](public/images/lectures/CREDITS.md) document individual reuse terms and modifications. Keep these credits in redistributed offline packages. Image licenses are separate from course-authored content. `src/visuals.json` and `scripts/visuals.mjs` apply the image layer without changing slide IDs or session timing.
 
+Additional conceptual sequences and comparisons are defined in `src/illustrations.json` and rendered by `scripts/illustrations.mjs`. They use original editable HTML labels and unmodified OpenMoji artwork, not actual application screenshots. [Illustration credits](public/images/openmoji/credits.html) record the pinned release, individual artists, sources and license. The same symbol deliberately represents the same concept across lessons. All artwork ships in offline downloads. Normal navigation reveals illustration points progressively; Read and no-JavaScript modes show everything.
+
 ## Verification limits
 
 Swift compilation and target-device validation require macOS/Xcode and the laboratory iPads. Follow the practice README's exact clean-build and behavior checks. Windows browser checks do not establish Safari compatibility on the course devices. Do not publish private instructor notes, assessment keys, student data or lab solutions here.

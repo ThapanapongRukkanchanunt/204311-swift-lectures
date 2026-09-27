@@ -1,0 +1,1762 @@
+[
+  {
+    "id": "inclusive",
+    "week": "01",
+    "type": "compare",
+    "caption": "Different ways to reach the same action.",
+    "nodes": [
+      {
+        "icon": "hand",
+        "label": "Touch",
+        "detail": "A visible Save action",
+        "file": "1F446.svg"
+      },
+      {
+        "icon": "keyboard",
+        "label": "Keyboard",
+        "detail": "A reachable focus target",
+        "file": "2328.svg"
+      },
+      {
+        "icon": "ear",
+        "label": "Screen reader",
+        "detail": "A meaningful action name",
+        "file": "1F442.svg"
+      }
+    ]
+  },
+  {
+    "id": "permission",
+    "week": "01",
+    "type": "flow",
+    "caption": "Permission follows a visible purpose, with a usable denied path.",
+    "nodes": [
+      {
+        "icon": "pin",
+        "label": "Find a stop",
+        "detail": "The user asks for nearby stops",
+        "file": "1F4CD.svg"
+      },
+      {
+        "icon": "lock",
+        "label": "Explain and ask",
+        "detail": "Location serves this task",
+        "file": "1F512.svg"
+      },
+      {
+        "icon": "map",
+        "label": "Choose a stop",
+        "detail": "Manual selection still works",
+        "file": "1F5FA.svg"
+      }
+    ]
+  },
+  {
+    "id": "w02-inversion-of-control",
+    "week": "02",
+    "type": "flow",
+    "caption": "The framework decides when to call the supplied handler.",
+    "nodes": [
+      {
+        "icon": "gear",
+        "label": "Framework",
+        "detail": "Receives an activation",
+        "file": "2699.svg"
+      },
+      {
+        "icon": "hand",
+        "label": "Your handler",
+        "detail": "Changes the app state",
+        "file": "1F446.svg"
+      },
+      {
+        "icon": "abacus",
+        "label": "State",
+        "detail": "Keeps the new value",
+        "file": "1F9EE.svg"
+      }
+    ]
+  },
+  {
+    "id": "w02-recompute-not-relaunch",
+    "week": "02",
+    "type": "flow",
+    "caption": "An existing app updates its output. It does not start over.",
+    "nodes": [
+      {
+        "icon": "abacus",
+        "label": "waiting changes",
+        "detail": "3 becomes 4",
+        "file": "1F9EE.svg"
+      },
+      {
+        "icon": "gear",
+        "label": "Relevant description",
+        "detail": "Reads the changed dependency",
+        "file": "2699.svg"
+      },
+      {
+        "icon": "phone",
+        "label": "Updated output",
+        "detail": "Waiting: 4",
+        "file": "1F4F1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w02-source-of-truth",
+    "week": "02",
+    "type": "flow",
+    "caption": "One stored count supports more than one presentation.",
+    "nodes": [
+      {
+        "icon": "abacus",
+        "label": "Stored count",
+        "detail": "waiting = 5",
+        "file": "1F9EE.svg"
+      },
+      {
+        "icon": "ruler",
+        "label": "Evaluate the rule",
+        "detail": "waiting >= 5",
+        "file": "1F4CF.svg"
+      },
+      {
+        "icon": "speech",
+        "label": "Derived status",
+        "detail": "Queue forming",
+        "file": "1F4AC.svg"
+      }
+    ]
+  },
+  {
+    "id": "w02-state-owner",
+    "week": "02",
+    "type": "hub",
+    "caption": "The common owner supplies the same fact to both consumers.",
+    "nodes": [
+      {
+        "icon": "house",
+        "label": "Queue feature",
+        "detail": "Owns waiting",
+        "file": "1F3E0.svg"
+      },
+      {
+        "icon": "eye",
+        "label": "Summary view",
+        "detail": "Reads waiting",
+        "file": "1F441.svg"
+      },
+      {
+        "icon": "hand",
+        "label": "Controls view",
+        "detail": "Requests a change",
+        "file": "1F446.svg"
+      }
+    ]
+  },
+  {
+    "id": "w03-need",
+    "week": "03",
+    "type": "flow",
+    "caption": "A useful feature addresses a real decision under a constraint.",
+    "nodes": [
+      {
+        "icon": "person",
+        "label": "Student decision",
+        "detail": "Is the trip worthwhile?",
+        "file": "1F9D1.svg"
+      },
+      {
+        "icon": "office",
+        "label": "Service status",
+        "detail": "Open, closed or unknown",
+        "file": "1F3E2.svg"
+      },
+      {
+        "icon": "clock",
+        "label": "Freshness",
+        "detail": "When was it checked?",
+        "file": "1F552.svg"
+      }
+    ]
+  },
+  {
+    "id": "w03-criteria",
+    "week": "03",
+    "type": "flow",
+    "caption": "An acceptance criterion connects a starting condition to visible evidence.",
+    "nodes": [
+      {
+        "icon": "clipboard",
+        "label": "Given",
+        "detail": "No service selected",
+        "file": "1F4CB.svg"
+      },
+      {
+        "icon": "phone",
+        "label": "When",
+        "detail": "Request screen opens",
+        "file": "1F4F1.svg"
+      },
+      {
+        "icon": "info",
+        "label": "Then",
+        "detail": "Send unavailable, reason shown",
+        "file": "2139.svg"
+      }
+    ]
+  },
+  {
+    "id": "w03-pitch-1",
+    "week": "03",
+    "type": "flow",
+    "caption": "Listen for the person, the situation and the current workaround.",
+    "nodes": [
+      {
+        "icon": "person",
+        "label": "Who?",
+        "detail": "One specific user",
+        "file": "1F9D1.svg"
+      },
+      {
+        "icon": "pin",
+        "label": "Where and when?",
+        "detail": "A concrete situation",
+        "file": "1F4CD.svg"
+      },
+      {
+        "icon": "tool",
+        "label": "Today’s workaround",
+        "detail": "What happens without the app?",
+        "file": "1F6E0.svg"
+      }
+    ]
+  },
+  {
+    "id": "w03-pitch-8",
+    "week": "03",
+    "type": "compare",
+    "caption": "A deliberate scope boundary keeps the first version testable.",
+    "nodes": [
+      {
+        "icon": "target",
+        "label": "Essential",
+        "detail": "Resolves the core user problem",
+        "file": "1F3AF.svg"
+      },
+      {
+        "icon": "parcel",
+        "label": "Later",
+        "detail": "Useful after the MVP",
+        "file": "1F4E6.svg"
+      },
+      {
+        "icon": "stop",
+        "label": "Excluded",
+        "detail": "Outside the chosen purpose",
+        "file": "1F6D1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w04-tree",
+    "week": "04",
+    "type": "hub",
+    "caption": "One composed service card contains related child views.",
+    "nodes": [
+      {
+        "icon": "phone",
+        "label": "ServiceCard",
+        "detail": "One reusable unit",
+        "file": "1F4F1.svg"
+      },
+      {
+        "icon": "text",
+        "label": "Text(title)",
+        "detail": "Names the service",
+        "file": "1F524.svg"
+      },
+      {
+        "icon": "info",
+        "label": "Text(detail)",
+        "detail": "Explains the service",
+        "file": "2139.svg"
+      }
+    ]
+  },
+  {
+    "id": "w04-stacks",
+    "week": "04",
+    "type": "compare",
+    "caption": "Read each arrangement as a spatial relationship.",
+    "nodes": [
+      {
+        "icon": "books",
+        "label": "VStack",
+        "detail": "Content above and below",
+        "file": "1F4DA.svg"
+      },
+      {
+        "icon": "train",
+        "label": "HStack",
+        "detail": "Content side by side",
+        "file": "1F683.svg"
+      },
+      {
+        "icon": "layers",
+        "label": "ZStack",
+        "detail": "Content in front and behind",
+        "file": "1F5C2.svg"
+      }
+    ]
+  },
+  {
+    "id": "w04-type",
+    "week": "04",
+    "type": "compare",
+    "caption": "More text needs more room, not an unreadably small font.",
+    "nodes": [
+      {
+        "icon": "text",
+        "label": "Standard text",
+        "detail": "Service information",
+        "file": "1F524.svg"
+      },
+      {
+        "icon": "magnify",
+        "label": "Larger text",
+        "detail": "More lines and vertical space",
+        "file": "1F50D.svg"
+      },
+      {
+        "icon": "scroll",
+        "label": "Overflow",
+        "detail": "A reachable continuation",
+        "file": "1F4DC.svg"
+      }
+    ]
+  },
+  {
+    "id": "w04-labels",
+    "week": "04",
+    "type": "compare",
+    "caption": "Name the action instead of describing the drawing.",
+    "nodes": [
+      {
+        "icon": "star",
+        "label": "Visible symbol",
+        "detail": "A star alone is ambiguous",
+        "file": "2B50.svg"
+      },
+      {
+        "icon": "speech",
+        "label": "Useful name",
+        "detail": "Save service",
+        "file": "1F4AC.svg"
+      },
+      {
+        "icon": "ear",
+        "label": "Spoken action",
+        "detail": "Understandable without sight",
+        "file": "1F442.svg"
+      }
+    ]
+  },
+  {
+    "id": "w04-reading",
+    "week": "04",
+    "type": "flow",
+    "caption": "A useful reading sequence gives context before the action.",
+    "nodes": [
+      {
+        "icon": "office",
+        "label": "1. Service name",
+        "detail": "Library help desk",
+        "file": "1F3E2.svg"
+      },
+      {
+        "icon": "info",
+        "label": "2. Details",
+        "detail": "Opening status and purpose",
+        "file": "2139.svg"
+      },
+      {
+        "icon": "hand",
+        "label": "3. Action",
+        "detail": "Create a request",
+        "file": "1F446.svg"
+      }
+    ]
+  },
+  {
+    "id": "w05-owner",
+    "week": "05",
+    "type": "compare",
+    "caption": "Editing and committed data have different lifetimes.",
+    "nodes": [
+      {
+        "icon": "pencil",
+        "label": "Draft",
+        "detail": "Changes with each edit",
+        "file": "270F.svg"
+      },
+      {
+        "icon": "cabinet",
+        "label": "Committed value",
+        "detail": "Stays stable until acceptance",
+        "file": "1F5C4.svg"
+      }
+    ]
+  },
+  {
+    "id": "w05-derived",
+    "week": "05",
+    "type": "flow",
+    "caption": "Recalculate validity from the current input.",
+    "nodes": [
+      {
+        "icon": "text",
+        "label": "Draft input",
+        "detail": "A request title",
+        "file": "1F524.svg"
+      },
+      {
+        "icon": "ruler",
+        "label": "Validation rule",
+        "detail": "Trim, then check the input",
+        "file": "1F4CF.svg"
+      },
+      {
+        "icon": "check",
+        "label": "Derived validity",
+        "detail": "Controls feedback and acceptance",
+        "file": "2705.svg"
+      }
+    ]
+  },
+  {
+    "id": "w05-feedback",
+    "week": "05",
+    "type": "compare",
+    "caption": "Feedback identifies a repair while preserving useful input.",
+    "nodes": [
+      {
+        "icon": "warning",
+        "label": "Unhelpful",
+        "detail": "Invalid",
+        "file": "26A0.svg"
+      },
+      {
+        "icon": "speech",
+        "label": "Actionable",
+        "detail": "Enter a request title",
+        "file": "1F4AC.svg"
+      }
+    ]
+  },
+  {
+    "id": "w05-cancel",
+    "week": "05",
+    "type": "compare",
+    "caption": "Start from a copy of saved data. Then choose one exit.",
+    "nodes": [
+      {
+        "icon": "save",
+        "label": "Save",
+        "detail": "Accepted draft replaces saved data",
+        "file": "1F4BE.svg"
+      },
+      {
+        "icon": "back",
+        "label": "Cancel",
+        "detail": "Draft discarded, saved data unchanged",
+        "file": "21A9.svg"
+      }
+    ]
+  },
+  {
+    "id": "w05-privacy",
+    "week": "05",
+    "type": "compare",
+    "caption": "Collect data because the task needs it.",
+    "nodes": [
+      {
+        "icon": "clipboard",
+        "label": "Request purpose",
+        "detail": "A title and relevant details",
+        "file": "1F4CB.svg"
+      },
+      {
+        "icon": "lock",
+        "label": "Data boundary",
+        "detail": "Unrelated personal data stays out",
+        "file": "1F512.svg"
+      }
+    ]
+  },
+  {
+    "id": "w06-transform",
+    "week": "06",
+    "type": "flow",
+    "caption": "These operations change different properties of a collection.",
+    "nodes": [
+      {
+        "icon": "funnel",
+        "label": "Filter",
+        "detail": "Fewer matching records",
+        "file": "1F53D.svg"
+      },
+      {
+        "icon": "gear",
+        "label": "Map",
+        "detail": "A different representation",
+        "file": "2699.svg"
+      },
+      {
+        "icon": "sort",
+        "label": "Sorted",
+        "detail": "A different order",
+        "file": "1F520.svg"
+      }
+    ]
+  },
+  {
+    "id": "w06-add",
+    "week": "06",
+    "type": "flow",
+    "caption": "Identity belongs to the new record, not to a later redraw.",
+    "nodes": [
+      {
+        "icon": "check",
+        "label": "Validate",
+        "detail": "Accept the draft",
+        "file": "2705.svg"
+      },
+      {
+        "icon": "tag",
+        "label": "Create",
+        "detail": "Assign a stable ID once",
+        "file": "1F3F7.svg"
+      },
+      {
+        "icon": "inbox",
+        "label": "Append",
+        "detail": "One more owned record",
+        "file": "1F4E5.svg"
+      }
+    ]
+  },
+  {
+    "id": "w06-delete",
+    "week": "06",
+    "type": "flow",
+    "caption": "Resolve the displayed item back to its source identity.",
+    "nodes": [
+      {
+        "icon": "eye",
+        "label": "Visible row",
+        "detail": "May come from a filtered list",
+        "file": "1F441.svg"
+      },
+      {
+        "icon": "tag",
+        "label": "Stable ID",
+        "detail": "Identifies the selected record",
+        "file": "1F3F7.svg"
+      },
+      {
+        "icon": "trash",
+        "label": "Source collection",
+        "detail": "Remove that record",
+        "file": "1F5D1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w06-empty",
+    "week": "06",
+    "type": "compare",
+    "caption": "The same blank area can require very different guidance.",
+    "nodes": [
+      {
+        "icon": "inbox",
+        "label": "No records yet",
+        "detail": "Offer the first creation",
+        "file": "1F4E5.svg"
+      },
+      {
+        "icon": "magnify",
+        "label": "No matches",
+        "detail": "Adjust the filter",
+        "file": "1F50D.svg"
+      },
+      {
+        "icon": "warning",
+        "label": "Load failed",
+        "detail": "Explain recovery",
+        "file": "26A0.svg"
+      }
+    ]
+  },
+  {
+    "id": "w06-edit",
+    "week": "06",
+    "type": "flow",
+    "caption": "A changed title can move a row without changing its identity.",
+    "nodes": [
+      {
+        "icon": "tag",
+        "label": "ID A7",
+        "detail": "Library help",
+        "file": "1F3F7.svg"
+      },
+      {
+        "icon": "pencil",
+        "label": "Edit title",
+        "detail": "Library access",
+        "file": "270F.svg"
+      },
+      {
+        "icon": "sort",
+        "label": "Recompute display",
+        "detail": "Still record A7",
+        "file": "1F520.svg"
+      }
+    ]
+  },
+  {
+    "id": "w07-intent",
+    "week": "07",
+    "type": "compare",
+    "caption": "The user’s intent suggests the navigation structure.",
+    "nodes": [
+      {
+        "icon": "magnify",
+        "label": "Explore an item",
+        "detail": "Open its detail",
+        "file": "1F50D.svg"
+      },
+      {
+        "icon": "pencil",
+        "label": "Complete a task",
+        "detail": "Open an editor",
+        "file": "270F.svg"
+      },
+      {
+        "icon": "compass",
+        "label": "Change area",
+        "detail": "Choose a top-level destination",
+        "file": "1F9ED.svg"
+      }
+    ]
+  },
+  {
+    "id": "w07-sheet",
+    "week": "07",
+    "type": "compare",
+    "caption": "A temporary editor needs an explicit exit policy.",
+    "nodes": [
+      {
+        "icon": "save",
+        "label": "Save",
+        "detail": "Commit the accepted draft",
+        "file": "1F4BE.svg"
+      },
+      {
+        "icon": "back",
+        "label": "Cancel / dismiss",
+        "detail": "Apply the chosen discard policy",
+        "file": "21A9.svg"
+      }
+    ]
+  },
+  {
+    "id": "w07-map",
+    "week": "07",
+    "type": "flow",
+    "caption": "Temporary editor input returns through a deliberate commit.",
+    "nodes": [
+      {
+        "icon": "cabinet",
+        "label": "List owner",
+        "detail": "Owns saved records",
+        "file": "1F5C4.svg"
+      },
+      {
+        "icon": "tag",
+        "label": "Detail",
+        "detail": "Selects one identity",
+        "file": "1F3F7.svg"
+      },
+      {
+        "icon": "pencil",
+        "label": "Editor",
+        "detail": "Owns a draft, commits to owner",
+        "file": "270F.svg"
+      }
+    ]
+  },
+  {
+    "id": "w07-route",
+    "week": "07",
+    "type": "flow",
+    "caption": "A stable reference connects navigation to current data.",
+    "nodes": [
+      {
+        "icon": "tag",
+        "label": "Route",
+        "detail": "Carries a record ID",
+        "file": "1F3F7.svg"
+      },
+      {
+        "icon": "magnify",
+        "label": "Lookup",
+        "detail": "Find the current record",
+        "file": "1F50D.svg"
+      },
+      {
+        "icon": "phone",
+        "label": "Destination",
+        "detail": "Show data or a missing state",
+        "file": "1F4F1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w07-patterns",
+    "week": "07",
+    "type": "compare",
+    "caption": "Different navigation patterns can serve different levels.",
+    "nodes": [
+      {
+        "icon": "compass",
+        "label": "Tabs",
+        "detail": "Requests and Settings",
+        "file": "1F9ED.svg"
+      },
+      {
+        "icon": "books",
+        "label": "Stack",
+        "detail": "Requests, then one detail",
+        "file": "1F4DA.svg"
+      },
+      {
+        "icon": "pencil",
+        "label": "Sheet",
+        "detail": "Add a request, then return",
+        "file": "270F.svg"
+      }
+    ]
+  },
+  {
+    "id": "w08-domain",
+    "week": "08",
+    "type": "compare",
+    "caption": "The model describes meaning independently of its appearance.",
+    "nodes": [
+      {
+        "icon": "clipboard",
+        "label": "Entity",
+        "detail": "A service request",
+        "file": "1F4CB.svg"
+      },
+      {
+        "icon": "ruler",
+        "label": "Constraint",
+        "detail": "Queue capacity",
+        "file": "1F4CF.svg"
+      },
+      {
+        "icon": "paint",
+        "label": "Presentation",
+        "detail": "The displayed color",
+        "file": "1F3A8.svg"
+      }
+    ]
+  },
+  {
+    "id": "w08-invariant",
+    "week": "08",
+    "type": "flow",
+    "caption": "A command must leave the model inside its valid range.",
+    "nodes": [
+      {
+        "icon": "abacus",
+        "label": "Valid state",
+        "detail": "0 <= count <= capacity",
+        "file": "1F9EE.svg"
+      },
+      {
+        "icon": "shield",
+        "label": "Command boundary",
+        "detail": "Check the proposed change",
+        "file": "1F6E1.svg"
+      },
+      {
+        "icon": "check",
+        "label": "Valid result",
+        "detail": "Accept, or preserve the old state",
+        "file": "2705.svg"
+      }
+    ]
+  },
+  {
+    "id": "w08-value",
+    "week": "08",
+    "type": "compare",
+    "caption": "Copying a value and sharing an instance create different relationships.",
+    "nodes": [
+      {
+        "icon": "copy",
+        "label": "Value copy",
+        "detail": "Separate values can change independently",
+        "file": "1F4C4.svg"
+      },
+      {
+        "icon": "link",
+        "label": "Shared reference",
+        "detail": "Both references identify one instance",
+        "file": "1F517.svg"
+      }
+    ]
+  },
+  {
+    "id": "w08-derived",
+    "week": "08",
+    "type": "flow",
+    "caption": "Calculate an answer from facts instead of synchronizing another stored copy.",
+    "nodes": [
+      {
+        "icon": "abacus",
+        "label": "Stored facts",
+        "detail": "count and capacity",
+        "file": "1F9EE.svg"
+      },
+      {
+        "icon": "calculator",
+        "label": "Calculation",
+        "detail": "capacity minus count",
+        "file": "1F9EE.svg"
+      },
+      {
+        "icon": "speech",
+        "label": "Derived answer",
+        "detail": "Remaining places",
+        "file": "1F4AC.svg"
+      }
+    ]
+  },
+  {
+    "id": "w08-architecture",
+    "week": "08",
+    "type": "compare",
+    "caption": "Separate responsibilities when the distinction helps reasoning.",
+    "nodes": [
+      {
+        "icon": "ruler",
+        "label": "Model",
+        "detail": "Domain facts and rules",
+        "file": "1F4CF.svg"
+      },
+      {
+        "icon": "phone",
+        "label": "View",
+        "detail": "Presentation and temporary UI",
+        "file": "1F4F1.svg"
+      },
+      {
+        "icon": "cloud",
+        "label": "Service",
+        "detail": "External work and failures",
+        "file": "2601.svg"
+      }
+    ]
+  },
+  {
+    "id": "w09-container",
+    "week": "09",
+    "type": "flow",
+    "caption": "The storage configuration must support the models that use it.",
+    "nodes": [
+      {
+        "icon": "clipboard",
+        "label": "Schema",
+        "detail": "Known model types",
+        "file": "1F4CB.svg"
+      },
+      {
+        "icon": "cabinet",
+        "label": "Container",
+        "detail": "Configured storage",
+        "file": "1F5C4.svg"
+      },
+      {
+        "icon": "phone",
+        "label": "Views",
+        "detail": "Environment access to storage",
+        "file": "1F4F1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w09-context",
+    "week": "09",
+    "type": "flow",
+    "caption": "A changed screen and a successful disk write are different evidence.",
+    "nodes": [
+      {
+        "icon": "pencil",
+        "label": "Change a model",
+        "detail": "Insert, modify or delete",
+        "file": "270F.svg"
+      },
+      {
+        "icon": "gear",
+        "label": "Context",
+        "detail": "Tracks pending changes",
+        "file": "2699.svg"
+      },
+      {
+        "icon": "save",
+        "label": "Save outcome",
+        "detail": "Handle success or an error",
+        "file": "1F4BE.svg"
+      }
+    ]
+  },
+  {
+    "id": "w09-crud",
+    "week": "09",
+    "type": "states",
+    "caption": "Each operation answers a different user intent.",
+    "nodes": [
+      {
+        "icon": "inbox",
+        "label": "Create",
+        "detail": "A new request",
+        "file": "1F4E5.svg"
+      },
+      {
+        "icon": "eye",
+        "label": "Read",
+        "detail": "The current list",
+        "file": "1F441.svg"
+      },
+      {
+        "icon": "pencil",
+        "label": "Update",
+        "detail": "The same record, changed",
+        "file": "270F.svg"
+      },
+      {
+        "icon": "trash",
+        "label": "Delete",
+        "detail": "The chosen record removed",
+        "file": "1F5D1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w09-fixtures",
+    "week": "09",
+    "type": "compare",
+    "caption": "Keep test data separate from the real application store.",
+    "nodes": [
+      {
+        "icon": "test",
+        "label": "Preview / test",
+        "detail": "Predictable in-memory fixture",
+        "file": "1F9EA.svg"
+      },
+      {
+        "icon": "cabinet",
+        "label": "Application",
+        "detail": "Real stored user records",
+        "file": "1F5C4.svg"
+      }
+    ]
+  },
+  {
+    "id": "w09-relaunch",
+    "week": "09",
+    "type": "flow",
+    "caption": "Persistence evidence must cross the end of one running process.",
+    "nodes": [
+      {
+        "icon": "save",
+        "label": "Before closing",
+        "detail": "Save a known change",
+        "file": "1F4BE.svg"
+      },
+      {
+        "icon": "stop",
+        "label": "Terminate",
+        "detail": "End the running app",
+        "file": "1F6D1.svg"
+      },
+      {
+        "icon": "phone",
+        "label": "Reopen",
+        "detail": "Verify the stored result",
+        "file": "1F4F1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w10-query",
+    "week": "10",
+    "type": "flow",
+    "caption": "A search changes which records are shown, not which records exist.",
+    "nodes": [
+      {
+        "icon": "cabinet",
+        "label": "Stored records",
+        "detail": "The full source collection",
+        "file": "1F5C4.svg"
+      },
+      {
+        "icon": "magnify",
+        "label": "Search condition",
+        "detail": "Select matching records",
+        "file": "1F50D.svg"
+      },
+      {
+        "icon": "eye",
+        "label": "Visible result",
+        "detail": "A subset of the source",
+        "file": "1F441.svg"
+      }
+    ]
+  },
+  {
+    "id": "w10-delete",
+    "week": "10",
+    "type": "compare",
+    "caption": "Removing a category can have different consequences for its requests.",
+    "nodes": [
+      {
+        "icon": "unlink",
+        "label": "Nullify",
+        "detail": "Requests remain without that category",
+        "file": "26D3-FE0F-200D-1F4A5.svg"
+      },
+      {
+        "icon": "trash",
+        "label": "Cascade",
+        "detail": "Related requests are removed",
+        "file": "1F5D1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w10-phases",
+    "week": "10",
+    "type": "states",
+    "caption": "Scene states describe activity, not a guaranteed shutdown sequence.",
+    "nodes": [
+      {
+        "icon": "sun",
+        "label": "Active",
+        "detail": "Can interact",
+        "file": "2600.svg"
+      },
+      {
+        "icon": "pause",
+        "label": "Inactive",
+        "detail": "Temporarily interrupted",
+        "file": "23F8.svg"
+      },
+      {
+        "icon": "moon",
+        "label": "Background",
+        "detail": "Not in the foreground",
+        "file": "1F319.svg"
+      }
+    ]
+  },
+  {
+    "id": "w10-repeat",
+    "week": "10",
+    "type": "compare",
+    "caption": "An activation can happen repeatedly. Decide what may repeat safely.",
+    "nodes": [
+      {
+        "icon": "refresh",
+        "label": "Refresh",
+        "detail": "Update existing information",
+        "file": "1F504.svg"
+      },
+      {
+        "icon": "copy",
+        "label": "Insert again",
+        "detail": "May create duplicate records",
+        "file": "1F4C4.svg"
+      }
+    ]
+  },
+  {
+    "id": "w10-resources",
+    "week": "10",
+    "type": "flow",
+    "caption": "An interrupted refresh needs a bounded recovery path.",
+    "nodes": [
+      {
+        "icon": "phone",
+        "label": "Foreground work",
+        "detail": "The user requests a refresh",
+        "file": "1F4F1.svg"
+      },
+      {
+        "icon": "hourglass",
+        "label": "Limited time",
+        "detail": "Interruption may stop the work",
+        "file": "23F3.svg"
+      },
+      {
+        "icon": "save",
+        "label": "Useful state",
+        "detail": "Keep recoverable data",
+        "file": "1F4BE.svg"
+      }
+    ]
+  },
+  {
+    "id": "w11-representation",
+    "week": "11",
+    "type": "compare",
+    "caption": "A reference can survive even when its target content is missing.",
+    "nodes": [
+      {
+        "icon": "text",
+        "label": "Metadata",
+        "detail": "A filename and description",
+        "file": "1F524.svg"
+      },
+      {
+        "icon": "picture",
+        "label": "Content",
+        "detail": "The actual image bytes",
+        "file": "1F5BC.svg"
+      }
+    ]
+  },
+  {
+    "id": "w11-states",
+    "week": "11",
+    "type": "states",
+    "caption": "Loading has more than one possible outcome.",
+    "nodes": [
+      {
+        "icon": "picture",
+        "label": "No selection",
+        "detail": "No chosen attachment",
+        "file": "1F5BC.svg"
+      },
+      {
+        "icon": "hourglass",
+        "label": "Loading",
+        "detail": "Wait for the chosen content",
+        "file": "23F3.svg"
+      },
+      {
+        "icon": "check",
+        "label": "Ready",
+        "detail": "Usable media",
+        "file": "2705.svg"
+      },
+      {
+        "icon": "warning",
+        "label": "Unavailable",
+        "detail": "Explain and recover",
+        "file": "26A0.svg"
+      }
+    ]
+  },
+  {
+    "id": "w11-cancel",
+    "week": "11",
+    "type": "compare",
+    "caption": "These are ordinary ways for unfinished media work to become obsolete.",
+    "nodes": [
+      {
+        "icon": "back",
+        "label": "Picker closed",
+        "detail": "No new selection",
+        "file": "21A9.svg"
+      },
+      {
+        "icon": "refresh",
+        "label": "New selection",
+        "detail": "Old load is superseded",
+        "file": "1F504.svg"
+      },
+      {
+        "icon": "door",
+        "label": "View leaves",
+        "detail": "Active task may end",
+        "file": "1F6AA.svg"
+      }
+    ]
+  },
+  {
+    "id": "w11-durable",
+    "week": "11",
+    "type": "flow",
+    "caption": "Publish a file reference only after its content has been written successfully.",
+    "nodes": [
+      {
+        "icon": "picture",
+        "label": "Validated media",
+        "detail": "A usable representation",
+        "file": "1F5BC.svg"
+      },
+      {
+        "icon": "save",
+        "label": "Write content",
+        "detail": "Chosen app-owned location",
+        "file": "1F4BE.svg"
+      },
+      {
+        "icon": "tag",
+        "label": "Update reference",
+        "detail": "Point to the saved file",
+        "file": "1F3F7.svg"
+      }
+    ]
+  },
+  {
+    "id": "w11-delete",
+    "week": "11",
+    "type": "flow",
+    "caption": "Attachment removal involves content and its reference.",
+    "nodes": [
+      {
+        "icon": "trash",
+        "label": "Remove content",
+        "detail": "Only the app-owned file",
+        "file": "1F5D1.svg"
+      },
+      {
+        "icon": "tag",
+        "label": "Clear reference",
+        "detail": "After successful cleanup",
+        "file": "1F3F7.svg"
+      },
+      {
+        "icon": "info",
+        "label": "Already missing?",
+        "detail": "Recover without a crash",
+        "file": "2139.svg"
+      }
+    ]
+  },
+  {
+    "id": "w12-async",
+    "week": "12",
+    "type": "flow",
+    "caption": "Waiting for a result should leave the interface responsive.",
+    "nodes": [
+      {
+        "icon": "hand",
+        "label": "Start",
+        "detail": "One defined user action",
+        "file": "1F446.svg"
+      },
+      {
+        "icon": "hourglass",
+        "label": "Await",
+        "detail": "The operation may suspend",
+        "file": "23F3.svg"
+      },
+      {
+        "icon": "phone",
+        "label": "Resume",
+        "detail": "Success, error or cancellation",
+        "file": "1F4F1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w12-fixture",
+    "week": "12",
+    "type": "states",
+    "caption": "Choose known inputs to make uncommon outcomes repeatable.",
+    "nodes": [
+      {
+        "icon": "parcel",
+        "label": "Success fixture",
+        "detail": "Expected records",
+        "file": "1F4E6.svg"
+      },
+      {
+        "icon": "inbox",
+        "label": "Empty fixture",
+        "detail": "A valid empty result",
+        "file": "1F4E5.svg"
+      },
+      {
+        "icon": "warning",
+        "label": "Error fixture",
+        "detail": "A known failure",
+        "file": "26A0.svg"
+      }
+    ]
+  },
+  {
+    "id": "w12-cancel",
+    "week": "12",
+    "type": "flow",
+    "caption": "Old work must not overwrite the result for a newer selection.",
+    "nodes": [
+      {
+        "icon": "magnify",
+        "label": "Request A",
+        "detail": "Started for an earlier selection",
+        "file": "1F50D.svg"
+      },
+      {
+        "icon": "refresh",
+        "label": "Request B",
+        "detail": "The user changes selection",
+        "file": "1F504.svg"
+      },
+      {
+        "icon": "shield",
+        "label": "Commit check",
+        "detail": "Reject obsolete A output",
+        "file": "1F6E1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w12-retry",
+    "week": "12",
+    "type": "flow",
+    "caption": "One user retry creates one bounded attempt.",
+    "nodes": [
+      {
+        "icon": "warning",
+        "label": "Recoverable error",
+        "detail": "Show a useful explanation",
+        "file": "26A0.svg"
+      },
+      {
+        "icon": "hand",
+        "label": "Retry action",
+        "detail": "Start one new attempt",
+        "file": "1F446.svg"
+      },
+      {
+        "icon": "hourglass",
+        "label": "In progress",
+        "detail": "Prevent duplicate starts",
+        "file": "23F3.svg"
+      }
+    ]
+  },
+  {
+    "id": "w12-stale",
+    "week": "12",
+    "type": "compare",
+    "caption": "Show where the displayed information came from.",
+    "nodes": [
+      {
+        "icon": "cloud",
+        "label": "Fresh response",
+        "detail": "Current service result",
+        "file": "2601.svg"
+      },
+      {
+        "icon": "clock",
+        "label": "Cached result",
+        "detail": "Show the last update time",
+        "file": "1F552.svg"
+      },
+      {
+        "icon": "test",
+        "label": "Bundled fixture",
+        "detail": "Label it as sample data",
+        "file": "1F9EA.svg"
+      }
+    ]
+  },
+  {
+    "id": "w13-identity",
+    "week": "13",
+    "type": "flow",
+    "caption": "Knowing an identity does not grant every action.",
+    "nodes": [
+      {
+        "icon": "person",
+        "label": "Authentication",
+        "detail": "Who is asking?",
+        "file": "1F9D1.svg"
+      },
+      {
+        "icon": "shield",
+        "label": "Authorization",
+        "detail": "May they do this?",
+        "file": "1F6E1.svg"
+      },
+      {
+        "icon": "lock",
+        "label": "Backend decision",
+        "detail": "Allow or deny this action",
+        "file": "1F512.svg"
+      }
+    ]
+  },
+  {
+    "id": "w13-configuration",
+    "week": "13",
+    "type": "compare",
+    "caption": "Identification and privileged authority have different security roles.",
+    "nodes": [
+      {
+        "icon": "tag",
+        "label": "Client configuration",
+        "detail": "Identifies the intended backend",
+        "file": "1F3F7.svg"
+      },
+      {
+        "icon": "key",
+        "label": "Private credential",
+        "detail": "Must not be distributed in the app",
+        "file": "1F511.svg"
+      }
+    ]
+  },
+  {
+    "id": "w13-sync",
+    "week": "13",
+    "type": "flow",
+    "caption": "A second actor can change remote state while the client waits.",
+    "nodes": [
+      {
+        "icon": "person",
+        "label": "Other operator",
+        "detail": "Changes a remote document",
+        "file": "1F9D1.svg"
+      },
+      {
+        "icon": "cloud",
+        "label": "Remote revision",
+        "detail": "Now differs from the cached copy",
+        "file": "2601.svg"
+      },
+      {
+        "icon": "refresh",
+        "label": "Client refresh",
+        "detail": "Receives and identifies new data",
+        "file": "1F504.svg"
+      }
+    ]
+  },
+  {
+    "id": "w13-conflict",
+    "week": "13",
+    "type": "compare",
+    "caption": "Two writers can start from the same old value.",
+    "nodes": [
+      {
+        "icon": "pencil",
+        "label": "Writer A",
+        "detail": "Changes revision 4",
+        "file": "270F.svg"
+      },
+      {
+        "icon": "pencil",
+        "label": "Writer B",
+        "detail": "Also changes revision 4",
+        "file": "270F.svg"
+      },
+      {
+        "icon": "shield",
+        "label": "Conflict policy",
+        "detail": "Detect, merge or resolve explicitly",
+        "file": "1F6E1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w13-test",
+    "week": "13",
+    "type": "compare",
+    "caption": "Each environment proves a different part of the behavior.",
+    "nodes": [
+      {
+        "icon": "test",
+        "label": "Fake service",
+        "detail": "Known UI success or failure",
+        "file": "1F9EA.svg"
+      },
+      {
+        "icon": "cloud",
+        "label": "Live backend",
+        "detail": "Real configuration and rules",
+        "file": "2601.svg"
+      },
+      {
+        "icon": "lock",
+        "label": "Denied action",
+        "detail": "Real rejection at the boundary",
+        "file": "1F512.svg"
+      }
+    ]
+  },
+  {
+    "id": "w14-levels",
+    "week": "14",
+    "type": "compare",
+    "caption": "Tests at different scopes catch different defects.",
+    "nodes": [
+      {
+        "icon": "ruler",
+        "label": "Unit",
+        "detail": "One isolated rule",
+        "file": "1F4CF.svg"
+      },
+      {
+        "icon": "link",
+        "label": "Integration",
+        "detail": "Components working together",
+        "file": "1F517.svg"
+      },
+      {
+        "icon": "phone",
+        "label": "UI",
+        "detail": "Actions through visible controls",
+        "file": "1F4F1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w14-boundary",
+    "week": "14",
+    "type": "states",
+    "caption": "Test the values immediately around a rule boundary.",
+    "nodes": [
+      {
+        "icon": "abacus",
+        "label": "Zero",
+        "detail": "Try to leave",
+        "file": "1F9EE.svg"
+      },
+      {
+        "icon": "hand",
+        "label": "Below capacity",
+        "detail": "Try to join",
+        "file": "1F446.svg"
+      },
+      {
+        "icon": "stop",
+        "label": "At capacity",
+        "detail": "Try to join again",
+        "file": "1F6D1.svg"
+      },
+      {
+        "icon": "refresh",
+        "label": "Repeated rejection",
+        "detail": "State must remain valid",
+        "file": "1F504.svg"
+      }
+    ]
+  },
+  {
+    "id": "w14-isolation",
+    "week": "14",
+    "type": "compare",
+    "caption": "A test should not inherit another test’s mutations.",
+    "nodes": [
+      {
+        "icon": "test",
+        "label": "Test A",
+        "detail": "Fresh model and fixed input",
+        "file": "1F9EA.svg"
+      },
+      {
+        "icon": "test",
+        "label": "Test B",
+        "detail": "Its own fresh model and input",
+        "file": "1F9EA.svg"
+      }
+    ]
+  },
+  {
+    "id": "w14-redgreen",
+    "week": "14",
+    "type": "flow",
+    "caption": "Keep the case that exposed the bug.",
+    "nodes": [
+      {
+        "icon": "warning",
+        "label": "Reproduce",
+        "detail": "The test fails for the bug",
+        "file": "26A0.svg"
+      },
+      {
+        "icon": "tool",
+        "label": "Repair",
+        "detail": "Change the implementation",
+        "file": "1F6E0.svg"
+      },
+      {
+        "icon": "check",
+        "label": "Regression check",
+        "detail": "The same test passes and stays",
+        "file": "2705.svg"
+      }
+    ]
+  },
+  {
+    "id": "w14-double",
+    "week": "14",
+    "type": "states",
+    "caption": "A controlled service can expose rare paths on demand.",
+    "nodes": [
+      {
+        "icon": "parcel",
+        "label": "Success",
+        "detail": "Fixed records",
+        "file": "1F4E6.svg"
+      },
+      {
+        "icon": "inbox",
+        "label": "Empty",
+        "detail": "No records",
+        "file": "1F4E5.svg"
+      },
+      {
+        "icon": "warning",
+        "label": "Failure",
+        "detail": "A known error",
+        "file": "26A0.svg"
+      },
+      {
+        "icon": "abacus",
+        "label": "Call count",
+        "detail": "Detect duplicate work",
+        "file": "1F9EE.svg"
+      }
+    ]
+  },
+  {
+    "id": "w15-candidate",
+    "week": "15",
+    "type": "flow",
+    "caption": "A test result is meaningful only when tied to the tested candidate.",
+    "nodes": [
+      {
+        "icon": "tag",
+        "label": "Source revision",
+        "detail": "Exactly which code?",
+        "file": "1F3F7.svg"
+      },
+      {
+        "icon": "parcel",
+        "label": "Build identity",
+        "detail": "Which settings and environment?",
+        "file": "1F4E6.svg"
+      },
+      {
+        "icon": "clipboard",
+        "label": "Test record",
+        "detail": "Which result belongs to it?",
+        "file": "1F4CB.svg"
+      }
+    ]
+  },
+  {
+    "id": "w15-configuration",
+    "week": "15",
+    "type": "compare",
+    "caption": "Check the environment that the delivered build will actually use.",
+    "nodes": [
+      {
+        "icon": "tool",
+        "label": "Development",
+        "detail": "Test services and debugging aids",
+        "file": "1F6E0.svg"
+      },
+      {
+        "icon": "parcel",
+        "label": "Release candidate",
+        "detail": "Intended services and safe logging",
+        "file": "1F4E6.svg"
+      }
+    ]
+  },
+  {
+    "id": "w15-signing",
+    "week": "15",
+    "type": "flow",
+    "caption": "Authorized identity and required capabilities belong in the release check.",
+    "nodes": [
+      {
+        "icon": "person",
+        "label": "Team identity",
+        "detail": "Authorized signing context",
+        "file": "1F9D1.svg"
+      },
+      {
+        "icon": "shield",
+        "label": "Profile / capabilities",
+        "detail": "Match the app’s needs",
+        "file": "1F6E1.svg"
+      },
+      {
+        "icon": "phone",
+        "label": "Distribution route",
+        "detail": "Check its requirements",
+        "file": "1F4F1.svg"
+      }
+    ]
+  },
+  {
+    "id": "w15-version",
+    "week": "15",
+    "type": "compare",
+    "caption": "The product version alone does not identify a tested binary.",
+    "nodes": [
+      {
+        "icon": "tag",
+        "label": "Version 1.0, build 7",
+        "detail": "One candidate",
+        "file": "1F3F7.svg"
+      },
+      {
+        "icon": "parcel",
+        "label": "Version 1.0, build 8",
+        "detail": "Another candidate",
+        "file": "1F4E6.svg"
+      }
+    ]
+  },
+  {
+    "id": "w15-demo",
+    "week": "15",
+    "type": "flow",
+    "caption": "The demonstration connects a user need to inspectable evidence.",
+    "nodes": [
+      {
+        "icon": "person",
+        "label": "Problem and scope",
+        "detail": "Who benefits, and from what?",
+        "file": "1F9D1.svg"
+      },
+      {
+        "icon": "phone",
+        "label": "Working behavior",
+        "detail": "Show the core flow and contributions",
+        "file": "1F4F1.svg"
+      },
+      {
+        "icon": "clipboard",
+        "label": "Release evidence",
+        "detail": "Cloud, tests, limits and maintenance",
+        "file": "1F4CB.svg"
+      }
+    ]
+  }
+]

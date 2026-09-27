@@ -1,0 +1,16 @@
+import {readFile} from 'node:fs/promises';
+export const illustrations=JSON.parse(await readFile(new URL('../src/illustrations.json',import.meta.url),'utf8'));
+const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
+const overrides={
+ inclusive:'<p class="lead">One hand, bright sun, large text, a keyboard or a screen reader.</p><ul><li>Keep essential actions available through familiar, labeled controls.</li><li>Allow text and layout to adapt.</li><li>Offer gesture alternatives and more than color alone.</li></ul><p class="prompt"><span>Discuss / predict</span>“Swipe the bus card to save it.” What other way should the app provide?</p>',
+ permission:'<ul><li>At launch, unexplained requests for location, notifications and contacts lack context.</li><li>At the moment of need, explain the purpose before requesting access.</li><li>Handle both allow and deny.</li></ul><p class="prompt"><span>Discuss / predict</span>If location is denied, how could someone still choose a stop?</p>',
+ 'w02-inversion-of-control':'<ul><li>An ordinary call starts when application code chooses to invoke a function.</li><li>For a callback, application code supplies behavior and the framework invokes it later.</li><li>Developers choose the response. The framework coordinates when it runs.</li></ul><p class="prompt"><span>Discuss / predict</span>What initiates an app launch, a button activation, or a timer event?</p>',
+ 'w02-source-of-truth':'<ul><li>Store independent facts once.</li><li>Calculate display values from those facts.</li><li>Avoid extra mutation paths that can be forgotten.</li></ul><p class="small">One source per fact does not mean one giant global object.</p>',
+ 'w02-state-owner':'<ul><li>Which views read the value and which actions change it?</li><li>Is it temporary UI state or shared domain data?</li><li>Choose the lowest useful common owner.</li></ul><p class="prompt"><span>Discuss / predict</span>Choose an owner for an expanded row, a feature’s queue count, and capacity shared across features. State your assumptions.</p><p class="small">Local view, ancestor / feature, or domain model.</p>'
+};
+export function applyIllustrations(slides){return slides.map(s=>{
+ const v=illustrations.find(v=>v.id===s.id);if(!v||s.body.includes('class="illustration-layout'))return s;
+ const nodes=v.nodes.map((n,i)=>`<div class="illustration-node"><img src="../../images/openmoji/${n.file}" alt="" width="112" height="112"><div><strong>${esc(n.label)}</strong><span>${esc(n.detail)}</span></div>${v.type==='flow'&&i<v.nodes.length-1?'<b class="sequence-arrow" aria-hidden="true">↓</b>':''}</div>`).join('');
+ const credit=`<figcaption>${esc(v.caption)}</figcaption><p class="illustration-credit">Course illustration · artwork: <a href="../../images/openmoji/credits.html#${v.nodes[0].icon}">OpenMoji contributors</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (unmodified)</p>`;
+ return {...s,kind:[s.kind,'illustrated',s.body.includes('<pre>')?'illustrated-code':''].filter(Boolean).join(' '),body:`<div class="illustration-layout"><div class="illustration-copy">${overrides[s.id]||s.body}</div><figure class="teaching-illustration"><div class="illustration-scene illustration-${v.type}" aria-label="${esc(v.caption)}">${nodes}</div>${credit}</figure></div>`};
+});}

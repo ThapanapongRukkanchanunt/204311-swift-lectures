@@ -1,0 +1,3 @@
+# Keep licensed SVG artwork byte-for-byte intact across platforms.
+*.svg -text -diff -whitespace
+LICENSE.txt -text -whitespace

@@ -1,0 +1,523 @@
+{
+  "version": "17.0.0",
+  "creator": "Benedikt Groß, Daniel Utz and the OpenMoji contributors (HfG Schwäbisch Gmünd)",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "retrieved": "2026-09-27",
+  "changes": "Unmodified SVG artwork. Reused symbols consistently identify the same concept.",
+  "assets": [
+    {
+      "key": "hand",
+      "file": "1F446.svg",
+      "title": "backhand index pointing up",
+      "author": "Julian Grüneberg",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F446.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F446.svg",
+      "sha256": "0f7389e5b9cfbb38c71eb744ded322b2e12b50233aa2b1070bdbdf2ef3e43d12"
+    },
+    {
+      "key": "keyboard",
+      "file": "2328.svg",
+      "title": "keyboard",
+      "author": "Carlin MacKenzie",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/2328.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/2328.svg",
+      "sha256": "f9b4c287ecb256d2784d53f63aeee4f0db98d96340bbd330117f90520291fa90"
+    },
+    {
+      "key": "ear",
+      "file": "1F442.svg",
+      "title": "ear",
+      "author": "Julian Grüneberg",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F442.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F442.svg",
+      "sha256": "c4ad1c9687c9d525f67e7a3a58aae854a0ba99884be01c5ba55ec56c7ecf99e4"
+    },
+    {
+      "key": "pin",
+      "file": "1F4CD.svg",
+      "title": "round pushpin",
+      "author": "Sina Schulz",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4CD.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4CD.svg",
+      "sha256": "a24f24e9b06e25591de0a42a37b4b0794c8d50f4c34ca6adaac7092ff6dfc5a2"
+    },
+    {
+      "key": "lock",
+      "file": "1F512.svg",
+      "title": "locked",
+      "author": "Lisa Schulz",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F512.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F512.svg",
+      "sha256": "32cef5a4ec414512b909302b4d93520575bbeda2e249ec2f2a0855c295bfefb2"
+    },
+    {
+      "key": "map",
+      "file": "1F5FA.svg",
+      "title": "world map",
+      "author": "Martin Wehl",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F5FA.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F5FA.svg",
+      "sha256": "478e6d091b16a4869265164677e8f9d6e38af0e94ec53416e85c21f7e63adb9e"
+    },
+    {
+      "key": "gear",
+      "file": "2699.svg",
+      "title": "gear",
+      "author": "Hilda Kalyoncu",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/2699.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/2699.svg",
+      "sha256": "4d3cebb814816b75ca093010d17564b4f7a350edce40625c22067a8cf5d562df"
+    },
+    {
+      "key": "abacus",
+      "file": "1F9EE.svg",
+      "title": "abacus",
+      "author": "Nicole Kornhaas",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F9EE.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F9EE.svg",
+      "sha256": "3fe49fe9a15d4247ee8da856198b572963366bdec8d7b5151c0065443652eee6"
+    },
+    {
+      "key": "phone",
+      "file": "1F4F1.svg",
+      "title": "mobile phone",
+      "author": "Martin Wehl",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4F1.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4F1.svg",
+      "sha256": "a69cdc48cf92ad4d52a58847393a2403c469673d2738fd88de01273817a6f9ab"
+    },
+    {
+      "key": "ruler",
+      "file": "1F4CF.svg",
+      "title": "straight ruler",
+      "author": "Sina Schulz",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4CF.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4CF.svg",
+      "sha256": "181870ff83197dddd0310ffb15be7da63e15046b8e97a7820ecffc77b2abb3d5"
+    },
+    {
+      "key": "speech",
+      "file": "1F4AC.svg",
+      "title": "speech balloon",
+      "author": "Laura Humpfer",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4AC.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4AC.svg",
+      "sha256": "4c27a874ea4eb7d11ae09b2c082d2708c8c027e1f7e666b570eb17436fa9ac19"
+    },
+    {
+      "key": "house",
+      "file": "1F3E0.svg",
+      "title": "house",
+      "author": "Martin Wehl",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F3E0.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F3E0.svg",
+      "sha256": "edfb5e77a7d324526f76295c0b3eb913006fd0424a0ee3dd0f12b0824225568f"
+    },
+    {
+      "key": "eye",
+      "file": "1F441.svg",
+      "title": "eye",
+      "author": "Julian Grüneberg",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F441.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F441.svg",
+      "sha256": "8b473eaed0e485510463aa446c4abd7a1270b351af1165aad499d6b596c520fd"
+    },
+    {
+      "key": "person",
+      "file": "1F9D1.svg",
+      "title": "person",
+      "author": "Johanna Wellnitz",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F9D1.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F9D1.svg",
+      "sha256": "b278b229e703b4693b204b1ceb29008709ff9fb199ca8e0f5e24d5e7a2a365df"
+    },
+    {
+      "key": "office",
+      "file": "1F3E2.svg",
+      "title": "office building",
+      "author": "Martin Wehl",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F3E2.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F3E2.svg",
+      "sha256": "0b77ea25b244907302be4ac60128fe02ce8fe23b35a174b27b034b12a4d6a382"
+    },
+    {
+      "key": "clock",
+      "file": "1F552.svg",
+      "title": "three o’clock",
+      "author": "Rana Cakir",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F552.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F552.svg",
+      "sha256": "33f79845302901b45d24c1b8a08ceb929b14aa31eedf30d00de370b3287abd1d"
+    },
+    {
+      "key": "clipboard",
+      "file": "1F4CB.svg",
+      "title": "clipboard",
+      "author": "Sina Schulz",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4CB.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4CB.svg",
+      "sha256": "5af3f09c5e65bc99be4b8b5846225368e0685135ace40bbe3971c9c120fe4960"
+    },
+    {
+      "key": "info",
+      "file": "2139.svg",
+      "title": "information",
+      "author": "Crystal Moon",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/2139.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/2139.svg",
+      "sha256": "8b57a07123e6049f0bdcfe5a7c09b88c88f768e46c365b90e0233e600b556d04"
+    },
+    {
+      "key": "tool",
+      "file": "1F6E0.svg",
+      "title": "hammer and wrench",
+      "author": "Hilda Kalyoncu",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F6E0.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F6E0.svg",
+      "sha256": "f9515a7d6a3a91f4ebc36bf845ab1991f7f4174f25e050c167c4f3b808fc62fc"
+    },
+    {
+      "key": "target",
+      "file": "1F3AF.svg",
+      "title": "bullseye",
+      "author": "Vanessa Boutzikoudi",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F3AF.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F3AF.svg",
+      "sha256": "dda0ccf93e7ffb4a513cd8ffc056066a5650470fa4b55a5770b7ebbb7eb5baf6"
+    },
+    {
+      "key": "parcel",
+      "file": "1F4E6.svg",
+      "title": "package",
+      "author": "Liz Bravo",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4E6.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4E6.svg",
+      "sha256": "39a2b6ed185c127b0f100397bd95ceaf6a0c12233c0533a0c43916be384fcf52"
+    },
+    {
+      "key": "stop",
+      "file": "1F6D1.svg",
+      "title": "stop sign",
+      "author": "Ronja Bäurlen",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F6D1.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F6D1.svg",
+      "sha256": "62d9b5d4343ef4b25bebf788b233251ca4700feee73270f812be8eb626e6f81c"
+    },
+    {
+      "key": "text",
+      "file": "1F524.svg",
+      "title": "input latin letters",
+      "author": "Crystal Moon",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F524.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F524.svg",
+      "sha256": "923d843ecdf2052d93c81b39dbcd7b3ac94d6683ce16fb6573ead014a668dab1"
+    },
+    {
+      "key": "books",
+      "file": "1F4DA.svg",
+      "title": "books",
+      "author": "Liz Bravo",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4DA.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4DA.svg",
+      "sha256": "19e62bc161f15bfa985536ae256eaa41106f39d26c495cac0fd935b08eabeaef"
+    },
+    {
+      "key": "train",
+      "file": "1F683.svg",
+      "title": "railway car",
+      "author": "Liz Bravo",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F683.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F683.svg",
+      "sha256": "c4fe8fae76666fe5c1dc514cc112a442fb8d047752405b7e63628f547689ddda"
+    },
+    {
+      "key": "layers",
+      "file": "1F5C2.svg",
+      "title": "card index dividers",
+      "author": "Marleen Heine",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F5C2.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F5C2.svg",
+      "sha256": "b788d0d61cebef1c1cea8b65707cd3ba3b169b934469f301e8dee7e70827839e"
+    },
+    {
+      "key": "magnify",
+      "file": "1F50D.svg",
+      "title": "magnifying glass tilted left",
+      "author": "Sina Schulz",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F50D.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F50D.svg",
+      "sha256": "2acd94760e04fe08acfa605545881915cce8d77b54eb77de1561e6f5f773cffa"
+    },
+    {
+      "key": "scroll",
+      "file": "1F4DC.svg",
+      "title": "scroll",
+      "author": "Jonas Roßner",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4DC.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4DC.svg",
+      "sha256": "3dc47b3e6b41e3d87c6160ec5599480e8c1013452eaafa82db44715de7c2ff78"
+    },
+    {
+      "key": "star",
+      "file": "2B50.svg",
+      "title": "star",
+      "author": "Vanessa Boutzikoudi",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/2B50.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/2B50.svg",
+      "sha256": "0927c3818e30711a17aa2a14b6b7383f4aab767c865d8f88ad491e91b0de49f0"
+    },
+    {
+      "key": "pencil",
+      "file": "270F.svg",
+      "title": "pencil",
+      "author": "Rana Cakir",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/270F.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/270F.svg",
+      "sha256": "ecba2acd2790c57042db30194f1052d525959017f5148670225adb3902301a53"
+    },
+    {
+      "key": "cabinet",
+      "file": "1F5C4.svg",
+      "title": "file cabinet",
+      "author": "Sina Schulz",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F5C4.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F5C4.svg",
+      "sha256": "cd85c6d6740662ec22722c43b097031b87682eb24c4df3b8ce65fde474a05fcd"
+    },
+    {
+      "key": "check",
+      "file": "2705.svg",
+      "title": "check mark button",
+      "author": "Hilda Kalyoncu",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/2705.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/2705.svg",
+      "sha256": "35aeed71b9dcd2ad35a481468916ed10ae12192a64986d59843675bbbb8832ad"
+    },
+    {
+      "key": "warning",
+      "file": "26A0.svg",
+      "title": "warning",
+      "author": "Miriam Vollmeier",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/26A0.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/26A0.svg",
+      "sha256": "5a25f88ebe8defcd245cbf31728b6480c48e3b8b869cbfc8027fab4edffdcea0"
+    },
+    {
+      "key": "save",
+      "file": "1F4BE.svg",
+      "title": "floppy disk",
+      "author": "Jonas Roßner",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4BE.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4BE.svg",
+      "sha256": "677897fe11f94aeaf1ebe3f440c1c262fbade0f385ae7a44c27c49ad5a0b0484"
+    },
+    {
+      "key": "back",
+      "file": "21A9.svg",
+      "title": "right arrow curving left",
+      "author": "Jose Avila",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/21A9.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/21A9.svg",
+      "sha256": "9804dd6e03aa5cfd49d0d463feaa0c4498e185f9af014e2535a95ab1e95c3e57"
+    },
+    {
+      "key": "funnel",
+      "file": "1F53D.svg",
+      "title": "downwards button",
+      "author": "Jose Avila",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F53D.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F53D.svg",
+      "sha256": "d25cf11485bd05bcac6ab7d4c142a3709d006fbd1cbb6becf0ea5f484d61a8b6"
+    },
+    {
+      "key": "sort",
+      "file": "1F520.svg",
+      "title": "input latin uppercase",
+      "author": "Crystal Moon",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F520.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F520.svg",
+      "sha256": "4e1d8aa871adba5084f6b220359124a10f052177d82deaf0844cba498f371295"
+    },
+    {
+      "key": "tag",
+      "file": "1F3F7.svg",
+      "title": "label",
+      "author": "Jonas Roßner",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F3F7.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F3F7.svg",
+      "sha256": "4034024eb5389ae0950fcabb5613fa6a43355c6637d5711999b8da4486e5d727"
+    },
+    {
+      "key": "inbox",
+      "file": "1F4E5.svg",
+      "title": "inbox tray",
+      "author": "Marius Schnabel",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4E5.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4E5.svg",
+      "sha256": "25225f1bf9935f90a8fdba8dfcf7759ff0d7cf8274c5ff7a5d2bc84ede582403"
+    },
+    {
+      "key": "trash",
+      "file": "1F5D1.svg",
+      "title": "wastebasket",
+      "author": "Sina Schulz",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F5D1.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F5D1.svg",
+      "sha256": "1ca64f9af052db7560c56f4ec87c4c04cc73caeaac89d0b2d2a87465f4f454b6"
+    },
+    {
+      "key": "compass",
+      "file": "1F9ED.svg",
+      "title": "compass",
+      "author": "Kai Magnus Müller",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F9ED.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F9ED.svg",
+      "sha256": "e8ab346391122e69bfcaf143616b39a54d864b9603e7dfdf97fbb76d06a237fd"
+    },
+    {
+      "key": "paint",
+      "file": "1F3A8.svg",
+      "title": "artist palette",
+      "author": "Martin Wehl",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F3A8.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F3A8.svg",
+      "sha256": "1e440790c0d02486a2dbd061ec465f78e28111d0c778dec08de62df123959cb6"
+    },
+    {
+      "key": "shield",
+      "file": "1F6E1.svg",
+      "title": "shield",
+      "author": "Hilda Kalyoncu",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F6E1.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F6E1.svg",
+      "sha256": "d55fb5586b3c9d4fe01972242b58a13b209f0c93abd23fe9d4301b0ec5ead49a"
+    },
+    {
+      "key": "copy",
+      "file": "1F4C4.svg",
+      "title": "page facing up",
+      "author": "Jonas Roßner",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F4C4.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F4C4.svg",
+      "sha256": "cdd5b3658ac9288b381734516f7cdd28c933be9a323a370df0a18859ada290ea"
+    },
+    {
+      "key": "link",
+      "file": "1F517.svg",
+      "title": "link",
+      "author": "Hilda Kalyoncu",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F517.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F517.svg",
+      "sha256": "80ee4d83227a8aa2b7f4f0efb2c3fad0c11bf231f1e8c0206364650b27239574"
+    },
+    {
+      "key": "calculator",
+      "file": "1F9EE.svg",
+      "title": "abacus",
+      "author": "Nicole Kornhaas",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F9EE.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F9EE.svg",
+      "sha256": "3fe49fe9a15d4247ee8da856198b572963366bdec8d7b5151c0065443652eee6"
+    },
+    {
+      "key": "cloud",
+      "file": "2601.svg",
+      "title": "cloud",
+      "author": "Vanessa Boutzikoudi",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/2601.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/2601.svg",
+      "sha256": "576cae585d83517d1f8b72dd0cb2d4294d092d1c0096c80d5fdb591ba4da5396"
+    },
+    {
+      "key": "test",
+      "file": "1F9EA.svg",
+      "title": "test tube",
+      "author": "Tonia Reinhardt",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F9EA.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F9EA.svg",
+      "sha256": "cf27600483398de5568ec12795c8251b372e03b64557e9ef72eeb770bf94e28b"
+    },
+    {
+      "key": "unlink",
+      "file": "26D3-FE0F-200D-1F4A5.svg",
+      "title": "broken chain",
+      "author": "Vanessa Stoessinger",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/26D3-FE0F-200D-1F4A5.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/26D3-FE0F-200D-1F4A5.svg",
+      "sha256": "0b280471cbea9a6c353d1c8f5121090319a845f71ff39bf045fdb893ea802152"
+    },
+    {
+      "key": "sun",
+      "file": "2600.svg",
+      "title": "sun",
+      "author": "Vanessa Boutzikoudi",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/2600.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/2600.svg",
+      "sha256": "cf039475b1c737bd355572478013138e602814dae141928f7d50d819080ac4ab"
+    },
+    {
+      "key": "pause",
+      "file": "23F8.svg",
+      "title": "pause button",
+      "author": "Jose Avila",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/23F8.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/23F8.svg",
+      "sha256": "6496ffc4fe9743fc927427bd6482081000c9d12b748baabf63333b19ec9a0fd0"
+    },
+    {
+      "key": "moon",
+      "file": "1F319.svg",
+      "title": "crescent moon",
+      "author": "Vanessa Boutzikoudi",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F319.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F319.svg",
+      "sha256": "54cde751c97683286b15a7402f722e4c9fe5487e56b78738bd3e85da2534bd84"
+    },
+    {
+      "key": "refresh",
+      "file": "1F504.svg",
+      "title": "counterclockwise arrows button",
+      "author": "Jose Avila",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F504.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F504.svg",
+      "sha256": "cbfed47f4825d54e3f6615bec724d9fa6eef90bdd73d96c1a1c0b53188b8c071"
+    },
+    {
+      "key": "hourglass",
+      "file": "23F3.svg",
+      "title": "hourglass not done",
+      "author": "Rana Cakir",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/23F3.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/23F3.svg",
+      "sha256": "e5104a57675dab5aee5bffc1b2f63a75d542f312efecd74982db892c7d4e6dd4"
+    },
+    {
+      "key": "picture",
+      "file": "1F5BC.svg",
+      "title": "framed picture",
+      "author": "Martin Wehl",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F5BC.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F5BC.svg",
+      "sha256": "406ab517a7b77e999977efb72174496073dd5ae4b76b2ee3d2a5dd67990f2cd1"
+    },
+    {
+      "key": "door",
+      "file": "1F6AA.svg",
+      "title": "door",
+      "author": "Lisa Schulz",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F6AA.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F6AA.svg",
+      "sha256": "01cf0a7caa1c41aa37d8d33c44e7a6dad0eb07b8a03b781f84debfbe9ae218d3"
+    },
+    {
+      "key": "key",
+      "file": "1F511.svg",
+      "title": "key",
+      "author": "Lisa Schulz",
+      "source": "https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/1F511.svg",
+      "original": "https://raw.githubusercontent.com/hfg-gmuend/openmoji/17.0.0/color/svg/1F511.svg",
+      "sha256": "950ab0db97d2b474167dfbfb3af35a66fe7c34de071ed435168d35db3cff16ac"
+    }
+  ]
+}

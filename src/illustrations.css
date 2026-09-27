@@ -1,0 +1,49 @@
+/* Original teaching arrangements with unmodified, locally stored artwork. */
+.illustration-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:38px;align-items:start}
+.illustration-copy,.teaching-illustration{min-width:0}
+.teaching-illustration{margin:0}
+.illustration-scene{background:#F6F0FC;border-radius:24px;padding:22px;min-height:350px;box-sizing:border-box}
+.illustration-node{position:relative;min-width:0;display:flex;align-items:center;gap:18px}
+.illustration-node img{width:100px;height:100px;object-fit:contain;flex:none}
+.illustration-node strong{display:block;color:#442574;font:700 25px/1.2 Arial,sans-serif;margin-bottom:8px}
+.illustration-node span{display:block;font:21px/1.3 Arial,sans-serif;color:#302C3C}
+.illustration-flow{display:grid;gap:26px}
+.illustration-flow .sequence-arrow{position:absolute;left:40px;bottom:-29px;color:#6D3BC1;font-size:28px;line-height:28px}
+.illustration-compare{display:flex;align-items:stretch;gap:16px;min-height:330px}
+.illustration-compare .illustration-node{flex:1;flex-direction:column;text-align:center;justify-content:flex-start;padding-top:15px}
+.illustration-compare .illustration-node img{width:125px;height:125px}
+.illustration-compare .illustration-node + .illustration-node{border-left:1px solid #C8B8E0;padding-left:15px}
+.illustration-compare .illustration-node strong{font-size:24px}
+.illustration-compare .illustration-node span{font-size:20px}
+.illustration-states{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.illustration-states .illustration-node{flex-direction:column;text-align:center;gap:8px}
+.illustration-states .illustration-node img{width:75px;height:75px}
+.illustration-states .illustration-node strong{font-size:23px;margin:0 0 5px}
+.illustration-states .illustration-node span{font-size:19px}
+.illustration-hub{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.illustration-hub .illustration-node:first-child{grid-column:1/-1;justify-content:center;padding-bottom:22px;border-bottom:3px solid #B89AE9}
+.illustration-hub .illustration-node:not(:first-child){flex-direction:column;text-align:center;gap:8px}
+.illustration-hub .illustration-node img{width:90px;height:90px}
+.teaching-illustration figcaption{font:20px/1.4 Arial,sans-serif;margin-top:16px;color:#302C3C}
+.teaching-illustration .illustration-credit{font:13px/1.4 Arial,sans-serif;margin:12px 0 0;color:#4F4560}
+.illustration-credit a{color:#442574;text-decoration:underline}
+.deck.enhanced .illustrated h2{font-size:46px}
+.deck.enhanced .illustration-copy{font-size:24px;line-height:1.4}
+.deck.enhanced .illustration-copy .lead{font-size:26px}
+.deck.enhanced .illustration-copy .prompt{font-size:21px;padding:16px 18px;margin:20px 0}
+.deck.enhanced .illustration-copy .small{font-size:17px}
+.deck.enhanced .illustrated .sources{margin-top:16px!important}
+.illustration-copy .split{display:block}
+.deck.enhanced .illustrated-code .illustration-layout{display:block}
+.deck.enhanced .illustrated-code .illustration-copy{display:block}
+.deck.enhanced .illustrated-code .code-label{grid-column:1/-1}
+.deck.enhanced .illustrated-code .illustration-copy pre{font-size:22px;line-height:1.45;margin:0 0 12px;white-space:pre-wrap;padding:18px 24px}
+.deck.enhanced .illustrated-code .illustration-copy .prompt{margin:0 0 12px;padding:12px 18px}
+.deck.enhanced .illustrated-code .illustration-flow{display:flex;gap:24px;min-height:0;padding:18px;margin-top:8px}
+.deck.enhanced .illustrated-code .illustration-node{flex:1;gap:10px}
+.deck.enhanced .illustrated-code .illustration-node img{width:62px;height:62px}
+.deck.enhanced .illustrated-code .illustration-node strong{font-size:22px}
+.deck.enhanced .illustrated-code .illustration-node span{font-size:19px}
+.deck.enhanced .illustrated-code .sequence-arrow{display:none}
+@media(max-width:800px){body:not(.enhanced) .illustration-layout,.reading .illustration-layout{grid-template-columns:1fr}body:not(.enhanced) .illustration-compare,.reading .illustration-compare{display:grid;gap:24px}body:not(.enhanced) .illustration-compare .illustration-node,.reading .illustration-compare .illustration-node{border:0;padding:0;flex-direction:row;text-align:left}body:not(.enhanced) .illustration-node img,.reading .illustration-node img{width:76px;height:76px}body:not(.enhanced) .illustration-states,.reading .illustration-states{grid-template-columns:1fr}body:not(.enhanced) .illustration-node strong,.reading .illustration-node strong{font-size:22px}body:not(.enhanced) .illustration-node span,.reading .illustration-node span{font-size:18px}}
+@media print{.illustration-layout{display:block}.illustration-scene{break-inside:avoid}.illustration-credit{font-size:12px}}

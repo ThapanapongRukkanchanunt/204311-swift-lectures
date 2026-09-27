@@ -5,6 +5,7 @@ import { slides } from '../src/week01.mjs';
 import { slides as week02 } from '../src/week02.mjs';
 import {lessons} from './lessons.mjs';
 import {visuals} from './visuals.mjs';
+import {illustrations} from './illustrations.mjs';
 import {createHash} from 'node:crypto';
 assert.equal(visuals.length,15);
 assert.equal(new Set(visuals.map(v=>v.id)).size,15);
@@ -20,6 +21,23 @@ for(const v of visuals){
  }
 }
 console.log('PASS: image provenance, attribution, alt text, asset hashes and private-cue boundary.');
+const artwork=JSON.parse(await readFile('dist/images/openmoji/manifest.json','utf8'));
+assert.equal(illustrations.length,70);
+assert.equal(new Set(illustrations.map(v=>v.id)).size,illustrations.length);
+for(const a of artwork.assets){
+ assert.ok(a.author&&a.source&&a.title);
+ assert.equal(createHash('sha256').update(await readFile(`dist/images/openmoji/${a.file}`)).digest('hex'),a.sha256);
+}
+for(const v of illustrations){
+ const s=lessons.find(l=>l.week===v.week).slides.find(s=>s.id===v.id);
+ assert.ok(s.body.includes('illustration-layout'));
+ assert.ok(!v.en&&!v.th,'Private illustration cues must stay outside the public manifest');
+ if(s.body.includes('<pre>'))assert.ok(s.kind.includes('illustrated-code'),'Code examples use a dedicated layout');
+ for(const n of v.nodes)assert.ok(n.label&&n.detail&&artwork.assets.some(a=>a.file===n.file));
+ assert.ok(s.body.includes('CC BY-SA 4.0'));
+}
+await access('dist/images/openmoji/LICENSE.txt');
+console.log('PASS: 70 illustrated slides, original artwork hashes, source/artist/license metadata and dedicated code layouts.');
 assert.equal(lessons.length,15);
 for(const lesson of lessons){
  assert.equal(lesson.slides.reduce((n,s)=>n+s.time,0),120,lesson.week);

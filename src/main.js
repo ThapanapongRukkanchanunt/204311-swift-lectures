@@ -1,6 +1,7 @@
 import Reveal from 'reveal.js';
 import './style.css';
 import './week02.css';
+import './illustrations.css';
 
 const reading = document.body.classList.contains('reading');
 const all = [...document.querySelectorAll('.slides > section')];
@@ -10,7 +11,7 @@ const editable = el => el.closest('input,select,textarea,button,summary,a,[conte
 if (!reading) {
   // Add fragments only in presentation mode: reading/no-JS content stays complete.
   for (const slide of all) {
-    slide.querySelectorAll('li, .cards > .card, .criteria > div, tbody > tr').forEach(item => {
+    slide.querySelectorAll('li, .cards > .card, .criteria > div, tbody > tr, .illustration-node').forEach(item => {
       item.classList.add('fragment', 'fade-up');
     });
   }
