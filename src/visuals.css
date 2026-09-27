@@ -1,0 +1,24 @@
+/* Image evidence uses the established teaching canvas and reflows in Read. */
+.visual-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:32px;align-items:start}
+.visual-copy,.visual-evidence{min-width:0}
+.visual-gallery{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+.visual-gallery.image-pair{grid-template-columns:repeat(2,minmax(0,1fr))}
+.visual-gallery figure{margin:0;min-width:0}
+.visual-gallery img{display:block;width:100%;height:340px;object-fit:contain;background:#fff;border:1px solid #DFD6ED;border-radius:12px;box-sizing:border-box}
+.image-enlarge{display:block;border-radius:12px}
+.image-credit{font:14px/1.4 Arial,sans-serif;color:#4F4560;margin-top:10px;overflow-wrap:anywhere}
+.image-credit a{text-decoration:underline}
+.reveal .image-caption{font-size:19px;line-height:1.4;margin:14px 0 0}
+.deck.enhanced .visual-copy{font-size:24px}
+.deck.enhanced .visual-copy .lead{font-size:25px}
+.deck.enhanced .visual-copy .small{font-size:17px}
+.deck.enhanced .visual-copy .prompt{font-size:21px;padding:16px 18px;margin-top:20px}
+.deck.enhanced .has-visual .sources{margin-top:16px!important}
+.deck.enhanced .visual-gallery.image-pair img{height:300px}
+.deck.enhanced .has-visual h2{font-size:46px}
+.deck.enhanced #w05-controls .visual-gallery img{height:440px}
+/* Preserve the source file; trim only empty margins in the slide viewport. */
+#w10-relation .visual-gallery img{height:220px;object-fit:cover;object-position:50% 25%}
+body:not(.enhanced) .visual-layout,.reading .visual-layout{margin-bottom:24px}
+@media(max-width:800px){body:not(.enhanced) .visual-layout,.reading .visual-layout{grid-template-columns:1fr}body:not(.enhanced) .visual-gallery img,.reading .visual-gallery img{height:auto;max-height:480px}body:not(.enhanced) .visual-gallery.image-pair,.reading .visual-gallery.image-pair{grid-template-columns:1fr}.reading .image-caption,body:not(.enhanced) .image-caption{font-size:18px}}
+@media print{.visual-layout{display:block}.visual-gallery img{max-height:300px}.image-credit{font-size:12px}}

@@ -4,6 +4,22 @@ import { resolve, dirname } from 'node:path';
 import { slides } from '../src/week01.mjs';
 import { slides as week02 } from '../src/week02.mjs';
 import {lessons} from './lessons.mjs';
+import {visuals} from './visuals.mjs';
+import {createHash} from 'node:crypto';
+assert.equal(visuals.length,15);
+assert.equal(new Set(visuals.map(v=>v.id)).size,15);
+const credits=await readFile('dist/images/lectures/credits.html','utf8');
+for(const v of visuals){
+ assert.ok(lessons.find(l=>l.week===v.week).slides.some(s=>s.id===v.id));
+ assert.ok(v.caption);
+ assert.ok(!v.en&&!v.th,'Private teaching cues must not enter the image manifest');
+ for(const i of v.images){
+  for(const field of ['title','author','source','license','licenseUrl','alt','changes','retrieved'])assert.ok(i[field],`${i.file}: ${field}`);
+  assert.equal(createHash('sha256').update(await readFile(`dist/images/lectures/${i.file}`)).digest('hex'),i.sha256);
+  assert.ok(credits.includes(`id="${i.file}"`));
+ }
+}
+console.log('PASS: image provenance, attribution, alt text, asset hashes and private-cue boundary.');
 assert.equal(lessons.length,15);
 for(const lesson of lessons){
  assert.equal(lesson.slides.reduce((n,s)=>n+s.time,0),120,lesson.week);

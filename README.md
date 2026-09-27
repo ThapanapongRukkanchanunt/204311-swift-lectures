@@ -45,6 +45,10 @@ The expected lesson URL is https://thapanapongrukkanchanunt.github.io/204311-swi
 
 The build generates `downloads/week-NN-practice.zip` and `downloads/week-NN-offline.zip` for all weeks, plus catch-up starter ZIPs where supplied. Extract the offline package and follow START-HERE.txt. Core reading works from a local file; interactive slides need a local HTTP server. External references and the intentionally live networking/cloud exercises need internet; core lecture content does not.
 
+## Lecture images
+
+Selected slides use locally stored, licensed internet images. Creator, source and license links appear beside each image; click an image for the full-size file. [Complete image credits](public/images/lectures/credits.html) and [provenance record](public/images/lectures/CREDITS.md) document individual reuse terms and modifications. Keep these credits in redistributed offline packages. Image licenses are separate from course-authored content. `src/visuals.json` and `scripts/visuals.mjs` apply the image layer without changing slide IDs or session timing.
+
 ## Verification limits
 
 Swift compilation and target-device validation require macOS/Xcode and the laboratory iPads. Follow the practice README's exact clean-build and behavior checks. Windows browser checks do not establish Safari compatibility on the course devices. Do not publish private instructor notes, assessment keys, student data or lab solutions here.

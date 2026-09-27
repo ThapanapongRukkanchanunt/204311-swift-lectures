@@ -1,0 +1,341 @@
+[
+  {
+    "week": "01",
+    "id": "forces",
+    "caption": "Keypad and early touchscreen phones: changes in input created new interface-design work.",
+    "images": [
+      {
+        "file": "w01-1.webp",
+        "title": "Nokia 3310 phone.jpg",
+        "author": "Santeri Viinamäki",
+        "source": "https://commons.wikimedia.org/wiki/File%3ANokia_3310_phone.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/1/18/Nokia_3310_phone.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Resized and converted to WebP; no crop or recoloring.",
+        "alt": "Nokia 3310 with a small display and physical number keys.",
+        "sourceCredit": "Own work",
+        "retrieved": "2026-09-27",
+        "sha256": "26019bbc8396ccc0ba3f40e2937c5e3d6ea3c30fb9a0b4f791ea56533c7fada0"
+      },
+      {
+        "file": "w01-2.webp",
+        "title": "IPhone & iPhone 3G fronts.jpg",
+        "author": "Dan Taylor from London, UK",
+        "source": "https://commons.wikimedia.org/wiki/File%3AIPhone_%26_iPhone_3G_fronts.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b1/IPhone_%26_iPhone_3G_fronts.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "changes": "Resized and converted to WebP; no crop or recoloring.",
+        "alt": "First-generation iPhone and iPhone 3G with large touchscreens.",
+        "sourceCredit": "iPhone & iPhone 3G (front)",
+        "retrieved": "2026-09-27",
+        "sha256": "f0df8a2565ca2acd8ff0f19589ee65e4496835f32fa1ad2dec54d73990a8e2c5"
+      }
+    ],
+    "points": [
+      "More platforms: capabilities, form factors and input methods.",
+      "More states: live data, interruptions and asynchronous events.",
+      "More responsibility: accessibility, privacy and maintenance."
+    ],
+    "prompt": "Which problems remain even if phones become infinitely fast?"
+  },
+  {
+    "week": "02",
+    "id": "w02-state-concept",
+    "caption": "A turnstile makes state and events visible. Follow one event at a time.",
+    "images": [
+      {
+        "file": "w02-1.svg",
+        "title": "Turnstile state machine colored.svg",
+        "author": "Chetvorno",
+        "source": "https://commons.wikimedia.org/wiki/File%3ATurnstile_state_machine_colored.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Turnstile_state_machine_colored.svg",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "Two states, Locked and Unlocked. Coin unlocks Locked; Push locks Unlocked. Push at Locked and Coin at Unlocked leave the state unchanged.",
+        "sourceCredit": "Own work",
+        "retrieved": "2026-09-27",
+        "sha256": "15aba43e9b36a1dc17550717a1f4638ba168efca7d46b0df3602a9966d1c1aea"
+      }
+    ]
+  },
+  {
+    "week": "03",
+    "id": "w03-pitch-7",
+    "caption": "A real paper prototype for Wiki Education. Screen sketches can test a flow before implementation.",
+    "images": [
+      {
+        "file": "w03-1.webp",
+        "title": "Paper prototype of website user interface, 2015-04-16.jpg",
+        "author": "Sage Ross",
+        "source": "https://commons.wikimedia.org/wiki/File%3APaper_prototype_of_website_user_interface%2C_2015-04-16.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/6/67/Paper_prototype_of_website_user_interface%2C_2015-04-16.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Resized and converted to WebP; no crop or recoloring.",
+        "alt": "Paper interface sketches spread on a table, with a designer moving between them.",
+        "sourceCredit": "Own work",
+        "retrieved": "2026-09-27",
+        "sha256": "6720c0bb2bca6c0230c033a9c1194320930ead9f9683fe735e14cff463f51c15"
+      }
+    ]
+  },
+  {
+    "week": "04",
+    "id": "w04-proposal",
+    "caption": "Responsive-design analogy: preserve useful content as the available space changes.",
+    "images": [
+      {
+        "file": "w04-1.svg",
+        "title": "Content-is-like-water.svg",
+        "author": "Stéphanie Walter",
+        "source": "https://commons.wikimedia.org/wiki/File%3AContent-is-like-water.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/09/Content-is-like-water.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "Content is compared with water that takes the shape of a cup, teapot, bottle, phone and tablet.",
+        "sourceCredit": "https://stephaniewalter.design/",
+        "retrieved": "2026-09-27",
+        "sha256": "3b2b22d0c98dda1b9c8b3b3f086579a60109ee51258d0d8cd867410e85e991aa"
+      }
+    ]
+  },
+  {
+    "week": "05",
+    "id": "w05-controls",
+    "caption": "Generic desktop controls: grouped choices and disabled states. SwiftUI uses platform-native appearances.",
+    "images": [
+      {
+        "file": "w05-1.svg",
+        "title": "GUI Frame.svg",
+        "author": "Rfc1394",
+        "source": "https://commons.wikimedia.org/wiki/File%3AGUI_Frame.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/e/e3/GUI_Frame.svg",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/File%3AGUI_Frame.svg",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "Radio-button groups with one selected size and a disabled version group shown in gray.",
+        "sourceCredit": "Own work",
+        "retrieved": "2026-09-27",
+        "sha256": "657bbe5b791e31b2d251698bf6c1b2daa81f946f88b10dc2a68a5470de88807b"
+      }
+    ]
+  },
+  {
+    "week": "06",
+    "id": "w06-record",
+    "caption": "Identifier analogy: an ISBN identifies a publication edition, not an individual physical copy.",
+    "images": [
+      {
+        "file": "w06-1.svg",
+        "title": "EAN-13-ISBN-13.svg",
+        "author": "ISBN",
+        "source": "https://commons.wikimedia.org/wiki/File%3AEAN-13-ISBN-13.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/2/28/EAN-13-ISBN-13.svg",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/File%3AEAN-13-ISBN-13.svg",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "ISBN 978-3-16-148410-0 printed above its EAN-13 barcode.",
+        "sourceCredit": "self-made using bookland 1.3",
+        "retrieved": "2026-09-27",
+        "sha256": "ede4a6ad83fb29a7001eb96c640914f63e30ebfe0690ec6ea7d93fd411cd9254"
+      }
+    ]
+  },
+  {
+    "week": "07",
+    "id": "w07-stack",
+    "caption": "Push adds to the top. Pop removes the top. Navigation applies this idea to a path of destinations.",
+    "images": [
+      {
+        "file": "w07-1.svg",
+        "title": "Data stack.svg",
+        "author": "Boivie, based on Shrimp; refinements by Bobbo and Benjaminabel",
+        "source": "https://commons.wikimedia.org/wiki/File%3AData_stack.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/2/29/Data_stack.svg",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/File%3AData_stack.svg",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "A stack with a Push arrow adding an item to the top and a Pop arrow removing the top item.",
+        "sourceCredit": "made in Inkscape, by myself User:Boivie. Based on Image:Stack-sv.png, originally uploaded to the Swedish Wikipedia in 2004 by sv:User:Shrimp",
+        "retrieved": "2026-09-27",
+        "sha256": "27ffa24f3c70064453999331947fb6946f0535f38c6ef39ed86097b69ed164f7"
+      }
+    ]
+  },
+  {
+    "week": "08",
+    "id": "w08-observation",
+    "caption": "Historical Observer pattern, for comparison only. SwiftUI tracks relevant property reads; no manual observer list is required here.",
+    "images": [
+      {
+        "file": "w08-1.svg",
+        "title": "Observer.svg",
+        "author": "WikiSolved",
+        "source": "https://commons.wikimedia.org/wiki/File%3AObserver.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Observer.svg",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/File%3AObserver.svg",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "Generic UML Observer pattern: one subject keeps observers and notifies them. Two concrete observers implement a notification interface.",
+        "sourceCredit": "Own work",
+        "retrieved": "2026-09-27",
+        "sha256": "024036e6b25728d95f2e7449fa0511aa8dda82fa9ce2779a690290688b542c35"
+      }
+    ]
+  },
+  {
+    "week": "09",
+    "id": "w09-lifetime",
+    "caption": "An SSD is a physical example of persistent storage. This is not the course iPad or Mac storage layout.",
+    "images": [
+      {
+        "file": "w09-1.webp",
+        "title": "Intel 512G M2 Solid State Drive.jpg",
+        "author": "David290",
+        "source": "https://commons.wikimedia.org/wiki/File%3AIntel_512G_M2_Solid_State_Drive.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Intel_512G_M2_Solid_State_Drive.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Resized and converted to WebP; no crop or recoloring.",
+        "alt": "A hand holds an Intel M.2 solid-state drive.",
+        "sourceCredit": "Own work",
+        "retrieved": "2026-09-27",
+        "sha256": "35ae1bcc01503cc3ed8465fac64ba4a9ef83266d02e26a1a8255a69b2a5d1e74"
+      }
+    ]
+  },
+  {
+    "week": "10",
+    "id": "w10-relation",
+    "caption": "Crow’s-foot notation shows one-to-many. Our category link also permits “none”; optionality is a separate rule.",
+    "images": [
+      {
+        "file": "w10-1.png",
+        "title": "Many to one relationship example.png",
+        "author": "Steveisgreat",
+        "source": "https://commons.wikimedia.org/wiki/File%3AMany_to_one_relationship_example.png",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/3/34/Many_to_one_relationship_example.png",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "A generic crow’s-foot relationship diagram connects Mother on the one side to Child on the many side.",
+        "sourceCredit": "Own work",
+        "retrieved": "2026-09-27",
+        "sha256": "7f1327f244965c7863d586412e3bd69b964d583869e604cf077ecf58e265f84a"
+      }
+    ]
+  },
+  {
+    "week": "11",
+    "id": "w11-size",
+    "caption": "Zooming reveals the pixel grid. Encoded file size and decoded image memory measure different things.",
+    "images": [
+      {
+        "file": "w11-1.png",
+        "title": "Pixel-example.png",
+        "author": "ed g2s, using a computer illustration by Gustavb",
+        "source": "https://commons.wikimedia.org/wiki/File%3APixel-example.png",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Pixel-example.png",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "A computer illustration with a magnified region showing individual square pixels along an edge.",
+        "sourceCredit": "Example image is a rendering of Image:Personal computer, exploded 5.svg.",
+        "retrieved": "2026-09-27",
+        "sha256": "a866b8dcfa3b8ba577536c0dd3750c1ab044ae24bc9a64be4d48be75fce9bd16"
+      }
+    ]
+  },
+  {
+    "week": "12",
+    "id": "w12-boundary",
+    "caption": "Request and response are separate crossings. A failure can occur before a usable app value exists.",
+    "images": [
+      {
+        "file": "w12-1.svg",
+        "title": "Client-server model.svg",
+        "author": "Lubaochuan",
+        "source": "https://commons.wikimedia.org/wiki/File%3AClient-server_model.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/6/69/Client-server_model.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "A client sends a request to a server and receives a response in the opposite direction.",
+        "sourceCredit": "Own work",
+        "retrieved": "2026-09-27",
+        "sha256": "13f6c8047ffdcd93775ba8d4368b60cac38954d8854f1b76a6d24f8927867721"
+      }
+    ]
+  },
+  {
+    "week": "13",
+    "id": "w13-boundary",
+    "caption": "Generic cloud components. The cloud outline is not an authorization boundary or a Firebase architecture diagram.",
+    "images": [
+      {
+        "file": "w13-1.svg",
+        "title": "Cloud computing.svg",
+        "author": "Sam Johnston",
+        "source": "https://commons.wikimedia.org/wiki/File%3ACloud_computing.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Cloud_computing.svg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "Phones, tablets and computers connect to cloud application, platform and infrastructure services, including identity and database components.",
+        "sourceCredit": "Created by Sam Johnston using OmniGroup's OmniGraffle and Inkscape (includes Computer.svg by Sasa Stefanovic)\n\n This W3C-unspecified vector image was created with Inkscape .",
+        "retrieved": "2026-09-27",
+        "sha256": "cabb7ae15d409ed939dddcc8a08eff68d424d0b1edd12092bc326187a5182806"
+      }
+    ]
+  },
+  {
+    "week": "14",
+    "id": "w14-debug",
+    "caption": "Mark II logbook, 1947: a recorded observation and physical evidence. The term “bug” predates this event.",
+    "images": [
+      {
+        "file": "w14-1.webp",
+        "title": "First Computer Bug, 1947.jpg",
+        "author": "U.S. Navy / Naval Surface Warfare Center",
+        "source": "https://commons.wikimedia.org/wiki/File%3AFirst_Computer_Bug%2C_1947.jpg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/e/e7/First_Computer_Bug%2C_1947.jpg",
+        "license": "Public domain",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/File%3AFirst_Computer_Bug%2C_1947.jpg",
+        "changes": "Resized and converted to WebP; no crop or recoloring.",
+        "alt": "Historical logbook page with timestamps, relay notes and a moth taped beside the written observation.",
+        "sourceCredit": "U.S. Naval Historical Center Online Library Photograph NH 96566-KN  The above link is no longer valid on 13.04.2017, the image available here.",
+        "retrieved": "2026-09-27",
+        "sha256": "13885db25a2226b82a8841ba0e119ab1ff29c542f0105f3b10da1829872e0687"
+      }
+    ],
+    "extraSource": [
+      "Smithsonian: logbook context",
+      "https://americanhistory.si.edu/collections/object/nmah_334663"
+    ]
+  },
+  {
+    "week": "15",
+    "id": "w15-maintenance",
+    "caption": "A generic development/operations feedback cycle. A release leads to monitoring and another bounded change.",
+    "images": [
+      {
+        "file": "w15-1.svg",
+        "title": "Devops-toolchain.svg",
+        "author": "Kharnagy",
+        "source": "https://commons.wikimedia.org/wiki/File%3ADevops-toolchain.svg",
+        "original": "https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-toolchain.svg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "changes": "Unmodified image; scaled for display.",
+        "alt": "A loop links Plan, Create, Verify, Package, Release, Configure and Monitor across development and operations.",
+        "sourceCredit": "Own work",
+        "retrieved": "2026-09-27",
+        "sha256": "22b8d37fb113fe908dff0c05d757016f277a84f0736bcce9c5c804bf39d54140"
+      }
+    ]
+  }
+]

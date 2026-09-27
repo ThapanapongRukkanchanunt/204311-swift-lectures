@@ -1,0 +1,2 @@
+# Preserve licensed source SVG bytes and provenance hashes across checkouts.
+*.svg -text -diff -whitespace
