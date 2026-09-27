@@ -1,8 +1,14 @@
 # 204311 Swift Lectures
 
+## Complete semester review draft
+
+All 15 teaching weeks are available at `/2027/week-NN/`, each with a reading view, Thai lab sheet, practice-source ZIP and offline ZIP. Weeks 03–15 were added on 2026-09-27. Their catalog is `src/generated-catalog.json`; `scripts/lessons.mjs` loads every lesson for generation, packaging and checks. Resource links use the same labels and order throughout.
+
+These are review drafts, not a claim of Apple-device, timed beginner-pilot or Canvas validation. Week 03 preserves the approved in-class requirements/pitch workshop; Week 15 preserves the full deployment lecture and the 25 + 90 + 5 minute release/presentation lab. No extra class meetings are required. Instructor media links remain placeholders.
+
 ## Thai lab sheets
 
-The lab index is `/2027/labs/`, with sheets at `/2027/week-01/lab/` and `/2027/week-02/lab/`. Each has a Canvas HTML-fragment download. Public fragment sources are in `content/labs/`; `scripts/labs.mjs` wraps them as standalone pages. These are review drafts with instructor media placeholders. Canonical course fragments and private instructor verification records remain outside this repository. When a canonical sheet changes, sync only its student-facing fragment (without HTML comments) into `content/labs/`, then rebuild. Both current lab sheets are included in the shared offline package. Do not copy lab solutions or instructor notes into this repository.
+The lab index is `/2027/labs/`, with sheets at `/2027/week-NN/lab/` for 01–15. Each has a Canvas HTML-fragment download. Public fragment sources are in `content/labs/`; `scripts/labs.mjs` wraps them as standalone pages. Canonical course fragments and private instructor verification records remain outside this repository. When a canonical sheet changes, sync only its student-facing fragment (without HTML comments) into `content/labs/`, then rebuild. All current lab sheets are included in the shared offline package. Do not copy lab solutions or instructor notes into this repository.
 
 Week 02 is available in source at `/2027/week-02/` with a linear reading view, CampusQueue practice project and offline package. Its content lives in `src/week02.mjs`. The shared generator builds both lessons. Week 02 private English and Thai instructor notes stay outside this public repository. Pushing source runs the build workflow; Pages publication requires the explicit release workflow.
 
@@ -37,7 +43,7 @@ The expected lesson URL is https://thapanapongrukkanchanunt.github.io/204311-swi
 
 ## Downloads and offline use
 
-The build generates `downloads/week-01-practice.zip` and `downloads/week-01-offline.zip`. Extract the offline package and follow START-HERE.txt. Core reading works from a local file; interactive slides need a local HTTP server. External references need internet.
+The build generates `downloads/week-NN-practice.zip` and `downloads/week-NN-offline.zip` for all weeks, plus catch-up starter ZIPs where supplied. Extract the offline package and follow START-HERE.txt. Core reading works from a local file; interactive slides need a local HTTP server. External references and the intentionally live networking/cloud exercises need internet; core lecture content does not.
 
 ## Verification limits
 

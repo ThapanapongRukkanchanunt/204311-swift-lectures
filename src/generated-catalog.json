@@ -1,0 +1,80 @@
+[
+  {
+    "week": "03",
+    "title": "Requirements and Interactive Prototypes",
+    "label": "REQUIREMENTS AND INTERACTIVE PROTOTYPES",
+    "labTitle": "สร้างต้นแบบขอรับบริการในมหาวิทยาลัย"
+  },
+  {
+    "week": "04",
+    "title": "View Composition, Layout and Accessibility",
+    "label": "VIEW COMPOSITION, LAYOUT AND ACCESSIBILITY",
+    "labTitle": "จัดหน้าบริการให้ใช้ได้กับข้อความขนาดใหญ่"
+  },
+  {
+    "week": "05",
+    "title": "Input, State, Binding and Validation",
+    "label": "INPUT, STATE, BINDING AND VALIDATION",
+    "labTitle": "รับคำขอด้วยฟอร์มและตรวจข้อมูล"
+  },
+  {
+    "week": "06",
+    "title": "Collections, Identity and Dynamic Lists",
+    "label": "COLLECTIONS, IDENTITY AND DYNAMIC LISTS",
+    "labTitle": "เพิ่ม ลบ และกรองรายการคำขอ"
+  },
+  {
+    "week": "07",
+    "title": "Navigation and Cross-View Data Flow",
+    "label": "NAVIGATION AND CROSS-VIEW DATA FLOW",
+    "labTitle": "เชื่อมรายการ รายละเอียด และหน้าแก้ไข"
+  },
+  {
+    "week": "08",
+    "title": "Domain Models, Rules and Observation",
+    "label": "DOMAIN MODELS, RULES AND OBSERVATION",
+    "labTitle": "ย้ายกฎคิวไปยัง Model ที่ใช้ร่วมกัน"
+  },
+  {
+    "week": "09",
+    "title": "Persistence and CRUD with SwiftData",
+    "label": "PERSISTENCE AND CRUD WITH SWIFTDATA",
+    "labTitle": "บันทึกคำขอและตรวจข้อมูลหลังเปิดแอปใหม่"
+  },
+  {
+    "week": "10",
+    "title": "Relationships, Search and Lifecycle",
+    "label": "RELATIONSHIPS, SEARCH AND LIFECYCLE",
+    "labTitle": "เชื่อมหมวดบริการ ค้นหา และตอบสนอง ScenePhase"
+  },
+  {
+    "week": "11",
+    "title": "Text and Media Storage",
+    "label": "TEXT AND MEDIA STORAGE",
+    "labTitle": "แนบภาพและจัดการไฟล์ของคำขอ"
+  },
+  {
+    "week": "12",
+    "title": "Networking, Concurrency and Error States",
+    "label": "NETWORKING, CONCURRENCY AND ERROR STATES",
+    "labTitle": "โหลดประกาศและแสดงสถานะเครือข่ายครบ"
+  },
+  {
+    "week": "13",
+    "title": "Cloud Integration and Resilience",
+    "label": "CLOUD INTEGRATION AND RESILIENCE",
+    "labTitle": "เชื่อม Firebase ผ่าน Service และตรวจสิทธิ์"
+  },
+  {
+    "week": "14",
+    "title": "Testing Methodologies and Debugging",
+    "label": "TESTING METHODOLOGIES AND DEBUGGING",
+    "labTitle": "เขียน Test และซ่อมข้อผิดพลาดที่ขอบเขต"
+  },
+  {
+    "week": "15",
+    "title": "Deployment, Maintenance and Project Communication",
+    "label": "DEPLOYMENT, MAINTENANCE AND PROJECT COMMUNICATION",
+    "labTitle": "ตรวจ Release Candidate และนำเสนอโครงงาน"
+  }
+]
