@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W15 · Deployment, Maintenance and Project Communication",
-    "body": "<ul><li>Explain signing, versioning and distribution responsibilities.</li><li>Evaluate release blockers and maintenance risks.</li><li>Present product claims using build and test evidence.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Explain signing, versioning and distribution responsibilities.</li><li>Evaluate release blockers and maintenance risks.</li><li>Present product claims using build and test evidence.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/tutorials/develop-in-swift/welcome-to-app-distribution\">Apple app distribution</a> · <a href=\"https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases\">Apple distributing apps</a> · <a href=\"https://developer.apple.com/app-store/app-privacy-details/\">Apple privacy details</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/tutorials/develop-in-swift/welcome-to-app-distribution\">Apple app distribution</a> · <a href=\"https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases\">Apple distributing apps</a> · <a href=\"https://developer.apple.com/app-store/app-privacy-details/\">Apple privacy details</a>"
   },
   {
-    "id": "w15-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W15 · Deployment, Maintenance and Project Communication",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/tutorials/develop-in-swift/welcome-to-app-distribution\">Apple app distribution</a> · <a href=\"https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases\">Apple distributing apps</a> · <a href=\"https://developer.apple.com/app-store/app-privacy-details/\">Apple privacy details</a>"
-  },
-  {
     "id": "w15-privacy",
     "title": "A release describes actual data practices",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w15-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W15 · Deployment, Maintenance and Project Communication",
     "body": "<p class=\"lead\">A team has a polished demo, an untested last-minute change and an exposed service credential in its repository.</p><ul><li>Classify release blockers and immediate containment steps.</li><li>Choose the candidate to verify and a smoke-test path.</li><li>Rewrite the release note and assign one maintenance action.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/tutorials/develop-in-swift/welcome-to-app-distribution\">Apple app distribution</a> · <a href=\"https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases\">Apple distributing apps</a> · <a href=\"https://developer.apple.com/app-store/app-privacy-details/\">Apple privacy details</a>"

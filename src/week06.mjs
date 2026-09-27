@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W06 · Collections, Identity and Dynamic Lists",
-    "body": "<ul><li>Explain stable identity in a dynamic list.</li><li>Predict filter, map and sorted results.</li><li>Design add, delete and empty-state behavior.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Explain stable identity in a dynamic list.</li><li>Predict filter, map and sorted results.</li><li>Design add, delete and empty-state behavior.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/foreach\">Apple ForEach</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/\">Swift collections</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/foreach\">Apple ForEach</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/\">Swift collections</a>"
   },
   {
-    "id": "w06-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W06 · Collections, Identity and Dynamic Lists",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/documentation/swiftui/foreach\">Apple ForEach</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/\">Swift collections</a>"
-  },
-  {
     "id": "w06-add",
     "title": "Insertion creates one new identity",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w06-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W06 · Collections, Identity and Dynamic Lists",
     "body": "<p class=\"lead\">Deleting the first open request removes a different closed request.</p><ul><li>Construct a three-record example that reproduces the bug.</li><li>Explain the visible-index and source-index mismatch.</li><li>Propose an ID-based fix and regression check.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/foreach\">Apple ForEach</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/collectiontypes/\">Swift collections</a>"

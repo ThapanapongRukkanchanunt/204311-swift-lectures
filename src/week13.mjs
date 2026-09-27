@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W13 · Cloud Integration and Resilience",
-    "body": "<ul><li>Locate client, service and cloud trust boundaries.</li><li>Distinguish authentication, authorization and public configuration.</li><li>Design testable cloud access and honest stale-data feedback.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Locate client, service and cloud trust boundaries.</li><li>Distinguish authentication, authorization and public configuration.</li><li>Design testable cloud access and honest stale-data feedback.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://firebase.google.com/docs/firestore/use-rest-api\">Firebase REST access</a> · <a href=\"https://firebase.google.com/docs/firestore/security/get-started\">Firebase security rules</a> · <a href=\"https://firebase.google.com/docs/projects/api-keys\">Firebase API keys</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://firebase.google.com/docs/firestore/use-rest-api\">Firebase REST access</a> · <a href=\"https://firebase.google.com/docs/firestore/security/get-started\">Firebase security rules</a> · <a href=\"https://firebase.google.com/docs/projects/api-keys\">Firebase API keys</a>"
   },
   {
-    "id": "w13-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W13 · Cloud Integration and Resilience",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://firebase.google.com/docs/firestore/use-rest-api\">Firebase REST access</a> · <a href=\"https://firebase.google.com/docs/firestore/security/get-started\">Firebase security rules</a> · <a href=\"https://firebase.google.com/docs/projects/api-keys\">Firebase API keys</a>"
-  },
-  {
     "id": "w13-sync",
     "title": "Remote state can change independently",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w13-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W13 · Cloud Integration and Resilience",
     "body": "<p class=\"lead\">A team fixes Permission denied by enabling public reads and writes for every document.</p><ul><li>Identify the expanded exposure.</li><li>Design a minimal rule for one public synthetic status document.</li><li>Specify positive and negative integration tests.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://firebase.google.com/docs/firestore/use-rest-api\">Firebase REST access</a> · <a href=\"https://firebase.google.com/docs/firestore/security/get-started\">Firebase security rules</a> · <a href=\"https://firebase.google.com/docs/projects/api-keys\">Firebase API keys</a>"

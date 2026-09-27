@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W05 · Input, State, Binding and Validation",
-    "body": "<ul><li>Choose one owner for editable data.</li><li>Trace a binding between a parent and child view.</li><li>Derive validity and distinguish a draft from committed data.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Choose one owner for editable data.</li><li>Trace a binding between a parent and child view.</li><li>Derive validity and distinguish a draft from committed data.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/binding\">Apple Binding</a> · <a href=\"https://developer.apple.com/documentation/swiftui/textfield\">Apple TextField</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/binding\">Apple Binding</a> · <a href=\"https://developer.apple.com/documentation/swiftui/textfield\">Apple TextField</a>"
   },
   {
-    "id": "w05-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W05 · Input, State, Binding and Validation",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/documentation/swiftui/binding\">Apple Binding</a> · <a href=\"https://developer.apple.com/documentation/swiftui/textfield\">Apple TextField</a>"
-  },
-  {
     "id": "w05-save",
     "title": "Save commits an accepted draft",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w05-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W05 · Input, State, Binding and Validation",
     "body": "<p class=\"lead\">A campus request form clears every field after one validation error and Cancel still changes the saved title.</p><ul><li>Identify the owners of draft and committed values.</li><li>Design actionable validation feedback.</li><li>Write one test for invalid input and one for Cancel.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/binding\">Apple Binding</a> · <a href=\"https://developer.apple.com/documentation/swiftui/textfield\">Apple TextField</a>"

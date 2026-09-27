@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W12 · Networking, Concurrency and Error States",
-    "body": "<ul><li>Trace an asynchronous request and decoding boundary.</li><li>Represent loading, empty, success and failure explicitly.</li><li>Design cancellation, retry and deterministic tests.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Trace an asynchronous request and decoding boundary.</li><li>Represent loading, empty, success and failure explicitly.</li><li>Design cancellation, retry and deterministic tests.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/foundation/urlsession\">Apple URLSession</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/\">Swift concurrency</a> · <a href=\"https://developer.apple.com/documentation/foundation/jsondecoder\">Apple JSONDecoder</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/documentation/foundation/urlsession\">Apple URLSession</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/\">Swift concurrency</a> · <a href=\"https://developer.apple.com/documentation/foundation/jsondecoder\">Apple JSONDecoder</a>"
   },
   {
-    "id": "w12-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W12 · Networking, Concurrency and Error States",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/documentation/foundation/urlsession\">Apple URLSession</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/\">Swift concurrency</a> · <a href=\"https://developer.apple.com/documentation/foundation/jsondecoder\">Apple JSONDecoder</a>"
-  },
-  {
     "id": "w12-isolation",
     "title": "UI state has an isolation boundary",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w12-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W12 · Networking, Concurrency and Error States",
     "body": "<p class=\"lead\">A notices screen spins forever after malformed JSON and starts another request on every tap.</p><ul><li>Draw the valid state transitions.</li><li>Choose a duplicate-request guard and cancellation behavior.</li><li>Define fixtures that reproduce both defects.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/foundation/urlsession\">Apple URLSession</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/\">Swift concurrency</a> · <a href=\"https://developer.apple.com/documentation/foundation/jsondecoder\">Apple JSONDecoder</a>"

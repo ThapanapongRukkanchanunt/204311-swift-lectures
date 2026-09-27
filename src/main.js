@@ -2,6 +2,7 @@ import Reveal from 'reveal.js';
 import './style.css';
 import './week02.css';
 import './illustrations.css';
+import {prepareFragments,fragmentProgress} from './reveal-groups.js';
 
 const reading = document.body.classList.contains('reading');
 const all = [...document.querySelectorAll('.slides > section')];
@@ -11,9 +12,7 @@ const editable = el => el.closest('input,select,textarea,button,summary,a,[conte
 if (!reading) {
   // Add fragments only in presentation mode: reading/no-JS content stays complete.
   for (const slide of all) {
-    slide.querySelectorAll('li, .cards > .card, .criteria > div, tbody > tr, .illustration-node').forEach(item => {
-      item.classList.add('fragment', 'fade-up');
-    });
+    prepareFragments(slide);
   }
   document.body.classList.add('enhanced');
   deck = new Reveal(document.querySelector('.reveal'), {
@@ -32,9 +31,8 @@ if (!reading) {
   document.body.classList.add('enhanced');
   const update = () => {
     const s=deck.getCurrentSlide(); const index=all.indexOf(s);
-    const fragments = [...s.querySelectorAll('.fragment')];
-    const revealed = fragments.filter(f=>f.classList.contains('visible')).length;
-    document.querySelector('#position').textContent=`${index+1} / ${all.length}${fragments.length ? ` · ${revealed}/${fragments.length} points` : ''}`;
+    const {total,revealed}=fragmentProgress(s);
+    document.querySelector('#position').textContent=`${index+1} / ${all.length}${total ? ` · ${revealed}/${total} points` : ''}`;
     document.querySelector('#chapter-label').textContent=s.querySelector('.eyebrow').childNodes[0].textContent;
     document.querySelector('.course-progress i').style.width=`${(index+1)/all.length*100}%`;
     const routes=deck.availableFragments();

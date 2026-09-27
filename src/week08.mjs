@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W08 · Domain Models, Rules and Observation",
-    "body": "<ul><li>Express a domain invariant in a focused model.</li><li>Separate a command from derived presentation.</li><li>Trace updates from one observable model to two views.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Express a domain invariant in a focused model.</li><li>Separate a command from derived presentation.</li><li>Trace updates from one observable model to two views.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app\">Apple model data</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/\">Swift structures and classes</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app\">Apple model data</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/\">Swift structures and classes</a>"
   },
   {
-    "id": "w08-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W08 · Domain Models, Rules and Observation",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app\">Apple model data</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/\">Swift structures and classes</a>"
-  },
-  {
     "id": "w08-derived",
     "title": "Derived values reduce synchronization",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w08-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W08 · Domain Models, Rules and Observation",
     "body": "<p class=\"lead\">One screen shows four people in a three-seat service queue while another shows zero.</p><ul><li>Identify the violated invariant and possible duplicate instances.</li><li>Design a shared owner and guarded commands.</li><li>Write a test sequence covering full and empty boundaries.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app\">Apple model data</a> · <a href=\"https://docs.swift.org/swift-book/documentation/the-swift-programming-language/classesandstructures/\">Swift structures and classes</a>"

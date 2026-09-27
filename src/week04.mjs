@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W04 · View Composition, Layout and Accessibility",
-    "body": "<ul><li>Explain how composed views describe a screen.</li><li>Predict stack layout and modifier-order effects.</li><li>Evaluate a screen with large text and accessible labels.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Explain how composed views describe a screen.</li><li>Predict stack layout and modifier-order effects.</li><li>Evaluate a screen with large text and accessible labels.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/layout-fundamentals\">Apple layout</a> · <a href=\"https://developer.apple.com/design/human-interface-guidelines/accessibility\">Apple accessibility</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/layout-fundamentals\">Apple layout</a> · <a href=\"https://developer.apple.com/design/human-interface-guidelines/accessibility\">Apple accessibility</a>"
   },
   {
-    "id": "w04-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W04 · View Composition, Layout and Accessibility",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/documentation/swiftui/layout-fundamentals\">Apple layout</a> · <a href=\"https://developer.apple.com/design/human-interface-guidelines/accessibility\">Apple accessibility</a>"
-  },
-  {
     "id": "w04-hierarchy",
     "title": "Hierarchy can survive without color",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w04-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W04 · View Composition, Layout and Accessibility",
     "body": "<p class=\"lead\">A campus service screen works on the projector but clips on an iPad with large text.</p><ul><li>Sketch the view tree and identify the rigid constraint.</li><li>Compare a vertical card and an adjacent layout.</li><li>Specify large-text and VoiceOver acceptance checks.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/layout-fundamentals\">Apple layout</a> · <a href=\"https://developer.apple.com/design/human-interface-guidelines/accessibility\">Apple accessibility</a>"

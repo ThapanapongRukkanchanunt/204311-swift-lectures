@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W07 · Navigation and Cross-View Data Flow",
-    "body": "<ul><li>Match stack, tab and sheet patterns to user intent.</li><li>Trace data ownership across destinations.</li><li>Verify save, cancel and back-navigation behavior.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Match stack, tab and sheet patterns to user intent.</li><li>Trace data ownership across destinations.</li><li>Verify save, cancel and back-navigation behavior.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/understanding-the-navigation-stack\">Apple navigation</a> · <a href=\"https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)\">Apple sheet</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/understanding-the-navigation-stack\">Apple navigation</a> · <a href=\"https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)\">Apple sheet</a>"
   },
   {
-    "id": "w07-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W07 · Navigation and Cross-View Data Flow",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/documentation/swiftui/understanding-the-navigation-stack\">Apple navigation</a> · <a href=\"https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)\">Apple sheet</a>"
-  },
-  {
     "id": "w07-commit",
     "title": "An explicit commit boundary",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w07-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W07 · Navigation and Cross-View Data Flow",
     "body": "<p class=\"lead\">A team has separate copies of the request array in its list and detail screens.</p><ul><li>Draw the owner and all readers/writers.</li><li>Design one edit-and-cancel sequence.</li><li>Specify a missing-record recovery screen.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftui/understanding-the-navigation-stack\">Apple navigation</a> · <a href=\"https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)\">Apple sheet</a>"

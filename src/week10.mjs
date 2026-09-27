@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W10 · Relationships, Search and Lifecycle",
-    "body": "<ul><li>Choose relationship and deletion semantics.</li><li>Derive search results from a single data source.</li><li>Connect scene changes to bounded, repeatable work.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Choose relationship and deletion semantics.</li><li>Derive search results from a single data source.</li><li>Connect scene changes to bounded, repeatable work.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes\">Apple relationships</a> · <a href=\"https://developer.apple.com/documentation/swiftui/scenephase\">Apple ScenePhase</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes\">Apple relationships</a> · <a href=\"https://developer.apple.com/documentation/swiftui/scenephase\">Apple ScenePhase</a>"
   },
   {
-    "id": "w10-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W10 · Relationships, Search and Lifecycle",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes\">Apple relationships</a> · <a href=\"https://developer.apple.com/documentation/swiftui/scenephase\">Apple ScenePhase</a>"
-  },
-  {
     "id": "w10-phases",
     "title": "Scene phases describe activity",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w10-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W10 · Relationships, Search and Lifecycle",
     "body": "<p class=\"lead\">Returning to Campus Help adds duplicate categories and a filtered delete appears to remove every request.</p><ul><li>Separate lifecycle insertion from relationship deletion.</li><li>Choose an explicit delete policy.</li><li>Design a repeated foreground and relaunch check.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftdata/defining-data-relationships-with-enumerations-and-model-classes\">Apple relationships</a> · <a href=\"https://developer.apple.com/documentation/swiftui/scenephase\">Apple ScenePhase</a>"

@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W14 · Testing Methodologies and Debugging",
-    "body": "<ul><li>Choose a test level for a stated risk.</li><li>Write behavior-focused assertions with isolated fixtures.</li><li>Use a reproducible failure to guide a minimal fix and regression test.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Choose a test level for a stated risk.</li><li>Write behavior-focused assertions with isolated fixtures.</li><li>Use a reproducible failure to guide a minimal fix and regression test.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/testing\">Apple Swift Testing</a> · <a href=\"https://developer.apple.com/documentation/testing/expectations\">Apple expectations</a> · <a href=\"https://developer.apple.com/documentation/xctest/user-interface-tests\">Apple UI testing</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/documentation/testing\">Apple Swift Testing</a> · <a href=\"https://developer.apple.com/documentation/testing/expectations\">Apple expectations</a> · <a href=\"https://developer.apple.com/documentation/xctest/user-interface-tests\">Apple UI testing</a>"
   },
   {
-    "id": "w14-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W14 · Testing Methodologies and Debugging",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/documentation/testing\">Apple Swift Testing</a> · <a href=\"https://developer.apple.com/documentation/testing/expectations\">Apple expectations</a> · <a href=\"https://developer.apple.com/documentation/xctest/user-interface-tests\">Apple UI testing</a>"
-  },
-  {
     "id": "w14-debug",
     "title": "Debugging is a sequence of hypotheses",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w14-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W14 · Testing Methodologies and Debugging",
     "body": "<p class=\"lead\">A queue test passes even though the fourth join succeeds. The UI also calls a different rule.</p><ul><li>Write a failing boundary test for the model.</li><li>Add one wiring check for the Join button.</li><li>State which checks remain platform-specific.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/testing\">Apple Swift Testing</a> · <a href=\"https://developer.apple.com/documentation/testing/expectations\">Apple expectations</a> · <a href=\"https://developer.apple.com/documentation/xctest/user-interface-tests\">Apple UI testing</a>"

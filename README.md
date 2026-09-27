@@ -53,4 +53,6 @@ Additional conceptual sequences and comparisons are defined in `src/illustration
 
 ## Verification limits
 
+Text and associated illustration parts reveal together. `src/reveal-groups.js` records explicit associations where diagram parts do not map one-to-one by order; the counter measures logical points, not separate text/image elements. Read and no-JavaScript views remain fully visible. Dedicated break slides are omitted, with their time reassigned to existing discussion activities.
+
 Swift compilation and target-device validation require macOS/Xcode and the laboratory iPads. Follow the practice README's exact clean-build and behavior checks. Windows browser checks do not establish Safari compatibility on the course devices. Do not publish private instructor notes, assessment keys, student data or lab solutions here.

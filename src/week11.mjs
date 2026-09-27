@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W11 · Text and Media Storage",
-    "body": "<ul><li>Compare text, file data, references and metadata.</li><li>Trace media selection through loading, storage and deletion.</li><li>Design cancellation and missing-file recovery with privacy in mind.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Compare text, file data, references and metadata.</li><li>Trace media selection through loading, storage and deletion.</li><li>Design cancellation and missing-file recovery with privacy in mind.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/photokit/bringing-photos-picker-to-your-swiftui-app\">Apple Photos picker</a> · <a href=\"https://developer.apple.com/documentation/photosui/photospickeritem/loadtransferable(type:)\">Apple loadTransferable</a> · <a href=\"https://developer.apple.com/documentation/foundation/filemanager\">Apple FileManager</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/documentation/photokit/bringing-photos-picker-to-your-swiftui-app\">Apple Photos picker</a> · <a href=\"https://developer.apple.com/documentation/photosui/photospickeritem/loadtransferable(type:)\">Apple loadTransferable</a> · <a href=\"https://developer.apple.com/documentation/foundation/filemanager\">Apple FileManager</a>"
   },
   {
-    "id": "w11-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W11 · Text and Media Storage",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/documentation/photokit/bringing-photos-picker-to-your-swiftui-app\">Apple Photos picker</a> · <a href=\"https://developer.apple.com/documentation/photosui/photospickeritem/loadtransferable(type:)\">Apple loadTransferable</a> · <a href=\"https://developer.apple.com/documentation/foundation/filemanager\">Apple FileManager</a>"
-  },
-  {
     "id": "w11-durable",
     "title": "Durable storage needs a chosen location",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w11-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W11 · Text and Media Storage",
     "body": "<p class=\"lead\">A request photo disappears after relaunch and closing the picker deletes the old attachment.</p><ul><li>Identify temporary versus accepted state.</li><li>Choose a durable reference and write order.</li><li>Specify cancel, missing-file and delete outcomes.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/photokit/bringing-photos-picker-to-your-swiftui-app\">Apple Photos picker</a> · <a href=\"https://developer.apple.com/documentation/photosui/photospickeritem/loadtransferable(type:)\">Apple loadTransferable</a> · <a href=\"https://developer.apple.com/documentation/foundation/filemanager\">Apple FileManager</a>"

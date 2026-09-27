@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and agenda",
     "time": 3,
     "chapter": "W09 · Persistence and CRUD with SwiftData",
-    "body": "<ul><li>Distinguish model, container, context and query responsibilities.</li><li>Trace create, read, update and delete to the store.</li><li>Test relaunch behavior and identify schema-change risks.</li></ul><p class=\"small\">Concepts and predictions · break · case analysis · synthesis and exit ticket</p>",
+    "body": "<ul><li>Distinguish model, container, context and query responsibilities.</li><li>Trace create, read, update and delete to the store.</li><li>Test relaunch behavior and identify schema-change risks.</li></ul><p class=\"small\">Concepts and predictions · case analysis · synthesis and exit ticket</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches\">Apple SwiftData persistence</a> · <a href=\"https://developer.apple.com/documentation/swiftdata/modelcontext\">Apple ModelContext</a>"
   },
   {
@@ -75,14 +75,6 @@ export const slides = [
     "source": "<a href=\"https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches\">Apple SwiftData persistence</a> · <a href=\"https://developer.apple.com/documentation/swiftdata/modelcontext\">Apple ModelContext</a>"
   },
   {
-    "id": "w09-break",
-    "title": "Break",
-    "time": 10,
-    "chapter": "W09 · Persistence and CRUD with SwiftData",
-    "body": "<p class=\"lead\">Return in 10 minutes.</p><p>Keep one unresolved question for the second half.</p>",
-    "source": "<a href=\"https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches\">Apple SwiftData persistence</a> · <a href=\"https://developer.apple.com/documentation/swiftdata/modelcontext\">Apple ModelContext</a>"
-  },
-  {
     "id": "w09-insert",
     "title": "Insertion and save form one user action",
     "time": 6,
@@ -133,7 +125,7 @@ export const slides = [
   {
     "id": "w09-case",
     "title": "Case analysis",
-    "time": 18,
+    "time": 28,
     "chapter": "W09 · Persistence and CRUD with SwiftData",
     "body": "<p class=\"lead\">A request appears immediately but vanishes after relaunch. Another request duplicates each time the screen opens.</p><ul><li>Separate context state from durable storage.</li><li>Locate the save boundary and seeding trigger.</li><li>Design a relaunch test with exact expected records.</li></ul><p class=\"prompt\"><span>Discuss / predict</span>Compare two defensible designs. What evidence would distinguish them?</p>",
     "source": "<a href=\"https://developer.apple.com/documentation/swiftdata/preserving-your-apps-model-data-across-launches\">Apple SwiftData persistence</a> · <a href=\"https://developer.apple.com/documentation/swiftdata/modelcontext\">Apple ModelContext</a>"

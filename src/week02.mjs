@@ -1,5 +1,5 @@
 // W02-Lecture · OBE: frameworks and control flow, 2 lecture hours.
-// CLO 1 and 2 primary; CLO 3 supporting. 120 minutes including a 10-minute break.
+// CLO 1 and 2 primary; CLO 3 supporting. 120 minutes including extended peer reasoning.
 // Prerequisites: Week 01 and basic programming. No student compiler required in class.
 // Technical sources checked 2026-09-13. Device baseline and Swift builds pending Mac/iPad verification.
 const list = items => `<ul>${items.map(x=>`<li>${x}</li>`).join('')}</ul>`;
@@ -23,11 +23,11 @@ const example=String.raw`struct QueueView: View {
 const make=(id,title,time,chapter,body,source='',kind='')=>({id,title,time,chapter,body,source,kind});
 export const slides=[
 make('w02-title','Framework Control Flow and Declarative UI',2,'W02 · Frameworks and control flow',
- `<p class="lead">If we do not call <code>body</code>,<br>how does the screen change?</p><ol class="steps"><li>Event</li><li>State</li><li>View</li></ol><p class="meta">120 minutes · includes a 10-minute break<br>CLO 1 / CLO 2 · supporting CLO 3<br>Prerequisites: Week 01 and basic programming</p>`),
+ `<p class="lead">If we do not call <code>body</code>,<br>how does the screen change?</p><ol class="steps"><li>Event</li><li>State</li><li>View</li></ol><p class="meta">120 minutes<br>CLO 1 / CLO 2 · supporting CLO 3<br>Prerequisites: Week 01 and basic programming</p>`),
 make('w02-queue-problem','The Queue Number Does Not Change Itself',4,'01 · The motivating problem',
  `<div class="split"><div><p class="lead">Mali activates <strong>Join queue</strong>.</p>${prompt('What must happen between the activation and the new screen?')}<p class="small">Think → compare with a neighbor → explain the missing steps.</p></div><div class="cards queue-pair"><article class="card"><h3>Before</h3><p class="queue-number">4</p><p>Seats available</p></article><article class="card mint"><h3>After</h3><p class="queue-number">5</p><p>Queue forming</p></article></div></div><p class="small">A local teaching simulation; not a live campus queue. Status changes at 5. The result must also be accessible to VoiceOver.</p>`),
 make('w02-agenda','Today’s Route and Evidence',3,'01 · Learning objectives',
- list(['<strong>Explain:</strong> who controls execution?','<strong>Distinguish:</strong> App, Scene, View and their responsibilities.','<strong>Trace:</strong> event → state → updated view.','<strong>Select:</strong> the state owner and values to derive.'])+`<p class="takeaway">First-hour check → break → trace and diagnose → exit ticket</p>`),
+ list(['<strong>Explain:</strong> who controls execution?','<strong>Distinguish:</strong> App, Scene, View and their responsibilities.','<strong>Trace:</strong> event → state → updated view.','<strong>Select:</strong> the state owner and values to derive.'])+`<p class="takeaway">First-hour check → trace and diagnose → exit ticket</p>`),
 make('w02-retrieval','Retrieval Who Calls Whom',5,'01 · Library and framework',
  `<p>Build two stories from these numbered cards.</p>${list(['A · Your code calls <code>sorted()</code>.','B · The framework invokes your supplied action later.','C · The library returns a result.','D · Your code declares a button and supplies an action.','E · The framework waits for an activation.'])}${prompt('Which cards form a library call? Which form a framework callback? Give their order.')}`),
 make('w02-inversion-of-control','Inversion of Control',5,'01 · The framework contract',
@@ -54,9 +54,7 @@ make('w02-minimal-state-view','A Minimal Stateful View',6,'01 · Read and write 
 make('w02-counter-prediction','Predict Three Activations',5,'01 · Predict before running',
  `<p>Use the previous example, starting at <code>waiting = 3</code>.</p>`+list(['What text appears before any activation?','What text appears after three activations?','How many times does the action closure run?','Does the application entry run again each time?'])+prompt('Commit your prediction, then compare your reasoning with a partner.')),
 make('w02-first-hour-check','First Hour Check',3,'01 · Retrieve the model',
- `<p class="lead">Complete these sentences without looking back.</p>`+list(['Inversion of control means …','<code>App.body</code> describes … while <code>View.body</code> describes …','A button action runs when …'])+`<p class="small">One minute individually, then discuss. Mark one uncertainty for after the break.</p>`),
-make('w02-break','Break',10,'Pause · 10 minutes',
- `<p class="statement">What changes,<br>and what merely gets<br><em>recalculated?</em></p><p>Return in 10 minutes.</p>`),
+ `<p class="lead">Complete these sentences without looking back.</p>`+list(['Inversion of control means …','<code>App.body</code> describes … while <code>View.body</code> describes …','A button action runs when …'])+`<p class="small">One minute individually, then discuss. Mark one uncertainty for the next trace.</p>`),
 make('w02-event-state-view-trace','Event State View Trace',6,'02 · Follow one activation',
  `<p class="small">A conceptual dependency trace, not an exact scheduling guarantee.</p>`+list(['Deliver a button activation.','Invoke the supplied action closure.','Change <code>waiting</code>: 3 → 4.','Observe the changed dependency.','Reevaluate relevant view descriptions.','Reconcile the interface with the new description.','Present accessible output: <code>Waiting: 4</code>.']),eventSource),
 make('w02-trace-table','Trace More Than One Event',6,'02 · Old state → new state',
@@ -88,7 +86,7 @@ private var status: String {
 
 // Inside body:
 Text(status)`)+`<ol class="steps"><li>Activation</li><li>waiting changes</li><li>Count and status are derived</li></ol>`+prompt('What else could be derived from waiting? Keep a text cue if color changes.')),
-make('w02-peer-activity','Peer Activity Design a Reliable Shuttle Toggle',7,'02 · Apply the model in pairs',
+make('w02-peer-activity','Peer Activity Design a Reliable Shuttle Toggle',17,'02 · Apply the model in pairs',
  `<p>A student selects <strong>Notify me when the shuttle is near</strong>.</p><div class="split"><div>${list(['Name the event and independent state.','Define the transition rule.','Name two derived outputs.'])}</div><div>${list(['Choose the owner and explain why.','Describe accessible feedback.','Trace both off → on and on → off.'])}</div></div><p class="small">Model the preference only. Permission, notifications, networking and persistence come later.</p>`),
 make('w02-project-transfer','Project Transfer One Event State Output',4,'02 · Campus Life, But Smarter',
  `<p class="lead">Apply today’s model to one possible campus feature.</p><ol class="steps"><li>User event</li><li>Independent state change</li><li>Derived visible output</li></ol>`+prompt('Why is this state owned here?')+`<p>Work with your team, or a provisional group using the shuttle scenario.</p><p class="small">This is a concept-transfer activity. Project pitches and idea allocation have their own scheduled process.</p>`),
