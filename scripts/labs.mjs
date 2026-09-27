@@ -11,6 +11,4 @@ for(const [week,title] of labs){
  await writeFile(`public/downloads/labs/week-${week}-canvas.html`,fragment);
 }
 await writeFile('2027/labs/index.html',shell('ใบงานปฏิบัติการ',`<h1>ใบงานปฏิบัติการ SwiftUI</h1><p>คำแนะนำภาษาไทยสำหรับ Xcode บน Mac และ Swift Playgrounds บน iPad</p><p class="draft">ใบงานที่จัดทำแล้ว: Week 01 และ Week 02 · รอผู้สอนตรวจทาน</p><ul>${labs.map(([w,t])=>`<li><a href="../week-${w}/lab/">Week ${w} — ${t}</a></li>`).join('')}</ul><p>ทำตามขั้นตอนและส่ง PDF ใน Canvas Assignment ของสัปดาห์นั้น</p>`,'../../'));
-const home=await readFile('index.html','utf8');
-await writeFile('index.html',home.replace('<div class="home-links">','<div class="home-links"><a href="./2027/labs/">Lab sheets · ใบงานปฏิบัติการ</a>'));
 console.log('Generated two Thai lab pages, lab index and Canvas fragment downloads.');
