@@ -34,11 +34,11 @@
       }
     ],
     "points": [
-      "More platforms: capabilities, form factors and input methods.",
-      "More states: live data, interruptions and asynchronous events.",
-      "More responsibility: accessibility, privacy and maintenance."
+      "The shuttle team adds devices with different screens and inputs.",
+      "Each screen must handle loading, current, stale and unavailable arrivals.",
+      "Each repair must preserve access, privacy and maintainability."
     ],
-    "prompt": "Which problems remain even if phones become infinitely fast?"
+    "prompt": "What must the team now coordinate repeatedly? Would faster phones remove that work?"
   },
   {
     "week": "02",
