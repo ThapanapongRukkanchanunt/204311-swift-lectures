@@ -10,7 +10,7 @@ const overrides={
 };
 export function applyIllustrations(slides){return slides.map(s=>{
  const v=illustrations.find(v=>v.id===s.id);if(!v||s.body.includes('class="illustration-layout'))return s;
- const nodes=v.nodes.map((n,i)=>`<div class="illustration-node"><img src="../../images/openmoji/${n.file}" alt="" width="112" height="112"><div><strong>${esc(n.label)}</strong><span>${esc(n.detail)}</span></div>${v.type==='flow'&&i<v.nodes.length-1?'<b class="sequence-arrow" aria-hidden="true">↓</b>':''}</div>`).join('');
+ const nodes=v.nodes.map((n,i)=>`<div class="illustration-node"><a class="source-image-link" href="https://github.com/hfg-gmuend/openmoji/blob/17.0.0/color/svg/${esc(n.file)}" target="_blank" rel="noopener" aria-label="Original OpenMoji artwork: ${esc(n.label)} (new tab)"><img src="../../images/openmoji/${n.file}" alt="" width="112" height="112"></a><div><strong>${esc(n.label)}</strong><span>${esc(n.detail)}</span></div>${v.type==='flow'&&i<v.nodes.length-1?'<b class="sequence-arrow" aria-hidden="true">↓</b>':''}</div>`).join('');
  const credit=`<figcaption>${esc(v.caption)}</figcaption><p class="illustration-credit">Course illustration · artwork: <a href="../../images/openmoji/credits.html#${v.nodes[0].icon}">OpenMoji contributors</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> (unmodified)</p>`;
  return {...s,kind:[s.kind,'illustrated',s.body.includes('<pre>')?'illustrated-code':''].filter(Boolean).join(' '),body:`<div class="illustration-layout"><div class="illustration-copy">${overrides[s.id]||s.body}</div><figure class="teaching-illustration"><div class="illustration-scene illustration-${v.type}" aria-label="${esc(v.caption)}">${nodes}</div>${credit}</figure></div>`};
 });}
