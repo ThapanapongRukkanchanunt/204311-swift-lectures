@@ -211,7 +211,7 @@
     "id": "w03-pitch-1",
     "week": "03",
     "type": "flow",
-    "caption": "Listen for the person, the situation and the current workaround.",
+    "caption": "Identify the person, the situation and the current workaround.",
     "nodes": [
       {
         "icon": "person",

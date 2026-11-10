@@ -4,7 +4,7 @@
 
 All 15 teaching weeks are available at `/2027/week-NN/`, each with a reading view, Thai lab sheet, practice-source ZIP and offline ZIP. Weeks 03–15 were added on 2026-09-27. Their catalog is `src/generated-catalog.json`; `scripts/lessons.mjs` loads every lesson for generation, packaging and checks. Resource links use the same labels and order throughout.
 
-These are review drafts, not a claim of Apple-device, timed beginner-pilot or Canvas validation. Week 03 preserves the approved in-class requirements/pitch workshop; Week 15 preserves the full deployment lecture and the 25 + 90 + 5 minute release/presentation lab. No extra class meetings are required. Instructor media links remain placeholders.
+These are review drafts, not a claim of Apple-device, timed beginner-pilot or Canvas validation. Week 03 preserves the six-student guided requirements workshop; Week 15 preserves the full deployment lecture and the 25 + 90 + 5 minute release/presentation lab. No extra class meetings are required. Instructor media links remain placeholders.
 
 ## Thai lab sheets
 

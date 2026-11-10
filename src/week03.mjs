@@ -1,6 +1,6 @@
-// W03-Lecture · Analyzing mobile application requirements · 2 lecture hours · CLO 2, 3, 4, 5
-// Prerequisites: Week 02 events and state; basic programming
-// Sources checked 2026-09-27; Apple device compilation remains pending.
+// W03-Lecture | 120 minutes | Six-student requirements workshop, revised 2026-11-10.
+// OBE: requirements analysis, 2 hours; CLO 2/3/4/5; basic programming and Week 2 state.
+// Existing sources and Apple-device verification caveats remain applicable.
 export const slides = [
   {
     "id": "w03-title",
@@ -15,7 +15,7 @@ export const slides = [
     "title": "Objectives and workshop route",
     "time": 3,
     "chapter": "Requirements workshop",
-    "body": "<ul><li>Identify a user need and distinguish it from a proposed solution.</li><li>Bound an MVP and state a testable acceptance criterion.</li><li>Connect criteria to prototype behavior.</li></ul><p class=\"small\">Mini-lesson 15 min · pitch workshop 90 min · synthesis 10 min · exit 5 min</p>",
+    "body": "<ul><li>Identify a user need and distinguish it from a proposed solution.</li><li>Bound an MVP and state a testable acceptance criterion.</li><li>Connect criteria to prototype behavior.</li></ul><p class=\"small\">Mini-lesson 15 min · guided analysis 90 min · synthesis 10 min · exit 5 min</p>",
     "source": "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-ios\">Apple: Designing for iOS</a>"
   },
   {
@@ -36,66 +36,66 @@ export const slides = [
   },
   {
     "id": "w03-pitch-1",
-    "title": "Pitch workshop 1: User and situation",
-    "time": 11.25,
+    "title": "Requirements activity 1: User and situation",
+    "time": 10,
     "chapter": "Requirements workshop",
-    "body": "<p class=\"lead\">Whose situation changes, and what do they currently do?</p><ul><li>Each speaker: user, problem, essential feature and one testable criterion.</li><li>Up to 2 minutes speaking, then 15 seconds handover.</li><li>Listeners: note one assumption and one observable test.</li></ul><p class=\"small\">Five speaker slots per block at maximum enrollment. Use unused slots for guided requirements practice.</p>",
+    "body": "<p class=\"lead\">Whose situation changes, and what do they currently do?</p><ul><li>Name one specific user and situation.</li><li>Describe the current workaround.</li><li>Write the user outcome without naming a feature.</li></ul><p class=\"small\">Two teams of three · rotate recorder, user advocate and tester roles.</p>",
     "source": "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-ios\">Apple: Designing for iOS</a>"
   },
   {
     "id": "w03-pitch-2",
-    "title": "Pitch workshop 2: Problem and evidence",
-    "time": 11.25,
+    "title": "Requirements activity 2: Problem and evidence",
+    "time": 10,
     "chapter": "Requirements workshop",
-    "body": "<p class=\"lead\">What observation supports the problem claim?</p><ul><li>Each speaker: user, problem, essential feature and one testable criterion.</li><li>Up to 2 minutes speaking, then 15 seconds handover.</li><li>Listeners: note one assumption and one observable test.</li></ul><p class=\"small\">Five speaker slots per block at maximum enrollment. Use unused slots for guided requirements practice.</p>",
+    "body": "<p class=\"lead\">What observation supports the problem claim?</p><ul><li>Separate observation from assumption.</li><li>Identify one gap in the evidence.</li><li>Plan an interview or observation that avoids unnecessary personal data.</li></ul><p class=\"small\">Two teams of three · rotate recorder, user advocate and tester roles.</p>",
     "source": "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-ios\">Apple: Designing for iOS</a>"
   },
   {
     "id": "w03-pitch-3",
-    "title": "Pitch workshop 3: Essential feature",
-    "time": 11.25,
+    "title": "Requirements activity 3: Essential feature",
+    "time": 10,
     "chapter": "Requirements workshop",
-    "body": "<p class=\"lead\">Which single capability delivers the first useful outcome?</p><ul><li>Each speaker: user, problem, essential feature and one testable criterion.</li><li>Up to 2 minutes speaking, then 15 seconds handover.</li><li>Listeners: note one assumption and one observable test.</li></ul><p class=\"small\">Five speaker slots per block at maximum enrollment. Use unused slots for guided requirements practice.</p>",
+    "body": "<p class=\"lead\">Which single capability delivers the first useful outcome?</p><ul><li>List possible features for the same need.</li><li>Choose the smallest useful capability.</li><li>Explain what still works if you remove an extra feature.</li></ul><p class=\"small\">Two teams of three · rotate recorder, user advocate and tester roles.</p>",
     "source": "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-ios\">Apple: Designing for iOS</a>"
   },
   {
     "id": "w03-pitch-4",
-    "title": "Pitch workshop 4: Acceptance criterion",
-    "time": 11.25,
+    "title": "Requirements activity 4: Acceptance criterion",
+    "time": 15,
     "chapter": "Requirements workshop",
-    "body": "<p class=\"lead\">Can a tester decide pass or fail from observable behavior?</p><ul><li>Each speaker: user, problem, essential feature and one testable criterion.</li><li>Up to 2 minutes speaking, then 15 seconds handover.</li><li>Listeners: note one assumption and one observable test.</li></ul><p class=\"small\">Five speaker slots per block at maximum enrollment. Use unused slots for guided requirements practice.</p>",
+    "body": "<p class=\"lead\">Can a tester decide pass or fail from observable behavior?</p><ul><li>Write Given, When and Then for one task.</li><li>Exchange the criterion with the other team.</li><li>Repair any condition that a tester cannot judge.</li></ul><p class=\"small\">Two teams of three · rotate recorder, user advocate and tester roles.</p>",
     "source": "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-ios\">Apple: Designing for iOS</a>"
   },
   {
     "id": "w03-pitch-5",
-    "title": "Pitch workshop 5: Constraints and quality",
-    "time": 11.25,
+    "title": "Requirements activity 5: Constraints and quality",
+    "time": 10,
     "chapter": "Requirements workshop",
-    "body": "<p class=\"lead\">Which device, accessibility or privacy constraint changes the design?</p><ul><li>Each speaker: user, problem, essential feature and one testable criterion.</li><li>Up to 2 minutes speaking, then 15 seconds handover.</li><li>Listeners: note one assumption and one observable test.</li></ul><p class=\"small\">Five speaker slots per block at maximum enrollment. Use unused slots for guided requirements practice.</p>",
+    "body": "<p class=\"lead\">Which device, accessibility or privacy constraint changes the design?</p><ul><li>Choose one device, accessibility or privacy constraint.</li><li>Identify the screen or data it changes.</li><li>Turn the constraint into observable app behavior.</li></ul><p class=\"small\">Two teams of three · rotate recorder, user advocate and tester roles.</p>",
     "source": "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-ios\">Apple: Designing for iOS</a>"
   },
   {
     "id": "w03-pitch-6",
-    "title": "Pitch workshop 6: Data and states",
-    "time": 11.25,
+    "title": "Requirements activity 6: Data and states",
+    "time": 10,
     "chapter": "Requirements workshop",
-    "body": "<p class=\"lead\">What information must the app remember, and what can it derive?</p><ul><li>Each speaker: user, problem, essential feature and one testable criterion.</li><li>Up to 2 minutes speaking, then 15 seconds handover.</li><li>Listeners: note one assumption and one observable test.</li></ul><p class=\"small\">Five speaker slots per block at maximum enrollment. Use unused slots for guided requirements practice.</p>",
+    "body": "<p class=\"lead\">What information must the app remember, and what can it derive?</p><ul><li>List the data the app must remember.</li><li>Separate independent state from derived output.</li><li>Trace one event from its starting state to its result.</li></ul><p class=\"small\">Two teams of three · rotate recorder, user advocate and tester roles.</p>",
     "source": "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-ios\">Apple: Designing for iOS</a>"
   },
   {
     "id": "w03-pitch-7",
-    "title": "Pitch workshop 7: Prototype evidence",
-    "time": 11.25,
+    "title": "Requirements activity 7: Prototype evidence",
+    "time": 15,
     "chapter": "Requirements workshop",
-    "body": "<p class=\"lead\">What screen or interaction would test the riskiest assumption?</p><ul><li>Each speaker: user, problem, essential feature and one testable criterion.</li><li>Up to 2 minutes speaking, then 15 seconds handover.</li><li>Listeners: note one assumption and one observable test.</li></ul><p class=\"small\">Five speaker slots per block at maximum enrollment. Use unused slots for guided requirements practice.</p>",
+    "body": "<p class=\"lead\">What screen or interaction would test the riskiest assumption?</p><ul><li>Sketch the shortest flow that tests an assumption.</li><li>Ask a peer to follow it without coaching.</li><li>Record what the prototype proves and what it cannot prove.</li></ul><p class=\"small\">Two teams of three · rotate recorder, user advocate and tester roles.</p>",
     "source": "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-ios\">Apple: Designing for iOS</a>"
   },
   {
     "id": "w03-pitch-8",
-    "title": "Pitch workshop 8: Scope and tradeoffs",
-    "time": 11.25,
+    "title": "Requirements activity 8: Scope and tradeoffs",
+    "time": 10,
     "chapter": "Requirements workshop",
-    "body": "<p class=\"lead\">What will the first version deliberately leave out?</p><ul><li>Each speaker: user, problem, essential feature and one testable criterion.</li><li>Up to 2 minutes speaking, then 15 seconds handover.</li><li>Listeners: note one assumption and one observable test.</li></ul><p class=\"small\">Five speaker slots per block at maximum enrollment. Use unused slots for guided requirements practice.</p>",
+    "body": "<p class=\"lead\">What will the first version deliberately leave out?</p><ul><li>Sort features into essential, later and excluded.</li><li>Check that the MVP still solves the user need.</li><li>Prepare the scope and individual responsibilities for instructor review.</li></ul><p class=\"small\">Two teams of three · rotate recorder, user advocate and tester roles.</p>",
     "source": "<a href=\"https://developer.apple.com/design/human-interface-guidelines/designing-for-ios\">Apple: Designing for iOS</a>"
   },
   {
