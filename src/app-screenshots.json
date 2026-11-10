@@ -1,0 +1,62 @@
+{
+  "whatsapp": {
+    "file": "whatsapp.jpg",
+    "app": "WhatsApp",
+    "source": "https://apps.apple.com/us/app/whatsapp/id310633997",
+    "original": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/59/68/07/59680746-33d1-542e-5c43-1845813e74e2/6.9__Display_1-en_US.png/600x1200bb.jpg",
+    "alt": "WhatsApp chat list with recent conversations and bottom navigation.",
+    "caption": "WhatsApp · official App Store screenshot",
+    "retrieved": "2026-11-10",
+    "rights": "Proprietary publisher screenshot, reproduced for instructional UI analysis at instructor request. Not course-owned or openly licensed; no endorsement implied.",
+    "changes": "Uncropped publisher image, downloaded at 600-pixel bounding width; promotional framing retained.",
+    "sha256": "401866bec128cfd0c2a6840a53c5e92f7e1ff67c84b898c25729d706b90815d1"
+  },
+  "spotify": {
+    "file": "spotify.jpg",
+    "app": "Spotify: Music and Podcasts",
+    "source": "https://apps.apple.com/us/app/spotify-music-and-podcasts/id324684580",
+    "original": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/f3/ce/05/f3ce0547-690a-b355-b1dd-6b6e91808279/IOS_-_5.5_-_S01_-_EN_-_CA_U005bEnglish__U0028Canada_U0029_U005d.png/600x1200bb.jpg",
+    "alt": "Spotify home screen showing music, podcasts and audiobooks.",
+    "caption": "Spotify: Music and Podcasts · official App Store screenshot",
+    "retrieved": "2026-11-10",
+    "rights": "Proprietary publisher screenshot, reproduced for instructional UI analysis at instructor request. Not course-owned or openly licensed; no endorsement implied.",
+    "changes": "Uncropped publisher image, downloaded at 600-pixel bounding width; promotional framing retained.",
+    "sha256": "51bfcea60fc7fd59a4fb1b0219bc0a5ac93fc940306c1c044d99a10c472fc182"
+  },
+  "maps": {
+    "file": "maps.jpg",
+    "app": "Google Maps",
+    "source": "https://apps.apple.com/us/app/google-maps/id585027354",
+    "original": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/de/fa/59/defa59e3-d4d3-3884-3550-f5b66e370972/APP_IPHONE_65-0.png/600x1200bb.jpg",
+    "alt": "Google Maps navigation screen with a prominent next-turn instruction and route.",
+    "caption": "Google Maps · official App Store screenshot",
+    "retrieved": "2026-11-10",
+    "rights": "Proprietary publisher screenshot, reproduced for instructional UI analysis at instructor request. Not course-owned or openly licensed; no endorsement implied.",
+    "changes": "Uncropped publisher image, downloaded at 600-pixel bounding width; promotional framing retained.",
+    "sha256": "cb01d211ab3ac28dcf37195de2a1baf7858e085fdb36338bb5a12d746d024a6a"
+  },
+  "maps-location": {
+    "file": "maps-location.jpg",
+    "app": "Google Maps",
+    "source": "https://apps.apple.com/us/app/google-maps/id585027354",
+    "original": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f4/39/68/f4396894-d994-f544-c58b-447fcd66e33f/APP_IPHONE_65-2.png/600x1200bb.jpg",
+    "alt": "Google Maps navigation showing position, route, traffic and a re-center control.",
+    "caption": "Google Maps · official App Store screenshot",
+    "retrieved": "2026-11-10",
+    "rights": "Proprietary publisher screenshot, reproduced for instructional UI analysis at instructor request. Not course-owned or openly licensed; no endorsement implied.",
+    "changes": "Uncropped publisher image, downloaded at 600-pixel bounding width; promotional framing retained.",
+    "sha256": "63a41fe98647585f8dc33a466176a8ab745a901bd00e7a905da250419c0664b9"
+  },
+  "maps-dark": {
+    "file": "maps-dark.webp",
+    "app": "Google Maps",
+    "source": "https://blog.google/products-and-platforms/products/maps/widgets-dark-mode-3-updates-google-maps-ios/",
+    "original": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/dark_mode_manhattan.width-1200.format-webp.webp",
+    "alt": "Google Maps in dark mode on iPhone, with Manhattan map and bottom navigation tabs.",
+    "caption": "Google Maps · official dark-mode screenshot (2021)",
+    "retrieved": "2026-11-10",
+    "rights": "Google publisher screenshot; proprietary, not course-owned or openly licensed. Instructional UI analysis; no endorsement implied.",
+    "changes": "Unmodified publisher WebP; scaled only by slide CSS.",
+    "sha256": "7eb5e744c5cdc91fe05ad772d26a774a216116225485484b2ec31c198594ccd8"
+  }
+}

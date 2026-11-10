@@ -22,7 +22,7 @@ export const frameworkSlides = [
     "title": "2008 · Native smartphone SDKs",
     "time": 8,
     "chapter": "02 / Framework evolution",
-    "body": "<ul><li>Apple announced the iPhone SDK in 2008, opening native app development to third-party developers.</li><li>UIKit supplied interface building blocks within the Apple platform.</li><li>Platform frameworks offered access to device capabilities and familiar interface behavior.</li><li>Building for another platform still required its own tools, APIs and adaptations.</li></ul><p class=\"takeaway\">Pair discussion: what did developers gain from a platform SDK, and what work remained?</p>",
+    "body": "<ul><li><strong>Problem:</strong> Developers needed a supported way to build native touchscreen apps and access iPhone capabilities.</li><li><strong>Release:</strong> Apple announced the iPhone SDK in 2008, including UIKit for native interfaces.</li><li>UIKit supplied reusable views, controls and touch handling, reducing the UI work each app had to build itself.</li><li>Platform APIs exposed device services through supported interfaces and helped apps follow familiar interaction patterns.</li></ul><p class=\"takeaway\">Pair discussion: what did developers gain from a platform SDK, and what work remained?</p>",
     "source": "<a href=\"https://www.apple.com/newsroom/2008/03/06Apple-Announces-iPhone-2-0-Software-Beta/\">Apple · iPhone SDK announcement (2008)</a>"
   },
   {
@@ -30,7 +30,7 @@ export const frameworkSlides = [
     "title": "2011 · PhoneGap to Apache Cordova",
     "time": 6,
     "chapter": "02 / Framework evolution",
-    "body": "<ul><li>Hybrid apps reused HTML, CSS and JavaScript skills inside a packaged mobile app.</li><li>A WebView displayed the web interface; plugins connected it to native device features.</li><li>After Adobe acquired Nitobi in 2011, PhoneGap code was donated to Apache and became Cordova.</li><li>Code reuse helped teams, but platform differences and plugin support still mattered.</li></ul><p class=\"takeaway\">Check: why is a packaged hybrid app different from simply opening a website?</p>",
+    "body": "<ul><li><strong>Problem:</strong> Web developers faced unfamiliar native toolchains and repeated UI work when targeting multiple mobile platforms.</li><li><strong>Milestone:</strong> PhoneGap brought web technology into mobile apps; its 2011 donation to Apache led to Cordova.</li><li>A packaged WebView reused HTML, CSS and JavaScript for the interface, carrying existing web skills into app development.</li><li>Plugins connected web code to native device features, reducing the need to implement every integration from scratch.</li></ul><p class=\"takeaway\">Check: why is a packaged hybrid app different from simply opening a website?</p>",
     "source": "<a href=\"https://cordova.apache.org/announcements/2020/08/14/goodbye-phonegap.html\">Apache Cordova · PhoneGap history</a> · <a href=\"https://cordova.apache.org/docs/en/latest/guide/overview/\">Cordova architecture</a>"
   },
   {
@@ -38,7 +38,7 @@ export const frameworkSlides = [
     "title": "2014–2015 · Swift changes the language",
     "time": 5,
     "chapter": "02 / Framework evolution",
-    "body": "<ul><li>Apple introduced Swift in 2014 and released it as open source in 2015.</li><li>Swift is a programming language: it expresses data, logic and behavior.</li><li>UIKit and SwiftUI are UI frameworks; Xcode is a development environment.</li><li>A new language does not automatically replace an existing UI framework.</li></ul><p class=\"takeaway\">Classify Swift, UIKit and Xcode: language, framework or tool?</p>",
+    "body": "<ul><li><strong>Problem:</strong> Developers needed to express app logic more concisely while catching common mistakes earlier.</li><li><strong>Release:</strong> Apple introduced the Swift language in 2014 and released it as open source in 2015.</li><li>Concise syntax and type inference reduced repetitive declarations while retaining type checking.</li><li>Safety features such as optionals made missing values explicit, helping developers handle them deliberately.</li></ul><p class=\"takeaway\">Classify Swift, UIKit and Xcode: language, framework or tool?</p>",
     "source": "<a href=\"https://www.apple.com/newsroom/2015/12/03Apple-Releases-Swift-as-Open-Source/\">Apple · Swift becomes open source (2015)</a>"
   },
   {
@@ -46,7 +46,7 @@ export const frameworkSlides = [
     "title": "2015–2018 · Sharing code across platforms",
     "time": 8,
     "chapter": "02 / Framework evolution",
-    "body": "<ul><li>React Native was publicly released in 2015, using React to describe interfaces backed by native components.</li><li>Flutter reached version 1.0 in 2018, using Dart and its own widget/rendering approach.</li><li>Both aimed to reuse substantial app code across platforms through different architectures.</li><li>Platform integration, accessibility, testing and maintenance still needed attention.</li></ul><p class=\"takeaway\">Discuss: shared source code reduces which work? Why must we still test each platform?</p>",
+    "body": "<ul><li><strong>Problem:</strong> Separate iOS and Android implementations duplicated UI work and made shared features harder to maintain.</li><li><strong>Releases:</strong> React Native became public in 2015; Flutter reached its first stable release, version 1.0, in 2018.</li><li>React Native reused React and JavaScript to describe interfaces backed by native components across platforms.</li><li>Flutter used Dart and a shared widget/rendering approach to reuse UI code across platforms.</li></ul><p class=\"takeaway\">Discuss: shared source code reduces which work? Why must we still test each platform?</p>",
     "source": "<a href=\"https://legacy.reactjs.org/blog/2015/03/26/introducing-react-native.html\">React Native announcement (2015)</a> · <a href=\"https://developers.googleblog.com/en/flutter-10-googles-portable-ui-toolkit/\">Google · Flutter 1.0 (2018)</a>"
   },
   {
@@ -54,7 +54,7 @@ export const frameworkSlides = [
     "title": "2019 · SwiftUI brings declarative UI",
     "time": 8,
     "chapter": "02 / Framework evolution",
-    "body": "<ul><li>Apple introduced SwiftUI in 2019 as a declarative framework for Apple-platform interfaces.</li><li>Describe the interface for the current state; the framework coordinates updates.</li><li>Contrast: manually change a label after an event versus describe a label from state.</li><li>Framework evolution changes how developers express UI behavior, not only how many platforms they target.</li></ul><p class=\"takeaway\">Predict: when the count changes from 2 to 3, what should a label showing count display?</p>",
+    "body": "<ul><li><strong>Problem:</strong> As app state changed, manually updating UI elements made it easy for the screen and data to drift apart.</li><li><strong>Release:</strong> Apple introduced SwiftUI in 2019 as a declarative UI framework for Apple platforms.</li><li>Developers described the interface for the current state instead of issuing each individual UI update.</li><li>SwiftUI coordinated updates as state changed, reducing manual synchronization between data and visible views.</li></ul><p class=\"takeaway\">Predict: when the count changes from 2 to 3, what should a label showing count display?</p>",
     "source": "<a href=\"https://developer.apple.com/videos/play/wwdc2019/204/\">Apple · Introducing SwiftUI (WWDC19, historical)</a>"
   },
   {
