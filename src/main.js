@@ -2,6 +2,7 @@ import Reveal from 'reveal.js';
 import './style.css';
 import './week02.css';
 import './illustrations.css';
+import './week01-draft.css';
 import {prepareFragments,fragmentProgress} from './reveal-groups.js';
 
 const reading = document.body.classList.contains('reading');

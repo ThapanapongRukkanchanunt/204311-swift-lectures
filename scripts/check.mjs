@@ -22,7 +22,7 @@ for(const v of visuals){
 }
 console.log('PASS: image provenance, attribution, alt text, asset hashes and private-cue boundary.');
 const artwork=JSON.parse(await readFile('dist/images/openmoji/manifest.json','utf8'));
-assert.equal(illustrations.length,70);
+assert.equal(illustrations.length,68);
 assert.equal(new Set(illustrations.map(v=>v.id)).size,illustrations.length);
 for(const a of artwork.assets){
  assert.ok(a.author&&a.source&&a.title);
@@ -37,7 +37,7 @@ for(const v of illustrations){
  assert.ok(s.body.includes('CC BY-SA 4.0'));
 }
 await access('dist/images/openmoji/LICENSE.txt');
-console.log('PASS: 70 illustrated slides, original artwork hashes, source/artist/license metadata and dedicated code layouts.');
+console.log('PASS: 68 manifest illustrations, original artwork hashes, source/artist/license metadata and dedicated code layouts.');
 assert.equal(lessons.length,15);
 for(const lesson of lessons){
  assert.equal(lesson.slides.reduce((n,s)=>n+s.time,0),120,lesson.week);
@@ -56,8 +56,8 @@ for(const lesson of lessons){
  for(const type of ['practice','offline'])await access(`dist/downloads/week-${lesson.week}-${type}.zip`);
 }
 console.log('PASS: all 15 weeks, 120 minutes each, unique IDs, local links and downloads, public/private boundary.');
-assert.equal(slides.length,25);assert.equal(slides.reduce((n,s)=>n+s.time,0),120);
-assert.equal(new Set(slides.map(s=>s.id)).size,25);
+assert.equal(slides.length,35);assert.equal(slides.reduce((n,s)=>n+s.time,0),120);
+assert.equal(new Set(slides.map(s=>s.id)).size,35);
 assert.equal(week02.length,23);assert.equal(week02.reduce((n,s)=>n+s.time,0),120);
 assert.equal(new Set(week02.map(s=>s.id)).size,23);
 for(const l of lessons)assert.ok(!l.slides.some(s=>s.id==='break'||s.id.endsWith('-break')),'No dedicated break slides');
@@ -71,4 +71,4 @@ for(const file of ['dist/index.html','dist/2027/week-01/index.html','dist/2027/w
  assert.ok(!/https?:[^" ]+\.(?:js|css)/.test(html),'Core assets must be local');
  assert.ok(!/Talk track|Expected placement|instructor-notes|course-decisions/.test(html),'Private notes must not be published');
 }
-console.log('PASS: Weeks 01/02 have 25/23 slides, 120 minutes each, no break slides, unique section links, portable assets/downloads, no private guide in published HTML.');
+console.log('PASS: Weeks 01/02 have 35/23 slides, 120 minutes each, no break slides, unique section links, portable assets/downloads, no private guide in published HTML.');

@@ -27,6 +27,9 @@ export function prepareFragments(slide){
  const points=[...slide.querySelectorAll('li, .cards > .card, .criteria > div, tbody > tr')];
  const add=(item,index)=>{item.classList.add('fragment','fade-up');item.dataset.fragmentIndex=String(index);};
  points.forEach(add);
+ // Draft-specific visuals follow the bullet they explain, without extra steps.
+ if(slide.id==='ergonomics')slide.querySelectorAll('.people-pair svg').forEach((el,i)=>add(el,Math.min(i,points.length-1)));
+ if(['primary-task','adaptation','comfortable-reach','purposeful-permission'].includes(slide.id))slide.querySelectorAll('.demo-phone').forEach(el=>add(el,0));
  const nodes=[...slide.querySelectorAll('.illustration-node')];
  const mapping=imageSteps[slide.id];
  nodes.forEach((node,i)=>add(node,points.length?Math.min(mapping?.[i]??i,points.length-1):i));

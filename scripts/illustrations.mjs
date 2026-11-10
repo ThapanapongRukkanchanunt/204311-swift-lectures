@@ -1,5 +1,5 @@
 import {readFile} from 'node:fs/promises';
-export const illustrations=JSON.parse(await readFile(new URL('../src/illustrations.json',import.meta.url),'utf8'));
+export const illustrations=JSON.parse(await readFile(new URL('../src/illustrations.json',import.meta.url),'utf8')).filter(v=>v.week!=='01');
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
 const overrides={
  inclusive:'<p class="lead">Her route is back. Save needs a swipe. Mali still holds her umbrella.</p><ul><li>Try a visible, labeled Save button.</li><li>Check it with large text and a keyboard.</li><li>Check it with a screen reader; keep meaning beyond color.</li></ul><p class="prompt"><span>Try a repair</span>How does your change help Mali? Who else can use it?</p>',
