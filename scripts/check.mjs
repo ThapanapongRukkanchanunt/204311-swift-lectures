@@ -56,8 +56,8 @@ for(const lesson of lessons){
  for(const type of ['practice','offline'])await access(`dist/downloads/week-${lesson.week}-${type}.zip`);
 }
 console.log('PASS: all 15 weeks, 120 minutes each, unique IDs, local links and downloads, public/private boundary.');
-assert.equal(slides.length,32);assert.equal(slides.reduce((n,s)=>n+s.time,0),120);
-assert.equal(new Set(slides.map(s=>s.id)).size,32);
+assert.equal(slides.length,36);assert.equal(slides.reduce((n,s)=>n+s.time,0),120);
+assert.equal(new Set(slides.map(s=>s.id)).size,36);
 assert.equal(week02.length,23);assert.equal(week02.reduce((n,s)=>n+s.time,0),120);
 assert.equal(new Set(week02.map(s=>s.id)).size,23);
 for(const l of lessons)assert.ok(!l.slides.some(s=>s.id==='break'||s.id.endsWith('-break')),'No dedicated break slides');
@@ -71,4 +71,4 @@ for(const file of ['dist/index.html','dist/2027/week-01/index.html','dist/2027/w
  assert.ok(!/https?:[^" ]+\.(?:js|css)/.test(html),'Core assets must be local');
  assert.ok(!/Talk track|Expected placement|instructor-notes|course-decisions/.test(html),'Private notes must not be published');
 }
-console.log('PASS: Weeks 01/02 have 32/23 slides, 120 minutes each, no break slides, unique section links, portable assets/downloads, no private guide in published HTML.');
+console.log('PASS: Weeks 01/02 have 36/23 slides, 120 minutes each, no break slides, unique section links, portable assets/downloads, no private guide in published HTML.');
