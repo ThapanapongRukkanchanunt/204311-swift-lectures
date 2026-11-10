@@ -24,19 +24,27 @@ export const imageSteps={
 };
 
 export function prepareFragments(slide){
- const points=[...slide.querySelectorAll('li, .cards > .card, .criteria > div, tbody > tr')];
+ // Supporting information joins the final logical reveal (not an extra click).
+ // Keep nested bullets within a final box together to avoid hidden-parent steps.
+ const finalBoxes=[...slide.querySelectorAll('.prompt, .takeaway, [data-reveal-last], .card.mint')]
+  .filter(el=>!el.closest('.cards'))
+  .filter((el,_,boxes)=>!boxes.some(parent=>parent!==el&&parent.contains(el)));
+ const inFinalBox=el=>finalBoxes.some(box=>box.contains(el));
+ const points=[...slide.querySelectorAll('li, .cards > .card, .criteria > div, tbody > tr')].filter(el=>!inFinalBox(el));
  const add=(item,index)=>{item.classList.add('fragment','fade-up');item.dataset.fragmentIndex=String(index);};
  points.forEach(add);
  // Draft-specific visuals follow the bullet they explain, without extra steps.
  if(slide.id==='ergonomics')slide.querySelectorAll('.people-pair svg').forEach((el,i)=>add(el,Math.min(i,points.length-1)));
  if(['primary-task','adaptation','comfortable-reach','purposeful-permission'].includes(slide.id))slide.querySelectorAll('.demo-phone').forEach(el=>add(el,0));
- const nodes=[...slide.querySelectorAll('.illustration-node')];
+ const nodes=[...slide.querySelectorAll('.illustration-node')].filter(el=>!inFinalBox(el));
  const mapping=imageSteps[slide.id];
  nodes.forEach((node,i)=>add(node,points.length?Math.min(mapping?.[i]??i,points.length-1):i));
  // The caption summarizes the completed illustration; it is not another point.
  if(nodes.length){const caption=slide.querySelector('.teaching-illustration figcaption');if(caption)add(caption,Math.max(...nodes.map(n=>Number(n.dataset.fragmentIndex))));}
  // A single photograph/diagram supports the whole explanation, beginning at point 1.
  const evidence=slide.querySelector('.visual-evidence');if(evidence&&points.length)add(evidence,0);
+ const last=Math.max(0,...[...slide.querySelectorAll('.fragment')].map(el=>Number(el.dataset.fragmentIndex)));
+ finalBoxes.forEach(box=>add(box,last));
 }
 
 export function fragmentProgress(slide){
