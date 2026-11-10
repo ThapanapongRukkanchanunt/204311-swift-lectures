@@ -4,6 +4,7 @@ import { resolve, dirname } from 'node:path';
 import { slides } from '../src/week01.mjs';
 import { slides as week02 } from '../src/week02.mjs';
 import {lessons} from './lessons.mjs';
+import {isReleased} from './availability.mjs';
 import {visuals} from './visuals.mjs';
 import {illustrations} from './illustrations.mjs';
 import {createHash} from 'node:crypto';
@@ -46,6 +47,10 @@ for(const lesson of lessons){
  for(const suffix of ['index.html','reading.html','lab/index.html']){
   const file=`dist/2027/week-${lesson.week}/${suffix}`;
   const html=await readFile(file,'utf8');
+  if(!isReleased(lesson.week)){
+   assert.ok(html.includes('data-release-locked="true"'));
+   assert.ok(!html.includes('class="slides"'));
+  }
   for(const [,url] of html.matchAll(/(?:href|src)="([^"]+)"/g)){
    if(/^(?:https?:|#|mailto:)/.test(url))continue;
    assert.ok(!url.startsWith('/'),url);
@@ -53,7 +58,16 @@ for(const lesson of lessons){
   }
   assert.ok(!/instructor-notes|course-decisions|Suggested answer:/.test(html));
  }
- for(const type of ['practice','offline'])await access(`dist/downloads/week-${lesson.week}-${type}.zip`);
+ for(const type of ['practice','offline','starter']){
+  const path=`dist/downloads/week-${lesson.week}-${type}.zip`;
+  if(!isReleased(lesson.week))await assert.rejects(access(path));
+  else if(type!=='starter')await access(path);
+ }
+ if(!isReleased(lesson.week)){
+  await assert.rejects(access(`dist/downloads/week-${lesson.week}-practice`));
+  await assert.rejects(access(`dist/downloads/week-${lesson.week}-starter`));
+  await assert.rejects(access(`dist/downloads/labs/week-${lesson.week}-canvas.html`));
+ }
 }
 console.log('PASS: all 15 weeks, 120 minutes each, unique IDs, local links and downloads, public/private boundary.');
 assert.equal(slides.length,36);assert.equal(slides.reduce((n,s)=>n+s.time,0),120);

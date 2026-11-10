@@ -1,5 +1,7 @@
 # 204311 Swift Lectures
 
+Weeks 01–02 are released. Weeks 03–15 are held until explicit instructor confirmation; their site entries are disabled and direct lesson/lab URLs show a release notice. `scripts/availability.mjs` is the release allowlist. Build packaging excludes held practice, starter, Canvas and offline downloads while retaining authoring sources in the repository. This is a course-release gate, not private repository access control.
+
 ## Complete semester review draft
 
 All 15 teaching weeks are available at `/2027/week-NN/`, each with a reading view, Thai lab sheet, practice-source ZIP and offline ZIP. Weeks 03–15 were added on 2026-09-27. Their catalog is `src/generated-catalog.json`; `scripts/lessons.mjs` loads every lesson for generation, packaging and checks. Resource links use the same labels and order throughout.
