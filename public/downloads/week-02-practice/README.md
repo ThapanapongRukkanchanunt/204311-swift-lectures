@@ -6,6 +6,8 @@ This small app connects button actions to one local count and derives status fro
 
 ## Xcode on Mac
 
+The optional [composition reading companion](Composition/README.md) contains a complete parent/child view example for the revised lecture. It stays separate from the default app and is not an additional lab.
+
 Open CampusQueue.xcodeproj, select the CampusQueue scheme and an installed iPhone or iPad simulator, then choose Product → Clean Build Folder and Run. No signing account is needed for a simulator. The project uses Swift 5 language mode and an iOS 16 deployment floor as a provisional compatibility choice. Use an Xcode/macOS pair supported by the course machines; the final toolchain inventory is pending. There are no external dependencies or asset downloads.
 
 For a command-line check, list simulator destinations and choose one actually installed:

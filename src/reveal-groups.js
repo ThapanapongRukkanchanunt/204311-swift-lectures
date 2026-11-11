@@ -3,7 +3,7 @@
 export const imageSteps={
  inclusive:[0,0,0],permission:[1,1,2],
  'w02-inversion-of-control':[1,1,2],'w02-recompute-not-relaunch':[1,1,3],
- 'w02-source-of-truth':[0,1,1],'w02-state-owner':[2,2,2],
+ 'w02-source-of-truth':[0,1,1],'w02-single-multiple':[1,2,2],
  'w03-need':[1,2,3],'w03-pitch-1':[0,0,0],'w03-pitch-8':[0,0,0],
  'w04-tree':[0,1,1],'w04-type':[0,1,2],
  'w04-reading':[0,0,1],

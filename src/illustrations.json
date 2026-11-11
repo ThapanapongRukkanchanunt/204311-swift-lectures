@@ -130,27 +130,27 @@
     ]
   },
   {
-    "id": "w02-state-owner",
+    "id": "w02-single-multiple",
     "week": "02",
     "type": "hub",
-    "caption": "The common owner supplies the same fact to both consumers.",
+    "caption": "A parent view can combine smaller reusable child views.",
     "nodes": [
       {
         "icon": "house",
-        "label": "Queue feature",
-        "detail": "Owns waiting",
+        "label": "Parent view",
+        "detail": "Arranges the screen",
         "file": "1F3E0.svg"
       },
       {
         "icon": "eye",
-        "label": "Summary view",
-        "detail": "Reads waiting",
+        "label": "Summary child",
+        "detail": "Shows queue information",
         "file": "1F441.svg"
       },
       {
         "icon": "hand",
-        "label": "Controls view",
-        "detail": "Requests a change",
+        "label": "Controls child",
+        "detail": "Shows queue buttons",
         "file": "1F446.svg"
       }
     ]
