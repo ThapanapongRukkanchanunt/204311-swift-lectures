@@ -1,51 +1,215 @@
 <div lang="th" style="max-width:880px;margin:0 auto;padding:20px;background:#fffbf3;color:#302c3c;font-family:Tahoma,Arial,sans-serif;font-size:16px;line-height:1.85;border-radius:24px;overflow-wrap:anywhere;">
-<div style="padding:28px 24px;background:#442574;color:white;border-radius:24px;border-bottom:7px solid #ffbd69;"><p style="color:#ffe5ad;font-size:13px;letter-spacing:2px;">SWIFTUI · CAMPUS LIFE</p><h2 style="margin:0;font-size:30px;line-height:1.5;">W02-Lab: ให้แอปตอบสนองด้วย State</h2></div>
+<div style="padding:28px 24px;background:#442574;color:white;border-radius:24px;border-bottom:7px solid #ffbd69;"><p style="color:#ffe5ad;font-size:13px;letter-spacing:2px;">SWIFTUI · DEVELOP IN SWIFT</p><h2 style="margin:0;font-size:30px;line-height:1.5;">W02-Lab: ให้แอปตอบสนองด้วย State</h2></div>
 <h2 style="margin-top:28px;padding:12px 18px;background:#e9e0f7;color:#442574;border-radius:14px;font-size:24px;">ก่อนเริ่มต้น</h2>
-<p style="padding:16px;background:#fff0eb;color:#713a28;border-radius:14px;"><strong>วิดีโอ:</strong> [ลิงก์ Edpuzzle — ผู้สอนเพิ่มภายหลัง]</p>
-<p>คุณจะสร้าง <strong>Campus Queue</strong> สำหรับจำลองจำนวนผู้รอรถรับส่ง เริ่มที่ 3 คน ปุ่ม Join เพิ่มคน ปุ่ม Leave ลดคน และข้อความเปลี่ยนเมื่อมีอย่างน้อย 5 คน แอปนี้เป็นแบบจำลองในเครื่อง ไม่ได้จองคิวจริง</p>
+<p>คุณจะสร้างแอป <strong>DiceRoller</strong> สำหรับทอยลูกเต๋าจำลองตามบทเรียน <em>Update the UI with state</em> ของ Apple โดยแยก <code>DiceView</code> สำหรับลูกเต๋าแต่ละลูก ใช้ <code>@State</code> และ <code>Button</code> สุ่มแต้ม <code>1...6</code> พร้อมแอนิเมชัน ใช้ <code>ForEach</code> แสดงจำนวนลูกเต๋าตาม <code>@State</code> ของหน้าหลัก ป้องกันช่วงตัวเลขผิดพลาดด้วย <code>.disabled</code> ปรับขนาดลูกเต๋าให้รองรับสูงสุด 5 ลูก และตกแต่งด้วยสีพื้นหลังกับ SF Symbols โหมดพาเลตต์</p>
 <p style="padding:30px 18px;text-align:center;border:2px dashed #9f8aba;background:#f6f0fc;color:#5b4679;border-radius:18px;">[ภาพตัวอย่างแอป — ผู้สอนเพิ่มภายหลัง]</p>
 
-<ul><li>เชื่อม Button กับ <code>@State</code> และทำนายผลหลังเปลี่ยนค่า</li><li>แสดงเนื้อหาตามเงื่อนไขและสังเกตลำดับ event → state → UI</li><li>ตรวจพบและแก้ปัญหาจำนวนติดลบ</li></ul>
-<p><strong>เตรียม:</strong> Mac ที่ติดตั้ง Xcode พร้อม iPhone/iPad Simulator หรือ iPad ที่ติดตั้ง Swift Playgrounds, แอป Pages/Word หรือแอปเอกสารที่ส่งออก PDF ได้ และบัญชี Canvas สำหรับดูวิดีโอและส่งงาน เคยสร้างและ Run แอปตาม Week 01 ได้แล้ว</p>
-<p>สร้างโปรเจ็กต์ใหม่ตามภารกิจที่ 1 ไม่ต้องดาวน์โหลดไฟล์หรือใช้โปรเจ็กต์เดิม ไม่ต้องใช้บริการ cloud, API key หรือสิทธิ์กล้อง/ตำแหน่ง เลือก Simulator บน Mac จึงไม่ต้องใช้บัญชีสำหรับ signing เครื่องจริง ภาพส่งงานควรมีเฉพาะแอปหรือโค้ดที่เกี่ยวข้อง ไม่ติดรายละเอียดบัญชีหรือข้อมูลส่วนตัว</p>
+<ul><li>แยก Custom View (<code>DiceView</code>) และใช้พร็อพเพอร์ตี้ร่วมกับ String Interpolation</li><li>เชื่อม <code>Button</code> และ trailing closure เข้ากับ <code>@State</code> พร้อมแอนิเมชัน <code>withAnimation</code></li><li>สร้างจำนวน View แบบไดนามิกด้วย <code>ForEach</code> และป้องกันค่าขอบเขตด้วย <code>.disabled</code></li><li>ปรับขนาดยืดหยุ่นด้วย <code>maxWidth</code>/<code>maxHeight</code>, <code>aspectRatio</code>, <code>.labelStyle(.iconOnly)</code> และตกแต่งสีด้วย Asset Catalog กับ <code>.foregroundStyle</code></li></ul>
+<p><strong>เตรียม:</strong> Mac ที่ติดตั้ง Xcode พร้อม iPhone/iPad Simulator หรือ iPad ที่ติดตั้ง Swift Playgrounds, แอป Pages/Word หรือแอปเอกสารที่ส่งออก PDF ได้ และบัญชี Canvas สำหรับส่งงาน เคยสร้างและ Run แอปตาม Week 01 ได้แล้ว</p>
+<p>สร้างโปรเจ็กต์ใหม่ตามภารกิจที่ 1 ไม่ต้องดาวน์โหลดไฟล์หรือใช้โปรเจ็กต์เดิม เลือก Simulator บน Mac จึงไม่ต้องใช้บัญชีสำหรับ signing เครื่องจริง ภาพส่งงานควรมีเฉพาะแอปหรือโค้ดที่เกี่ยวข้อง ไม่ติดรายละเอียดบัญชีหรือข้อมูลส่วนตัว</p>
 <h2 style="margin-top:28px;padding:12px 18px;background:#ffedcd;color:#74420a;border-radius:14px;font-size:24px;">ภารกิจ</h2>
-<div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">1. สร้างโปรเจ็กต์และอ่านทางเข้าของแอป <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">15 นาที</span></h3><ol><li style="margin-bottom:12px;"><strong>Xcode บน Mac:</strong> สร้าง iOS App ชื่อ <code>CampusQueueLab</code> เลือก Interface เป็น SwiftUI, Language เป็น Swift และไม่ใช้ระบบจัดเก็บข้อมูล เลือก Simulator ที่ติดตั้งไว้แล้ว Run</li>
-<li style="margin-bottom:12px;"><strong>Swift Playgrounds บน iPad:</strong> จากหน้ารวมโปรเจ็กต์เลือกสร้าง App ใหม่ (New Playground → App หรือปุ่ม + → App ตามรุ่น) ตั้งชื่อ <code>CampusQueueLab</code> แล้วเปิด App Preview หรือ Run</li>
-<li style="margin-bottom:12px;">เปิดไฟล์ที่มี <code>@main</code> มองหา <code>WindowGroup { ContentView() }</code> แล้วเปิด <code>ContentView.swift</code> สังเกตว่า App ระบุ scene ส่วน ContentView อธิบายหน้าจอ ไม่ต้องเพิ่ม <code>@main</code> อีกตัว</li>
-<li style="margin-bottom:12px;">เก็บ <code>import SwiftUI</code>, โครง <code>struct ContentView: View</code> และ <code>var body: some View</code> ไว้ แทนเฉพาะเนื้อหาภายใน body ด้วยตัวอย่างด้านล่าง ส่วน preview ที่ท้ายไฟล์คงไว้ได้</li></ol><p><strong>ContentView.swift — ภายใน body</strong></p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>VStack(spacing: 16) {
-    Text("Campus Queue")
-        .font(.title)
-    Text("Ready")
-}
-.padding()</code></pre><p style="padding:14px;background:#e4f4ec;color:#164d38;border-left:4px solid #218060;border-radius:12px;"><strong>ตรวจผล:</strong> Run แล้วเห็น Campus Queue และ Ready ถ้าไม่เห็นให้ตรวจว่า WindowGroup เปิด ContentView และแก้ error แรกก่อน ห้ามลบวงเล็บปิดของ body หรือ struct</p></div><div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">2. เพิ่ม State และปุ่ม Join <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">20 นาที</span></h3><p><strong>ContentView.swift — ภายใน struct แต่ก่อน var body</strong> เพิ่มสองบรรทัดนี้</p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>@State private var waiting = 3
-@State private var lastEvent = "No action yet"</code></pre><p><strong>ContentView.swift — ใน VStack</strong> แทน <code>Text("Ready")</code> ด้วย</p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>Text("Waiting: \(waiting)")
-    .font(.title2)
-    .accessibilityLabel("People waiting")
-    .accessibilityValue("\(waiting)")
+<div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">1. สร้าง Custom View สำหรับลูกเต๋า (Create a custom view) <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">15 นาที</span></h3><ol><li style="margin-bottom:12px;"><strong>Xcode บน Mac:</strong> สร้างโปรเจ็กต์ iOS App ใหม่ (<code>File &gt; New &gt; Project... &gt; iOS &gt; App</code>) ตั้งชื่อ Product Name เป็น <code>DiceRoller</code> เลือก Interface เป็น <code>SwiftUI</code> และ Language เป็น <code>Swift</code></li>
+<li style="margin-bottom:12px;"><strong>Swift Playgrounds บน iPad:</strong> สร้าง App ใหม่ (<code>New Playground &gt; App</code> หรือปุ่ม <code>+ &gt; App</code>) แล้วตั้งชื่อเป็น <code>DiceRoller</code></li>
+<li style="margin-bottom:12px;">สร้างไฟล์ SwiftUI View ใหม่ชื่อ <code>DiceView</code> (บน Mac เลือก <code>File &gt; New &gt; File from Template... &gt; SwiftUI View</code> ตั้งชื่อ <code>DiceView</code>; บน iPad เพิ่มไฟล์ Swift ใหม่ชื่อ <code>DiceView.swift</code>)</li>
+<li style="margin-bottom:12px;">แทนที่โค้ดภายใน <code>body</code> ของ <code>DiceView</code> ด้วยรูปหน้าลูกเต๋า <code>Image(systemName: "die.face.1")</code> ลองเปลี่ยนตัวเลขท้ายชื่อจาก <code>1</code> ถึง <code>6</code> เพื่อดูรูปหน้าลูกเต๋าทั้ง 6 ด้านใน SF Symbols</li>
+<li style="margin-bottom:12px;">เพิ่มพร็อพเพอร์ตี้ <code>var numberOfPips: Int = 1</code> ใน <code>DiceView</code> ก่อน <code>body</code> เพื่อแทนจำนวนแต้มบนลูกเต๋า การกำหนดค่าเริ่มต้น <code>= 1</code> ทำให้ไม่ต้องแก้การเรียก <code>DiceView()</code> ใน <code>#Preview</code></li>
+<li style="margin-bottom:12px;">ใช้ String Interpolation <code>\(numberOfPips)</code> แสดงภาพลูกเต๋าตามค่าพร็อพเพอร์ตี้ แล้วเพิ่ม modifier <code>.resizable()</code> เพื่อให้ภาพยืดขยายได้ และจำกัดขนาดด้วย <code>.frame(width: 100, height: 100)</code></li></ol><p><strong>DiceView.swift</strong></p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>import SwiftUI
 
-Button("Join queue") {
-    let old = waiting
-    waiting += 1
-    lastEvent = "Join: \(old) to \(waiting)"
+struct DiceView: View {
+    var numberOfPips: Int = 1
+
+    var body: some View {
+        Image(systemName: "die.face.\(numberOfPips)")
+            .resizable()
+            .frame(width: 100, height: 100)
+    }
 }
 
-Text(lastEvent)
-    .font(.caption)</code></pre><ol><li style="margin-bottom:12px;">Run ใหม่ให้เริ่มที่ 3 คน ก่อนกดปุ่มให้ทำนายค่าหลังจากกดสองครั้ง แล้วกด Join สองครั้ง</li>
-<li style="margin-bottom:12px;">ดู Waiting และบรรทัดเหตุการณ์ล่าสุด เปรียบเทียบค่าเก่ากับค่าใหม่ บรรทัดนี้ใช้แทนหลักฐาน console ได้ทั้ง Mac และ iPad</li></ol><p style="padding:14px;background:#e4f4ec;color:#164d38;border-left:4px solid #218060;border-radius:12px;"><strong>ตรวจผล:</strong> Waiting: 5 และ Join: 4 to 5 หากตัวเลขไม่เปลี่ยน ตรวจ @State และว่าคำสั่งเพิ่มค่าอยู่ภายใน action ของ Button ไม่อยู่ใน body โดยตรง</p><p style="padding:14px;background:#fff0d8;color:#6c3d0b;border:1px solid #dfac66;border-radius:12px;"><strong>เก็บภาพที่ 1:</strong> หน้าจอที่มี Waiting: 5 และ Join: 4 to 5 ก่อนเพิ่มเงื่อนไขในภารกิจถัดไป</p><p><code>lastEvent</code> เก็บประวัติเหตุการณ์ล่าสุด จึงไม่ใช่สำเนาของจำนวนคน: เมื่อจำนวนเท่ากัน เหตุการณ์ก่อนหน้าอาจต่างกัน ส่วนข้อความสถานะคิวในภารกิจต่อไปจะคำนวณจาก waiting โดยตรง</p></div><div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">3. แสดงสถานะตามจำนวนคน <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">15 นาที</span></h3><p><strong>ContentView.swift — ใน VStack ก่อน Button("Join queue")</strong> เพิ่มเงื่อนไขนี้</p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>if waiting &gt;= 5 {
-    Text("Queue forming")
-} else {
-    Text("Seats available")
-}</code></pre><ol><li style="margin-bottom:12px;">เลือกเพิ่มสัญลักษณ์หนึ่งแบบภายในแขนง <code>waiting >= 5</code>: <code>Image(systemName: "person.2.fill")</code> หรือ <code>Image(systemName: "bus.fill")</code> ใส่ <code>.accessibilityHidden(true)</code> ต่อท้าย Image เพราะมีข้อความอธิบายอยู่แล้ว</li>
-<li style="margin-bottom:12px;">หยุดแล้ว Run ใหม่ให้กลับเป็น 3 คน ดู Seats available กด Join หนึ่งครั้งเป็น 4 แล้วยังเป็นข้อความเดิม กดอีกครั้งเป็น 5 ต้องเปลี่ยนเป็น Queue forming พร้อมสัญลักษณ์ที่เลือก</li></ol><p style="padding:14px;background:#e4f4ec;color:#164d38;border-left:4px solid #218060;border-radius:12px;"><strong>ตรวจผล:</strong> ข้อความตรงกับเงื่อนไขที่ 3, 4 และ 5 ไม่ใช้สีเพียงอย่างเดียวบอกสถานะ หากเห็นข้อความซ้ำ ตรวจว่าไม่ได้เก็บ Text("Ready") หรือข้อความสถานะเก่าไว้นอก if</p><p style="padding:14px;background:#fff0d8;color:#6c3d0b;border:1px solid #dfac66;border-radius:12px;"><strong>เก็บภาพที่ 2:</strong> หน้าจอ Waiting: 5 พร้อม Queue forming และสัญลักษณ์ที่คุณเลือก</p></div><div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">4. เพิ่ม Leave และจับปัญหาที่ขอบเขต <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">15 นาที</span></h3><p>ขั้นนี้จงใจเริ่มด้วยกฎที่ยังมีข้อผิดพลาด เพื่อดูว่าปุ่มทำงานถูกลำดับแต่กฎข้อมูลยังผิดได้อย่างไร</p><p><strong>ContentView.swift — ใน VStack หลังปุ่ม Join และก่อน Text(lastEvent)</strong></p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>Button("Leave queue") {
-    let old = waiting
-    waiting -= 1
-    lastEvent = "Leave: \(old) to \(waiting)"
-}</code></pre><ol><li style="margin-bottom:12px;">จากจำนวนที่มีอยู่ กด Leave จนเห็น 0 แล้วทำนายว่าจะเกิดอะไรหากกดอีกครั้ง</li>
-<li style="margin-bottom:12px;">กด Leave อีกหนึ่งครั้ง สังเกตว่าตัวเลขกลายเป็น -1 แม้แอปยังรันได้ คิดว่าต้องแก้เงื่อนไขที่ปุ่มหรือเปลี่ยนกฎการคำนวณอย่างไร</li></ol><p style="padding:14px;background:#fff0d8;color:#6c3d0b;border:1px solid #dfac66;border-radius:12px;"><strong>เก็บภาพที่ 3:</strong> สถานะผิดพลาด Waiting: -1 และ Leave: 0 to -1 ก่อนแก้โค้ด</p><p><strong>สังเกต:</strong> นี่คือข้อผิดพลาดของพฤติกรรม ไม่ใช่ compiler error ผู้รอไม่ควรติดลบ แต่ Swift ยังยอมให้จำนวนเต็มลดลงได้</p></div><div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">5. ซ่อมกฎและตรวจทั้งสองเส้นทาง <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">15 นาที</span></h3><p><strong>ContentView.swift — ใน action ของ Leave</strong> แทนเฉพาะ <code>waiting -= 1</code> ด้วย</p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>waiting = max(0, waiting - 1)</code></pre><ol><li style="margin-bottom:12px;">หยุดแล้ว Run ใหม่เพื่อเริ่มข้อมูลใหม่ที่ 3 กด Leave สามครั้งเป็น 0 แล้วกดอีกครั้ง ค่าต้องยังเป็น 0 และเหตุการณ์เป็น Leave: 0 to 0</li>
-<li style="margin-bottom:12px;">กด Join ห้าครั้งให้ถึง 5 แล้ว Leave หนึ่งครั้งให้กลับ 4 ตรวจว่าข้อความเปลี่ยนจาก Queue forming กลับ Seats available</li>
-<li style="margin-bottom:12px;">กด Leave จนเป็น 0 แล้วกดอีกครั้ง เก็บภาพสุดท้ายตามคำขอด้านล่าง</li>
-<li style="margin-bottom:12px;">ลองหมุนหน้าจอและเพิ่มขนาดข้อความจากการตั้งค่าของอุปกรณ์หรือ Simulator ตรวจว่าปุ่มและข้อความยังอ่านได้ หากพื้นที่ไม่พอ ครอบ VStack ด้วย ScrollView โดยคง state ไว้นอก body</li></ol><p style="padding:14px;background:#e4f4ec;color:#164d38;border-left:4px solid #218060;border-radius:12px;"><strong>ตรวจผล:</strong> จำนวนไม่ต่ำกว่า 0 และข้อความสะท้อนค่าทั้งขาขึ้นและขาลง หากยังติดลบ ตรวจว่าแก้ action ของ Leave และหยุด/Run ใหม่หลังแก้</p><p style="padding:14px;background:#fff0d8;color:#6c3d0b;border:1px solid #dfac66;border-radius:12px;"><strong>เก็บภาพที่ 4:</strong> หลังซ่อมเห็น Waiting: 0, Seats available และ Leave: 0 to 0</p><p>สำหรับ Xcode อาจใส่ <code>print(lastEvent)</code> หลังบรรทัดแก้ lastEvent ใน action แล้วดู Debug console เพิ่มเติมได้ บน iPad ใช้บรรทัดเหตุการณ์ในแอปได้โดยไม่ต้องหา console ทั้งสองทางแสดงหลักฐานค่าเก่า → ค่าใหม่เหมือนกัน</p></div><div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">เพิ่มเติม. เพิ่ม Reset (ไม่บังคับ) <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">5 นาที</span></h3><p>เพิ่มปุ่ม Reset ให้ waiting กลับเป็น 3 และบันทึกเหตุการณ์ลง lastEvent โดยใช้ state เดิม ทดสอบจาก 0 และ 5 แล้วตรวจว่าเงื่อนไขข้อความเปลี่ยนตามเอง ไม่ต้องส่งภาพเพิ่ม</p></div><h2 style="margin-top:28px;padding:12px 18px;background:#d9f2e8;color:#175a44;border-radius:14px;font-size:24px;">ยินดีด้วย!</h2><p>คุณสร้างปุ่มที่เปลี่ยน State แสดงข้อความตามเงื่อนไข และซ่อมกฎที่ทำให้จำนวนติดลบได้แล้ว</p><div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">6. รวมภาพและส่ง PDF <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">10 นาที</span></h3><ol><li style="margin-bottom:12px;">เปิด Pages, Word หรือแอปเอกสารที่ใช้ได้ทั้งเครื่องของคุณ แทรกภาพที่ 1–4 ตามลำดับ ภาพละหนึ่งหน้า</li>
-<li style="margin-bottom:12px;">ใส่คำบรรยายสั้นตามนี้: <strong>1. Join event</strong>, <strong>2. Conditional status</strong>, <strong>3. Negative count</strong>, <strong>4. Fixed at zero</strong></li>
-<li style="margin-bottom:12px;">ส่งออกเป็น PDF ชื่อ <code>W02_รหัสนักศึกษา.pdf</code> แล้วเปิดตรวจว่ามีครบ 4 หน้า ตัวเลขและบรรทัดเหตุการณ์อ่านชัด ภาพไม่ถูกตัด</li>
+#Preview {
+    DiceView()
+}</code></pre><p style="padding:14px;background:#e4f4ec;color:#164d38;border-left:4px solid #218060;border-radius:12px;"><strong>ตรวจผล:</strong> เห็นภาพลูกเต๋าขนาด 100×100 พอยต์ตรงกลาง Preview ลองเปลี่ยนค่าเริ่มต้นของ <code>numberOfPips</code> เป็นเลขอื่นระหว่าง <code>1</code> ถึง <code>6</code> เพื่อตรวจว่ารูปเปลี่ยนตามค่าพร็อพเพอร์ตี้ แล้วเปลี่ยนกลับเป็น <code>1</code></p></div>
+<div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">2. เพิ่มปุ่มทอยลูกเต๋าและอัปเดต View ด้วย @State (Add a button &amp; Use state) <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">15 นาที</span></h3><ol><li style="margin-bottom:12px;">ใน <code>DiceView.swift</code> ครอบ <code>Image</code> และ modifier ด้วย <code>VStack</code> เพื่อวางปุ่มไว้ด้านล่างลูกเต๋า</li>
+<li style="margin-bottom:12px;">ภายใน <code>VStack</code> ถัดจาก <code>Image</code> เริ่มพิมพ์ <code>Button</code> เลือกตัวสร้างที่มี <code>titleKey</code> (หรือ <code>title</code>) กับ <code>action</code> แทนที่ชื่อปุ่มด้วย <code>"Roll"</code> แล้วกด Tab ไปที่ <code>action: () -&gt; Void</code> และกด Return เพื่อเปลี่ยนเป็น trailing closure <code>{ ... }</code></li>
+<li style="margin-bottom:12px;">ใน closure ของปุ่ม เขียนคำสั่งสุ่มแต้ม 1 ถึง 6 ด้วย <code>numberOfPips = Int.random(in: 1...6)</code> สังเกตว่าจะเกิด compiler error เพราะพร็อพเพอร์ตี้ทั่วไปของ struct แก้ไขค่าใน <code>body</code> ไม่ได้ และ SwiftUI ไม่ได้เฝ้าดูพร็อพเพอร์ตี้ทุกตัวโดยอัตโนมัติ</li>
+<li style="margin-bottom:12px;">เปลี่ยน <code>numberOfPips</code> เป็นพร็อพเพอร์ตี้ <code>@State</code> โดยใส่ <code>@State private</code> ข้างหน้า (ใส่ <code>private</code> เสมอเพราะ view เป็นเจ้าของ state ของตัวเอง ไม่ให้ view อื่นเข้ามาแทรกแซง) แล้วลองกดปุ่ม <code>Roll</code> หลายครั้ง</li>
+<li style="margin-bottom:12px;">เพิ่ม <code>.buttonStyle(.bordered)</code> ต่อท้าย <code>Button</code> เพื่อใส่กรอบแยกปุ่มออกจากรูปลูกเต๋า และครอบคำสั่งสุ่มค่าด้วย <code>withAnimation { ... }</code> เพื่อให้การเปลี่ยนภาพลูกเต๋าค่อย ๆ จางเปลี่ยน (fade) อย่างนุ่มนวล</li></ol><p><strong>DiceView.swift</strong></p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>import SwiftUI
+
+struct DiceView: View {
+    @State private var numberOfPips: Int = 1
+
+    var body: some View {
+        VStack {
+            Image(systemName: "die.face.\(numberOfPips)")
+                .resizable()
+                .frame(width: 100, height: 100)
+
+            Button("Roll") {
+                withAnimation {
+                    numberOfPips = Int.random(in: 1...6)
+                }
+            }
+            .buttonStyle(.bordered)
+        }
+    }
+}
+
+#Preview {
+    DiceView()
+}</code></pre><p style="padding:14px;background:#e4f4ec;color:#164d38;border-left:4px solid #218060;border-radius:12px;"><strong>ตรวจผล:</strong> กดปุ่ม <code>Roll</code> สองสามครั้งแล้วเห็นภาพลูกเต๋าเปลี่ยนแต้มพร้อมแอนิเมชัน หากกดแล้วภาพไม่เปลี่ยน ตรวจว่าใส่ <code>@State private</code> หน้า <code>numberOfPips</code> แล้ว</p><p style="padding:14px;background:#fff0d8;color:#6c3d0b;border:1px solid #dfac66;border-radius:12px;"><strong>เก็บภาพที่ 1:</strong> หน้าจอหรือ Preview ของ <code>DiceView</code> ที่มีปุ่ม <code>Roll</code> แบบมีกรอบและทอยเปลี่ยนแต้มแล้ว</p></div>
+<div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">3. สร้างการแสดงผลลูกเต๋าแบบไดนามิก (Create a dynamic display of dice) <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">20 นาที</span></h3><ol><li style="margin-bottom:12px;">เปิด <code>ContentView.swift</code> แทนที่เนื้อหาใน <code>VStack</code> ด้วยหัวข้อ <code>Text("Dice Roller").font(.largeTitle.lowercaseSmallCaps())</code> คง <code>.padding()</code> ต่อท้าย <code>VStack</code> ไว้</li>
+<li style="margin-bottom:12px;">เพิ่ม <code>HStack</code> ที่มี <code>DiceView()</code> สามตัวเรียงกัน ลองกดทอยลูกเต๋าแต่ละลูก จากนั้นแทนที่ <code>DiceView()</code> สามตัวด้วย <code>ForEach(1...3, id: \.description) { _ in DiceView() }</code> เพื่อให้สร้าง subview ตามช่วงตัวเลข</li>
+<li style="margin-bottom:12px;">เพิ่มพร็อพเพอร์ตี้ <code>@State private var numberOfDice: Int = 1</code> ใน <code>ContentView</code> ก่อน <code>body</code> แล้วเปลี่ยนช่วงใน <code>ForEach</code> จาก <code>1...3</code> เป็น <code>1...numberOfDice</code></li>
+<li style="margin-bottom:12px;">ถัดจาก <code>HStack</code> ของลูกเต๋า เพิ่ม <code>HStack</code> อีกชุดที่มีสองปุ่มสำหรับลดและเพิ่มจำนวนลูกเต๋า พร้อม <code>.padding()</code> ต่อท้าย <code>HStack</code> ของปุ่มตามโค้ดด้านล่าง</li></ol><p><strong>ContentView.swift — ก่อนใส่ .disabled</strong></p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>HStack {
+    Button("Remove Dice") {
+        numberOfDice -= 1
+    }
+
+    Button("Add Dice") {
+        numberOfDice += 1
+    }
+}
+.padding()</code></pre><ol start="5"><li style="margin-bottom:12px;">ลดจำนวนลูกเต๋าให้เหลือ 1 ลูก แล้วกดปุ่ม <code>Remove Dice</code> อีกครั้ง สังเกตว่า Preview หรือแอปจะ crash เพราะช่วง <code>1...0</code> ไม่ถูกต้อง เก็บภาพข้อผิดพลาดนี้ก่อนแก้ไข</li>
+<li style="margin-bottom:12px;">ป้องกันการกดเมื่อเหลือ 1 ลูกด้วย <code>.disabled(numberOfDice == 1)</code> ที่ปุ่ม <code>Remove Dice</code> และป้องกันไม่ให้มีเกิน 3 ลูก (เพราะขนาด 100×100 พอดีหน้าจอได้ 3 ลูก) ด้วย <code>.disabled(numberOfDice == 3)</code> ที่ปุ่ม <code>Add Dice</code> จากนั้นครอบการเปลี่ยนค่าในปุ่มทั้งสองด้วย <code>withAnimation</code></li></ol><p style="padding:14px;background:#fff0d8;color:#6c3d0b;border:1px solid #dfac66;border-radius:12px;"><strong>เก็บภาพที่ 2:</strong> หน้าจอเกิดข้อผิดพลาด (Preview Crashed หรือ runtime error) เมื่อกด <code>Remove Dice</code> จนช่วงกลายเป็น <code>1...0</code> ก่อนใส่ <code>.disabled</code></p><p><strong>ContentView.swift — หลังใส่ .disabled และ withAnimation</strong></p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>import SwiftUI
+
+struct ContentView: View {
+    @State private var numberOfDice: Int = 1
+
+    var body: some View {
+        VStack {
+            Text("Dice Roller")
+                .font(.largeTitle.lowercaseSmallCaps())
+
+            HStack {
+                ForEach(1...numberOfDice, id: \.description) { _ in
+                    DiceView()
+                }
+            }
+
+            HStack {
+                Button("Remove Dice") {
+                    withAnimation {
+                        numberOfDice -= 1
+                    }
+                }
+                .disabled(numberOfDice == 1)
+
+                Button("Add Dice") {
+                    withAnimation {
+                        numberOfDice += 1
+                    }
+                }
+                .disabled(numberOfDice == 3)
+            }
+            .padding()
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    ContentView()
+}</code></pre><p style="padding:14px;background:#e4f4ec;color:#164d38;border-left:4px solid #218060;border-radius:12px;"><strong>ตรวจผล:</strong> ปุ่ม <code>Remove Dice</code> ถูกปิดใช้งานเมื่อมีลูกเต๋า 1 ลูก และปุ่ม <code>Add Dice</code> ถูกปิดใช้งานเมื่อมีลูกเต๋า 3 ลูก ไม่สามารถกดจนแอป crash ได้อีก</p></div>
+<div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">4. ปรับขนาดให้รองรับลูกเต๋าเพิ่มและใช้รูปในปุ่ม (Adapt the interface &amp; Use images in button labels) <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">15 นาที</span></h3><ol><li style="margin-bottom:12px;">ใน <code>ContentView.swift</code> เพิ่มขีดจำกัดลูกเต๋าเป็น 5 ลูกโดยเปลี่ยน <code>.disabled(numberOfDice == 3)</code> เป็น <code>.disabled(numberOfDice == 5)</code> แล้วกด <code>Add Dice</code> จนครบ 5 ลูก สังเกตว่า <code>HStack</code> ให้ขนาดตามที่ขอจนลูกเต๋าล้นขอบจอ</li>
+<li style="margin-bottom:12px;">เปิด <code>DiceView.swift</code> เปลี่ยน <code>.frame(width: 100, height: 100)</code> เป็นเฟรมยืดหยุ่น <code>.frame(maxWidth: 100, maxHeight: 100)</code> เพื่อให้รูปลูกเต๋าย่อขนาดลงได้ แต่เมื่อมี 4–5 ลูก ภาพจะถูกยืดในแนวตั้ง จึงต้องใส่ <code>.aspectRatio(1, contentMode: .fit)</code> ต่อท้ายเพื่อบังคับสัดส่วน 1:1 (สี่เหลี่ยมจัตุรัส)</li>
+<li style="margin-bottom:12px;">กลับไปที่ <code>ContentView.swift</code> เพิ่มอาร์กิวเมนต์ <code>systemImage: "plus.circle.fill"</code> ในปุ่ม <code>Add Dice</code> และ <code>systemImage: "minus.circle.fill"</code> ในปุ่ม <code>Remove Dice</code></li>
+<li style="margin-bottom:12px;">ต่อท้าย <code>.padding()</code> ของ <code>HStack</code> ปุ่ม เพิ่ม <code>.labelStyle(.iconOnly)</code> เพื่อซ่อนข้อความบนปุ่มแต่ยังเก็บชื่อปุ่มไว้ให้ฟีเจอร์อย่าง VoiceOver อ่านได้ และเพิ่ม <code>.font(.title)</code> เพื่อขยายขนาดไอคอนปุ่ม</li></ol><p><strong>DiceView.swift — ปรับ Image modifiers</strong></p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>Image(systemName: "die.face.\(numberOfPips)")
+    .resizable()
+    .frame(maxWidth: 100, maxHeight: 100)
+    .aspectRatio(1, contentMode: .fit)</code></pre><p><strong>ContentView.swift — ปรับ HStack ของปุ่มลดและเพิ่มลูกเต๋า</strong></p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>HStack {
+    Button("Remove Dice", systemImage: "minus.circle.fill") {
+        withAnimation {
+            numberOfDice -= 1
+        }
+    }
+    .disabled(numberOfDice == 1)
+
+    Button("Add Dice", systemImage: "plus.circle.fill") {
+        withAnimation {
+            numberOfDice += 1
+        }
+    }
+    .disabled(numberOfDice == 5)
+}
+.padding()
+.labelStyle(.iconOnly)
+.font(.title)</code></pre><p style="padding:14px;background:#e4f4ec;color:#164d38;border-left:4px solid #218060;border-radius:12px;"><strong>ตรวจผล:</strong> กดปุ่มไอคอน <code>+</code> จนมีลูกเต๋าครบ 5 ลูก ลูกเต๋าทุกอันย่อขนาดลงเป็นสี่เหลี่ยมจัตุรัสเรียงพอดีในหน้าจอ และปุ่มด้านล่างแสดงเฉพาะไอคอนลบและบวกขนาดใหญ่</p><p style="padding:14px;background:#fff0d8;color:#6c3d0b;border:1px solid #dfac66;border-radius:12px;"><strong>เก็บภาพที่ 3:</strong> หน้าจอที่แสดงลูกเต๋าครบ 5 ลูกขนาดสี่เหลี่ยมจัตุรัสเรียงพอดีจอ พร้อมปุ่มไอคอนลบและบวก</p></div>
+<div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">5. ปรับแต่งสีและดีไซน์ของแอป (Improve your app design) <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">15 นาที</span></h3><ol><li style="margin-bottom:12px;"><strong>Xcode บน Mac:</strong> เปิด <code>Assets</code> ใน Project Navigator คลิกปุ่ม <code>+</code> ด้านล่าง เลือก <code>Color Set</code> ตั้งชื่อว่า <code>App Background</code> เปิด Attributes Inspector เลือกช่องสีแล้วกำหนดค่า Red เป็น <code>0.208</code>, Green เป็น <code>0.478</code> และ Blue เป็น <code>0.613</code></li>
+<li style="margin-bottom:12px;"><strong>Swift Playgrounds บน iPad:</strong> หากไม่สร้าง Color Set ใน Asset Catalog ให้วางโค้ดนี้ต่อท้ายไฟล์ <code>ContentView.swift</code> เพื่อให้ใช้ <code>.appBackground</code> ได้เหมือนกันทุกประการ: <code>extension ShapeStyle where Self == Color { static var appBackground: Color { Color(red: 0.208, green: 0.478, blue: 0.613) } }</code></li>
+<li style="margin-bottom:12px;">ใน <code>ContentView.swift</code> เพิ่ม <code>.foregroundStyle(.white)</code> ต่อท้ายหัวข้อ <code>Text("Dice Roller")</code> และที่ท้าย <code>VStack</code> นอกสุด (ต่อจาก <code>.padding()</code>) ให้เพิ่ม <code>.frame(maxWidth: .infinity, maxHeight: .infinity)</code> เพื่อให้ขยายเต็มจอ ตามด้วย <code>.background(.appBackground)</code> และ <code>.tint(.white)</code></li>
+<li style="margin-bottom:12px;">เปิด <code>DiceView.swift</code> เปลี่ยนชื่อสัญลักษณ์เป็นแบบทึบ <code>"die.face.\(numberOfPips).fill"</code> ลองใส่ <code>.foregroundStyle(.white)</code> ก่อนจะเห็นว่าตัวลูกเต๋าเป็นสีขาวแต่จุดแต้มโปร่งใส จึงให้เปลี่ยนเป็น <code>.foregroundStyle(.black, .white)</code> เพื่อใช้โหมดพาเลตต์ของ SF Symbols กำหนดสีหลัก (จุดแต้ม) เป็นสีดำ และสีรอง (ตัวลูกเต๋า) เป็นสีขาว</li></ol><p><strong>ContentView.swift — ฉบับสมบูรณ์</strong></p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>import SwiftUI
+
+struct ContentView: View {
+    @State private var numberOfDice: Int = 1
+
+    var body: some View {
+        VStack {
+            Text("Dice Roller")
+                .font(.largeTitle.lowercaseSmallCaps())
+                .foregroundStyle(.white)
+
+            HStack {
+                ForEach(1...numberOfDice, id: \.description) { _ in
+                    DiceView()
+                }
+            }
+
+            HStack {
+                Button("Remove Dice", systemImage: "minus.circle.fill") {
+                    withAnimation {
+                        numberOfDice -= 1
+                    }
+                }
+                .disabled(numberOfDice == 1)
+
+                Button("Add Dice", systemImage: "plus.circle.fill") {
+                    withAnimation {
+                        numberOfDice += 1
+                    }
+                }
+                .disabled(numberOfDice == 5)
+            }
+            .padding()
+            .labelStyle(.iconOnly)
+            .font(.title)
+        }
+        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.appBackground)
+        .tint(.white)
+    }
+}
+
+#Preview {
+    ContentView()
+}</code></pre><p><strong>DiceView.swift — ฉบับสมบูรณ์</strong></p><pre style="background:#242138;color:#f8f4ff;border-radius:14px;padding:18px;white-space:pre-wrap;overflow-wrap:anywhere;font:15px/1.75 Consolas,Monaco,monospace;"><code>import SwiftUI
+
+struct DiceView: View {
+    @State private var numberOfPips: Int = 1
+
+    var body: some View {
+        VStack {
+            Image(systemName: "die.face.\(numberOfPips).fill")
+                .resizable()
+                .frame(maxWidth: 100, maxHeight: 100)
+                .aspectRatio(1, contentMode: .fit)
+                .foregroundStyle(.black, .white)
+
+            Button("Roll") {
+                withAnimation {
+                    numberOfPips = Int.random(in: 1...6)
+                }
+            }
+            .buttonStyle(.bordered)
+        }
+    }
+}
+
+#Preview {
+    DiceView()
+}</code></pre><p style="padding:14px;background:#e4f4ec;color:#164d38;border-left:4px solid #218060;border-radius:12px;"><strong>ตรวจผล:</strong> พื้นหลังสี <code>.appBackground</code> ขยายเต็มหน้าจอ หัวข้อและปุ่มมีสีขาว ลูกเต๋าเป็นสีขาวทึบแต้มสีดำ สามารถทอยแต้มแต่ละลูกและเพิ่ม/ลดจำนวนลูกเต๋าได้ตั้งแต่ 1 ถึง 5 ลูก</p><p style="padding:14px;background:#fff0d8;color:#6c3d0b;border:1px solid #dfac66;border-radius:12px;"><strong>เก็บภาพที่ 4:</strong> หน้าจอแอป <code>Dice Roller</code> ฉบับสมบูรณ์ที่มีพื้นหลังเต็มจอ ลูกเต๋าสีขาวแต้มสีดำ และปุ่มสีขาว</p></div>
+<div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">เพิ่มเติม. ขยายความสามารถของแอป (Extend your app — ไม่บังคับ) <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">5 นาที</span></h3><p>เลือกทดลองทำข้อใดข้อหนึ่งจากส่วน <em>Extend your app</em> ของ Apple: (1) เปลี่ยนรูปทรงกรอบปุ่ม <code>Roll</code> ให้เป็นทรงแคปซูลด้วย <code>.buttonBorderShape(.capsule)</code> (2) ปรับแต่งการแสดงสีของปุ่ม <code>Remove Dice</code> และ <code>Add Dice</code> ด้วย <code>.symbolRenderingMode</code> หรือ (3) ปรับ <code>DiceView</code> ให้ผู้ใช้แตะที่รูปลูกเต๋าโดยตรงเพื่อสุ่มแต้มแทนการใช้ปุ่ม <code>Roll</code> แยกด้านล่าง ไม่ต้องส่งภาพเพิ่ม</p></div>
+<h2 style="margin-top:28px;padding:12px 18px;background:#d9f2e8;color:#175a44;border-radius:14px;font-size:24px;">ยินดีด้วย!</h2><p>คุณสร้างแอป <code>DiceRoller</code> ที่อัปเดต UI ด้วย <code>@State</code> ใช้ <code>Button</code> และ trailing closure สร้างจำนวน View แบบไดนามิกด้วย <code>ForEach</code> ป้องกันค่าเกินขอบเขตด้วย <code>.disabled</code> และปรับแต่งดีไซน์ด้วยเฟรมยืดหยุ่นกับโหมดสีพาเลตต์ตามบทเรียนของ Apple ได้ครบแล้ว</p><div style="margin:18px 0;padding:22px;border:1px solid #dfd6ed;border-radius:20px;background:white;"><h3 style="font-size:21px;color:#322451;">6. รวมภาพและส่ง PDF <span style="display:inline-block;background:#eee6fb;color:#513080;padding:3px 10px;border-radius:20px;font-size:14px;">10 นาที</span></h3><ol><li style="margin-bottom:12px;">เปิด Pages, Word หรือแอปเอกสารที่ใช้ได้ทั้งเครื่องของคุณ แทรกภาพที่ 1–4 ตามลำดับ ภาพละหนึ่งหน้า</li>
+<li style="margin-bottom:12px;">ใส่คำบรรยายสั้นตามนี้: <strong>1. Single DiceView with @State</strong>, <strong>2. Invalid range crash (1...0)</strong>, <strong>3. Five adaptive dice with icon buttons</strong>, <strong>4. Completed Dice Roller design</strong></li>
+<li style="margin-bottom:12px;">ส่งออกเป็น PDF ชื่อ <code>W02_รหัสนักศึกษา.pdf</code> แล้วเปิดตรวจว่ามีครบ 4 หน้า ภาพชัดเจนและไม่ถูกตัด</li>
 <li style="margin-bottom:12px;">อัปโหลดไฟล์ใน Canvas Assignment ของ Week 02 ตรวจว่าไฟล์ที่ส่งเปิดได้ เก็บโปรเจ็กต์ไว้ในเครื่อง</li></ol><p>ส่งเพียง PDF ที่รวมภาพทั้ง 4 ภาพ ไม่ต้องแนบโปรเจ็กต์หรือรายงานเพิ่มเติม</p></div>
 </div>
