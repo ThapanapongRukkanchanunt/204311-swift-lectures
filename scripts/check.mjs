@@ -8,8 +8,8 @@ import {isReleased} from './availability.mjs';
 import {visuals} from './visuals.mjs';
 import {illustrations} from './illustrations.mjs';
 import {createHash} from 'node:crypto';
-assert.equal(visuals.length,15);
-assert.equal(new Set(visuals.map(v=>v.id)).size,15);
+assert.equal(visuals.length,14);
+assert.equal(new Set(visuals.map(v=>v.id)).size,14);
 const credits=await readFile('dist/images/lectures/credits.html','utf8');
 for(const v of visuals){
  assert.ok(lessons.find(l=>l.week===v.week).slides.some(s=>s.id===v.id));
@@ -23,7 +23,7 @@ for(const v of visuals){
 }
 console.log('PASS: image provenance, attribution, alt text, asset hashes and private-cue boundary.');
 const artwork=JSON.parse(await readFile('dist/images/openmoji/manifest.json','utf8'));
-assert.equal(illustrations.length,68);
+assert.equal(illustrations.length,64);
 assert.equal(new Set(illustrations.map(v=>v.id)).size,illustrations.length);
 for(const a of artwork.assets){
  assert.ok(a.author&&a.source&&a.title);
@@ -38,7 +38,7 @@ for(const v of illustrations){
  assert.ok(s.body.includes('CC BY-SA 4.0'));
 }
 await access('dist/images/openmoji/LICENSE.txt');
-console.log('PASS: 68 manifest illustrations, original artwork hashes, source/artist/license metadata and dedicated code layouts.');
+console.log('PASS: 64 manifest illustrations, original artwork hashes, source/artist/license metadata and dedicated code layouts.');
 assert.equal(lessons.length,15);
 for(const lesson of lessons){
  assert.equal(lesson.slides.reduce((n,s)=>n+s.time,0),120,lesson.week);
@@ -86,3 +86,21 @@ for(const file of ['dist/index.html','dist/2027/week-01/index.html','dist/2027/w
  assert.ok(!/Talk track|Expected placement|instructor-notes|course-decisions/.test(html),'Private notes must not be published');
 }
 console.log('PASS: Weeks 01/02 have 36/29 slides, 120 minutes each, no break slides, unique section links, portable assets/downloads, no private guide in published HTML.');
+
+if(isReleased('03')){
+ const week03=lessons.find(l=>l.week==='03');
+ assert.equal(week03.slides.length,26);
+ const lab=await readFile('dist/2027/week-03/lab/index.html','utf8');
+ assert.equal((lab.match(/id="w03-lab-section-/g)||[]).length,6);
+ assert.equal((lab.match(/เก็บภาพที่ \d+:/g)||[]).length,5);
+ assert.ok(lab.includes('Pick-a-Pal')&&!lab.includes('data-release-locked'));
+ for(const sub of ['', 'lab/']){
+  const manifest=JSON.parse(await readFile(`dist/images/week-03-apple/${sub}manifest.json`,'utf8'));
+  for(const im of manifest){
+   assert.ok(im.source&&im.alt&&im.rights);
+   assert.equal(createHash('sha256').update(await readFile(`dist/images/week-03-apple/${sub}${im.file}`)).digest('hex'),im.sha256);
+  }
+ }
+ await access('dist/images/week-03-course/campushelp-main.png');
+ console.log('PASS: Week 03 released: 26 slides, 6 lab sections, 5 screenshot checkpoints, attributed tutorial assets.');
+}

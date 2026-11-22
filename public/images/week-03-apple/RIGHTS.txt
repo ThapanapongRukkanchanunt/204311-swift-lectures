@@ -1,0 +1,5 @@
+Copyright Apple Inc. All rights reserved.
+Selected Develop in Swift tutorial illustrations accompany attributed educational explanations.
+Instructor approved Week 03 course publication on 2026-11-22. No Apple endorsement or open license is claimed.
+Source pages, asset URLs, retrieval dates and hashes are recorded in manifest.json and lab/manifest.json.
+No Apple fonts or UI kits are bundled.

@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "generate": "node scripts/generate.mjs && node scripts/labs.mjs",
-    "dev": "npm run generate && vite --host 127.0.0.1",
+    "generate:local": "node scripts/generate.mjs --local-preview && node scripts/labs.mjs --local-preview",
+    "dev": "npm run generate:local && vite --host 127.0.0.1",
     "build": "npm run generate && vite build && node scripts/package.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "check": "node scripts/check.mjs"
+    "check": "node scripts/check.mjs",
+    "build:local": "npm run generate:local && vite build --outDir .review-dist && node scripts/package.mjs --local-preview"
   },
   "dependencies": {
     "reveal.js": "6.0.2"

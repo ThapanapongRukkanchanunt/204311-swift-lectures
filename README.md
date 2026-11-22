@@ -1,12 +1,12 @@
 # 204311 Swift Lectures
 
-Weeks 01–02 are released. Weeks 03–15 are held until explicit instructor confirmation; their site entries are disabled and direct lesson/lab URLs show a release notice. `scripts/availability.mjs` is the release allowlist. Build packaging excludes held practice, starter, Canvas and offline downloads while retaining authoring sources in the repository. This is a course-release gate, not private repository access control.
+Weeks 01–03 are released. Weeks 04–15 are held until explicit instructor confirmation; their site entries are disabled and direct lesson/lab URLs show a release notice. `scripts/availability.mjs` is the release allowlist. Build packaging excludes held practice, starter, Canvas and offline downloads while retaining authoring sources in the repository. This is a course-release gate, not private repository access control.
 
 ## Complete semester review draft
 
 All 15 teaching weeks are available at `/2027/week-NN/`, each with a reading view, Thai lab sheet, practice-source ZIP and offline ZIP. Weeks 03–15 were added on 2026-09-27. Their catalog is `src/generated-catalog.json`; `scripts/lessons.mjs` loads every lesson for generation, packaging and checks. Resource links use the same labels and order throughout.
 
-These are review drafts, not a claim of Apple-device, timed beginner-pilot or Canvas validation. Week 03 preserves the six-student guided requirements workshop; Week 15 preserves the full deployment lecture and the 25 + 90 + 5 minute release/presentation lab. No extra class meetings are required. Instructor media links remain placeholders.
+These are review drafts, not a claim of Apple-device, timed beginner-pilot or Canvas validation. Week 03 follows Discovery and Prototypes with guided reasoning in two teams of three; Week 15 preserves the full deployment lecture and the 25 + 90 + 5 minute release/presentation lab. No extra class meetings are required. Instructor media links remain placeholders.
 
 ## Thai lab sheets
 
@@ -19,6 +19,12 @@ Public interactive lecture slides and student-facing downloads for CS 311 (20431
 The lecture site will use Reveal.js with Vite and deploy to GitHub Pages. Restricted material—including solutions, assessment answers, credentials, student data, and private instructor notes—must remain outside this repository.
 
 ## Local development
+
+Week 03 lecture and lab were approved for production on 2026-11-22. Weeks 04–15 remain locked. Both local and production builds include the released weeks; local builds use .review-dist.
+
+Week 03 has 26 Discovery and Prototypes slides (120 minutes), attributed Apple tutorial illustrations and a generated CampusHelp concept screen. The Thai Pick-a-Pal lab follows all six build sections of Create dynamic content and uses five screenshot submissions. Its canonical source and private notes remain outside this public repository; public content is in src/week03.mjs and content/labs/week-03.html.
+
+Screenshot reminders in Labs 1–3 use red labels and a brief border animation, with reduced-motion and static Canvas fallbacks. The shared generator applies this style to future releases. Apple images retain copyright, source links and provenance manifests; no open license is claimed. No Apple fonts or UI kits are bundled.
 
 Use Node.js 22.12 or later (Node 22 LTS is used in CI). Dependencies are pinned in package-lock.json.
 

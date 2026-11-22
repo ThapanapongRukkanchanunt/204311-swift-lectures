@@ -1,0 +1,83 @@
+[
+  {
+    "file": "lists-and-textfields--static-rows.png",
+    "url": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/lists-and-textfields--static-rows@2x.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/create-dynamic-content",
+    "alt": "Screenshot showing a list of four names.",
+    "accessed": "2026-11-22",
+    "rights": "Apple Inc.; copyrighted tutorial screenshot accompanying instruction. Instructor approved course publication on 2026-11-22. No open license claimed.",
+    "sha256": "146e84611a900f424f83845822df127fcc8fd1d65ff83ecb7da32fd2474748ca"
+  },
+  {
+    "file": "lists-and-textfields--add-textfield.png",
+    "url": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/lists-and-textfields--add-textfield@2x.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/create-dynamic-content",
+    "alt": "Screenshot showing a list of four names. Below it is the Add Name text field.",
+    "accessed": "2026-11-22",
+    "rights": "Apple Inc.; copyrighted tutorial screenshot accompanying instruction. Instructor approved course publication on 2026-11-22. No open license claimed.",
+    "sha256": "65d79b19c143e82be0843c3a6dc327e5bfa5deb0ad9d7b00a9b4953f7d4aac3b"
+  },
+  {
+    "file": "lists-and-textfields--resume-preview.png",
+    "url": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/lists-and-textfields--resume-preview@2x.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/create-dynamic-content",
+    "alt": "Screenshot showing the preview canvas. A banner near the top is labeled, Preview paused. In the banner, a button to reactivate the preview is highlighted.",
+    "accessed": "2026-11-22",
+    "rights": "Apple Inc.; copyrighted tutorial screenshot accompanying instruction. Instructor approved course publication on 2026-11-22. No open license claimed.",
+    "sha256": "aaebcca99203d8a766dbfa0586721ca5f8025dd35ef61cee5266b367812274fd"
+  },
+  {
+    "file": "lists-and-textfields--ternary-operator-diagram.png",
+    "url": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/lists-and-textfields--ternary-operator-diagram@2x.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/create-dynamic-content",
+    "alt": "Diagram comparing an if else statement to a ternary operator. The two forms have the same condition and return the same values when the condition is true and when the condition is false. The if else statement is shown on 8 lines of code, while the ternary operator is shown on 1 line of code and has fewer syntax elements.",
+    "accessed": "2026-11-22",
+    "rights": "Apple Inc.; copyrighted tutorial screenshot accompanying instruction. Instructor approved course publication on 2026-11-22. No open license claimed.",
+    "sha256": "112cedab7e96f40ee818233279536720a0d9f27d5c7ff77d1575190204846ea5"
+  },
+  {
+    "file": "lists-and-textfields--add-divider.png",
+    "url": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/lists-and-textfields--add-divider@2x.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/create-dynamic-content",
+    "alt": "Screenshot showing a list of four names. Above the list is some blank space. Below are the text field, a divider, and the Pick Random Name button.",
+    "accessed": "2026-11-22",
+    "rights": "Apple Inc.; copyrighted tutorial screenshot accompanying instruction. Instructor approved course publication on 2026-11-22. No open license claimed.",
+    "sha256": "a9a45520745bba73c6fd29655a56a2495f1e61c015772ea47b37b68b6bc38265"
+  },
+  {
+    "file": "lists-and-textfields--button-action-name-removal.png",
+    "url": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/lists-and-textfields--button-action-name-removal@2x.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/create-dynamic-content",
+    "alt": "Screenshot showing a list of three names. Above the list is the name that was just picked. Below are the text field, a divider, a toggle labeled Remove when picked, and the Pick Random Name button. The toggle is on.",
+    "accessed": "2026-11-22",
+    "rights": "Apple Inc.; copyrighted tutorial screenshot accompanying instruction. Instructor approved course publication on 2026-11-22. No open license claimed.",
+    "sha256": "19a5ba5cd530d1d07570d7aa2f773a6bae56b1fa14a2bf57d97566f1f2889de5"
+  },
+  {
+    "file": "lists-and-textfields--button-custom-label-padding.png",
+    "url": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/lists-and-textfields--button-custom-label-padding@2x.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/create-dynamic-content",
+    "alt": "Screenshot showing the Pick-a-Pal interface. The Pick Random Name button is rendered with white text in a blue rounded rectangle. There is some padding around the text inside the blue rounded rectangle.",
+    "accessed": "2026-11-22",
+    "rights": "Apple Inc.; copyrighted tutorial screenshot accompanying instruction. Instructor approved course publication on 2026-11-22. No open license claimed.",
+    "sha256": "24fc3e8440a4e79e0691dd75a834a4afccdb28c527d573c419eb7c71d19f0b24"
+  },
+  {
+    "file": "lists-and-textfields--custom-accent-color.png",
+    "url": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/lists-and-textfields--custom-accent-color@2x.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/create-dynamic-content",
+    "alt": "Screenshot showing the Pick-a-Pal interface. The icon, chosen name, and Pick Random Name button, are all rendered in an indigo color.",
+    "accessed": "2026-11-22",
+    "rights": "Apple Inc.; copyrighted tutorial screenshot accompanying instruction. Instructor approved course publication on 2026-11-22. No open license claimed.",
+    "sha256": "0fde7698acb934613a452f57004f5a4bdb3326b44e0d371a7ade08cb27c8db0c"
+  },
+  {
+    "file": "lists-and-textfields--empty-names-array.png",
+    "url": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/lists-and-textfields--empty-names-array@2x.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/create-dynamic-content",
+    "alt": "Screenshot showing the Pick-a-Pal interface. There is empty space in the middle of the screen where names will be added to the list.",
+    "accessed": "2026-11-22",
+    "rights": "Apple Inc.; copyrighted tutorial screenshot accompanying instruction. Instructor approved course publication on 2026-11-22. No open license claimed.",
+    "sha256": "795519f97964f26e0be7aed394bbbd8a081c94adca141e3356bc6509252836ec"
+  }
+]

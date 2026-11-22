@@ -35,6 +35,7 @@ body:not(.enhanced) #overview{display:none}
 .deck.enhanced .split{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:36px}
 .deck.enhanced .hero .split{grid-template-columns:1.4fr 1fr}
 .deck.enhanced .cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin:22px 0 28px}
+.deck.enhanced #w03-group-features .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
 .deck.enhanced .cards:has(>article:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr))}
 .deck.enhanced .card{padding:24px}
 .deck.enhanced .criteria{grid-template-columns:repeat(3,1fr);gap:24px}

@@ -1,9 +1,9 @@
 [
   {
     "week": "03",
-    "title": "Requirements and Interactive Prototypes",
-    "label": "REQUIREMENTS AND INTERACTIVE PROTOTYPES",
-    "labTitle": "สร้างต้นแบบขอรับบริการในมหาวิทยาลัย"
+    "title": "Discovery and Prototypes",
+    "label": "DISCOVERY AND PROTOTYPES",
+    "labTitle": "สร้าง Pick-a-Pal ด้วย List, TextField และ Binding"
   },
   {
     "week": "04",

@@ -10,3 +10,7 @@ coverage/
 .DS_Store
 Thumbs.db
 
+
+.review-dist/
+public/downloads/week-03-practice.zip
+public/downloads/week-03-offline.zip

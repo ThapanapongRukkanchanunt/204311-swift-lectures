@@ -62,27 +62,6 @@
     ]
   },
   {
-    "week": "03",
-    "id": "w03-pitch-7",
-    "caption": "A real paper prototype for Wiki Education. Screen sketches can test a flow before implementation.",
-    "images": [
-      {
-        "file": "w03-1.webp",
-        "title": "Paper prototype of website user interface, 2015-04-16.jpg",
-        "author": "Sage Ross",
-        "source": "https://commons.wikimedia.org/wiki/File%3APaper_prototype_of_website_user_interface%2C_2015-04-16.jpg",
-        "original": "https://upload.wikimedia.org/wikipedia/commons/6/67/Paper_prototype_of_website_user_interface%2C_2015-04-16.jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-        "changes": "Resized and converted to WebP; no crop or recoloring.",
-        "alt": "Paper interface sketches spread on a table, with a designer moving between them.",
-        "sourceCredit": "Own work",
-        "retrieved": "2026-09-27",
-        "sha256": "6720c0bb2bca6c0230c033a9c1194320930ead9f9683fe735e14cff463f51c15"
-      }
-    ]
-  },
-  {
     "week": "04",
     "id": "w04-proposal",
     "caption": "Responsive-design analogy: preserve useful content as the available space changes.",

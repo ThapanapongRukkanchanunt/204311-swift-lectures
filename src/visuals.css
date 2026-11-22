@@ -16,6 +16,9 @@
 .deck.enhanced .has-visual .sources{margin-top:16px!important}
 .deck.enhanced .visual-gallery.image-pair img{height:300px}
 .deck.enhanced .has-visual h2{font-size:46px}
+.deck.enhanced #w03-design-cycle .visual-layout{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}
+/* Crop transparent side margins in the viewport; keep Apple's original PNG intact. */
+#w03-design-cycle .visual-gallery img{height:auto;aspect-ratio:1;object-fit:cover;object-position:center}
 .deck.enhanced #w05-controls .visual-gallery img{height:440px}
 /* Preserve the source file; trim only empty margins in the slide viewport. */
 #w10-relation .visual-gallery img{height:220px;object-fit:cover;object-position:50% 25%}

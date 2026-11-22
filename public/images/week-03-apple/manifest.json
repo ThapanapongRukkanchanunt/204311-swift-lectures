@@ -1,0 +1,122 @@
+[
+  {
+    "file": "welcome-to-app-design-yourpath.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/welcome-to-app-design",
+    "original": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/welcome-to-app-design-yourpath@2x.png",
+    "author": "Apple Inc.",
+    "copyright": "Copyright Apple Inc. All rights reserved.",
+    "rights": "Copyright Apple Inc. Attributed tutorial illustration accompanying course instruction; instructor approved course publication on 2026-11-22. No open license or Apple endorsement claimed.",
+    "alt": "Illustration depicting a collection of notes and icons representing people with two lines leading away from the collection. One line leads to an image of an app called Grateful Moments. The other leads to an image of an app with stylized content and no legible title.",
+    "changes": "Unmodified original PNG; CSS scales without cropping.",
+    "retrieved": "2026-11-22",
+    "sha256": "5d51f8a7b6452e66c69ece746cd6289abb3eced8bd7dc3134a323d55a3186b7c"
+  },
+  {
+    "file": "app-design--design-cycle.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/explore-the-app-design-cycle",
+    "original": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/app-design--design-cycle.png",
+    "author": "Apple Inc.",
+    "copyright": "Copyright Apple Inc. All rights reserved.",
+    "rights": "Copyright Apple Inc. Attributed tutorial illustration accompanying course instruction; instructor approved course publication on 2026-11-22. No open license or Apple endorsement claimed.",
+    "alt": "Illustration of a ring divided into four colored sections, labeled discover, prototype, validate, and iterate.",
+    "changes": "Unmodified original PNG; CSS scales without cropping.",
+    "retrieved": "2026-11-22",
+    "sha256": "814d9c223d7a532b102bb6e8b661e00c57b62a817e2c6184ba1fa2eb1a6bcfed"
+  },
+  {
+    "file": "T1_S2_step2.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/ask-questions",
+    "original": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/T1_S2_step2@2x.png",
+    "author": "Apple Inc.",
+    "copyright": "Copyright Apple Inc. All rights reserved.",
+    "rights": "Copyright Apple Inc. Attributed tutorial illustration accompanying course instruction; instructor approved course publication on 2026-11-22. No open license or Apple endorsement claimed.",
+    "alt": "Illustration including three icons representing people and stylized text associated with each. Portions of two of the text areas are highlighted with orange coloring.",
+    "changes": "Unmodified original PNG; CSS scales without cropping.",
+    "retrieved": "2026-11-22",
+    "sha256": "6a87f36f436de129a9cf8ce0fa85ceea1377d276d349d336328e7e6de6258540"
+  },
+  {
+    "file": "T1_S3_step2.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/ask-questions",
+    "original": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/T1_S3_step2@2x.png",
+    "author": "Apple Inc.",
+    "copyright": "Copyright Apple Inc. All rights reserved.",
+    "rights": "Copyright Apple Inc. Attributed tutorial illustration accompanying course instruction; instructor approved course publication on 2026-11-22. No open license or Apple endorsement claimed.",
+    "alt": "Illustration including an orange capsule containing an icon depicting a washing machine. Next to it are three boxes, each with an icon representing writing and stylized text.",
+    "changes": "Unmodified original PNG; CSS scales without cropping.",
+    "retrieved": "2026-11-22",
+    "sha256": "cd3335068a6500331f740a02dc6af5356dbee202bf18bb79ec9f8d5a99fe7a8d"
+  },
+  {
+    "file": "T2_S3_step1.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/organize-your-features",
+    "original": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/T2_S3_step1@2x.png",
+    "author": "Apple Inc.",
+    "copyright": "Copyright Apple Inc. All rights reserved.",
+    "rights": "Copyright Apple Inc. Attributed tutorial illustration accompanying course instruction; instructor approved course publication on 2026-11-22. No open license or Apple endorsement claimed.",
+    "alt": "Illustration of an app screen with a toolbar button at the top and tab bar buttons at the bottom. The tab bar is highlighted.",
+    "changes": "Unmodified original PNG; CSS scales without cropping.",
+    "retrieved": "2026-11-22",
+    "sha256": "54c208fc1cb18866a40f98dc4f2cb4315696c8d965d10e980f4d88cc9588d188"
+  },
+  {
+    "file": "T2_S3_step2.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/organize-your-features",
+    "original": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/T2_S3_step2@2x.png",
+    "author": "Apple Inc.",
+    "copyright": "Copyright Apple Inc. All rights reserved.",
+    "rights": "Copyright Apple Inc. Attributed tutorial illustration accompanying course instruction; instructor approved course publication on 2026-11-22. No open license or Apple endorsement claimed.",
+    "alt": "Illustration of an app screen with a toolbar button at the top and tab bar buttons at the bottom. The toolbar button is highlighted.",
+    "changes": "Unmodified original PNG; CSS scales without cropping.",
+    "retrieved": "2026-11-22",
+    "sha256": "6036b63d1d7462555c2b15356b62a646355253ba225f4a0a61df2935925ef761"
+  },
+  {
+    "file": "T2_S3_step5.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/organize-your-features",
+    "original": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/T2_S3_step5@2x.png",
+    "author": "Apple Inc.",
+    "copyright": "Copyright Apple Inc. All rights reserved.",
+    "rights": "Copyright Apple Inc. Attributed tutorial illustration accompanying course instruction; instructor approved course publication on 2026-11-22. No open license or Apple endorsement claimed.",
+    "alt": "Illustration of three app screen sketches. The first has a title and toolbar button at the top, notes with stylized text in the middle, and a tab bar at the bottom. The second is a modal screen with a title and toolbar at the top and notes with stylized text in the middle. The third has a title at the top, notes with stylized text in the middle, and a tab bar at the bottom. Navigation arrows link the toolbar button on the first to the body of the second, the tab bar on the first to the body of the third, and a toolbar button on the second to the body of the first.",
+    "changes": "Unmodified original PNG; CSS scales without cropping.",
+    "retrieved": "2026-11-22",
+    "sha256": "ec4387eb64b3bd8348926b3a1cfa99ca528914ec0be5cfe6f5594d2b27dc0160"
+  },
+  {
+    "file": "T3_S1_step4.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/build-an-interactive-prototype",
+    "original": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/T3_S1_step4@2x.png",
+    "author": "Apple Inc.",
+    "copyright": "Copyright Apple Inc. All rights reserved.",
+    "rights": "Copyright Apple Inc. Attributed tutorial illustration accompanying course instruction; instructor approved course publication on 2026-11-22. No open license or Apple endorsement claimed.",
+    "alt": "Illustration depicting design elements being added to a screen sketch.",
+    "changes": "Unmodified original PNG; CSS scales without cropping.",
+    "retrieved": "2026-11-22",
+    "sha256": "7aa7a24dcbae93946d9dd43911084a191f5f92d225d3f7afbce9099f72a7780d"
+  },
+  {
+    "file": "T3_S2_step2.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/build-an-interactive-prototype",
+    "original": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/T3_S2_step2@2x.png",
+    "author": "Apple Inc.",
+    "copyright": "Copyright Apple Inc. All rights reserved.",
+    "rights": "Copyright Apple Inc. Attributed tutorial illustration accompanying course instruction; instructor approved course publication on 2026-11-22. No open license or Apple endorsement claimed.",
+    "alt": "Illustration of a computer screen with three app screen designs on it. The app screens are titled Grateful Moments, Add a Moment, and Achievements, and they have content represented with design elements. Navigation arrows link their toolbar and tab bar buttons to other screens or tabs.",
+    "changes": "Unmodified original PNG; CSS scales without cropping.",
+    "retrieved": "2026-11-22",
+    "sha256": "29d43fc5cdc8a0cc437416fd91aaacb8311e7198da3a03efb2616930ccc5944c"
+  },
+  {
+    "file": "T3_S3_step2.png",
+    "source": "https://developer.apple.com/tutorials/develop-in-swift/build-an-interactive-prototype",
+    "original": "https://developer.apple.com/tutorials/images/com.apple.DevelopInSwift/T3_S3_step2@2x.png",
+    "author": "Apple Inc.",
+    "copyright": "Copyright Apple Inc. All rights reserved.",
+    "rights": "Copyright Apple Inc. Attributed tutorial illustration accompanying course instruction; instructor approved course publication on 2026-11-22. No open license or Apple endorsement claimed.",
+    "alt": "Illustration depicting two app screens, titled Grateful Moments and Add a Moment. A toolbar button with a plus-shaped icon on the Grateful Moments screen is highlighted. An upward arrow indicates that the Add a Moment screen is sliding up from the bottom.",
+    "changes": "Unmodified original PNG; CSS scales without cropping.",
+    "retrieved": "2026-11-22",
+    "sha256": "7dedc11f027f861ce302528140d754d9298cd2140a545d0cc9e05f6118504b7c"
+  }
+]
