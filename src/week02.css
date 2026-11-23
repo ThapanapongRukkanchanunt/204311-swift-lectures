@@ -11,3 +11,10 @@ body:not(.enhanced) .queue-sim button{display:none}
 .deck.enhanced #w02-minimal-state-view pre,.deck.enhanced #w02-duplicated-state-defect pre{line-height:1.4}
 .deck.enhanced #w02-event-state-view-trace li{margin-bottom:10px}
 @media(max-width:700px){.queue-number{font-size:48px}.reading .reveal table,body:not(.enhanced) .reveal table{table-layout:fixed;font-size:12px}.reading .reveal td,.reading .reveal th,body:not(.enhanced) .reveal td,body:not(.enhanced) .reveal th{padding:6px;overflow-wrap:anywhere}}
+
+/* Each diagram and explanation reveal as one card. */
+.scene-architecture img{display:block;width:100%;height:240px;object-fit:contain;background:white;border-radius:12px}
+.scene-architecture h3{margin:14px 0 8px}
+.scene-architecture p{font-size:24px;line-height:1.35}
+.deck.enhanced .scene-architecture{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.scene-architecture .card{min-width:0}
